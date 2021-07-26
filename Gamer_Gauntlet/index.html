@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!--or document-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../Styles/Styles.css">
+  <link rel="icon" href="Multimedia/Controller_Icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><!--Bootstrap Time People!-->
+  <script type="text/javascript" src="../Styles/Script.js" defer></script>
+  <title>Gamer's Gauntlet</title>
+</head>
+<body>
+  <img src="Multimedia/Background_Alternate.gif" alt="By u/Cheezemaniac" id="BG">
+
+  <div>
+  <header id="header">
+    <a href="" id="logo"><img src="Multimedia/Logo_Negative_Transparent.png" alt="Main Page"></a>
+    <div id="Choices">
+
+      <p id="choose">Choose your challenge of liking:</p>
+
+      <div class="game_choices">
+        <a href="Challenges/Games.html" class="games_button">By Games</a>
+        <div class="games_content">
+          <p><a href="Challenges/Games.html#Silksong" style="border-top-left-radius:8px;border-top-right-radius:8px;">Hollow Knight</a></p>
+          <p><a href="Challenges/Games.html#Creeper">Minecraft</a></p>
+          <p><a href="Challenges/Games.html#Sunflower">Plants vs Zombies</a></p>
+          <p><a href="Challenges/Games.html#Pkmn">Pokemon</a></p>
+          <p><a href="Challenges/Games.html#Minecraft" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Terraria</a></p>
+        </div>
+      </div>
+
+      <div class="difficulty_choices">
+        <a href="Challenges/Difficulty.html" class="difficulty_button">By Difficulty</a>
+        <div class="difficulty_content">
+          <p><a href="Challenges/Difficulty.html#Easy" style="border-top-left-radius:8px;border-top-right-radius:8px;">Easy</a></p>
+          <p><a href="Challenges/Difficulty.html#CbWorse">Could be Worse</a></p>
+          <p><a href="Challenges/Difficulty.html#SoS">Starting to Suffer</a></p>
+          <p><a href="Challenges/Difficulty.html#RnG">Massive Luck Required</a></p>
+          <p><a href="Challenges/Difficulty.html#Impossibru" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Help.</a></p>
+        </div>
+      </div>
+
+      <p id="featured_button" class="choices"><a href="Challenges/Featured.html">Featured</a></p>
+
+    </div>
+    <div id="More_Choices">
+      <a href="Others/Suggestions.html" class="More_Choices">Suggestion Box</a>
+      <a href="Others/About-Us.html" class="More_Choices">About</a>
+      <a href="javascript:void(0)" class="More_Choices" onclick="Very_Random()">Random</a>
+    </div>
+
+    <div class="Search">
+      <form name="Search_Bar" target="" method="post" class="More_Choices" autocomplete="off">
+        <img src="Multimedia/Search.ico" alt="" id="Search">
+        <input name="Search" type="text" id="Enter_Search" placeholder="Search Here..." onkeyup="List_Filter()" autocomplete="off">
+      </form>
+
+      <div id="Challenge_List">
+        <p><a href="Challenges/Hollow_Knight/Gun.html">[Hollow Knight] <br>Gun%</a></p>
+        <p><a href="Challenges/Pokemon/Platinum_Lv100_Magikarp.html">[Pokemon Platinum] <br>Lv100 Magikarp</a></p>
+        <p><a href="Challenges/Terraria/No_WASD.html">[Terraria] <br>No WASD</a></p>
+        <p><a href="Challenges/Terraria/Terra_Toilet.html">[Terraria] <br>Terra Toilet%</a></p>
+      </div>
+    </div>
+
+    </header>
+  </div>
+
+  <h3 id="Menu"><span onclick="openNav()">&#9776;</span></h3><!--https://www.toptal.com/designers/htmlarrows/symbols/
+  The sidenav-->
+  <div id="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h1>&times;</h1></a>
+    <a href="Others/Suggestions.html" class="Choices2" style="margin-left:0px">Suggestion Box</a>
+    <a href="Others/About-Us.html" class="Choices2">About</a>
+    <a href="javascript:void(0)" class="Choices2" onclick="Very_Random()">Random</a>
+    <p id="choices_2" class="More_Choices2">Make a choice:</p>
+    <a href="Challenges/Games.html" class="More_Choices2">By Game</a>
+    <a href="Challenges/Difficulty.html" class="More_Choices2">By Difficulty</a>
+    <a href="Challenges/Featured.html" class="More_Choices2">Featured</a>
+  </div>
+
+<hr id="Header_Solver">
+<div id="Content">
+<!--Here begins the Wall of Text:-->
+<div id=Announce_WallOfText>
+<h2 style="margin: 15px auto;">Welcome to the Gamer's Gauntlet!</h2>
+<p>This blog was created in the hopes of consolidating information on silly challenges for games, to provide some replay value to them. Take a look around, and I hope you get excited to pick the game back up once more!</p><br>
+<h4>Here, have some help to get you started:</h4><br>
+</div>
+
+<div id="Elaborate_Choices">
+
+  <a href="javascript:void(0)" onclick="Very_Random()">
+  <div id="Elaborate_Choice_1">
+    <img src="Multimedia/Main/Obscure_Sinjoh_Ruins_HGSS.png" alt="By Gamefreak and The Pokemon Company">
+    <p>Something Random?</p>
+  </div>
+  </a>
+
+  <a href="#">
+  <div id="Elaborate_Choice_2">
+    <img src="Multimedia/Main/Featured_Contest_DPPt_Cropped.png" alt="By Gamefreak and The Pokemon Company">
+    <p><span>&#10022;</span> A Featured Post <span>&#10022;</span></p>
+  </div>
+  </a>
+
+<br class="break_time">
+
+  <a href="Others/Suggestions.html">
+  <div id="Elaborate_Choice_3">
+    <img src="Multimedia/Main/Interview_BWB2W2.jpg" alt="By Gamefreak and The Pokemon Company">
+    <p>Maybe make one yourself!</p>
+  </div>
+  </a>
+</div>
+</div>
+<footer>
+  <h2 id="icon"><img src="Multimedia/Controller_Icon.png"> Gamer's Gauntlet</h2>
+  <!--Icon found here: https://commons.wikimedia.org/wiki/File:Video-Game-Controller-Icon-D-Edit.svg-->
+  <table id="More_Choices_Back_Again">
+    <tr>  <td><a href="Others/Suggestions.html">Suggestion Box</a></td>  <td><a href="Others/About-Us.html">About</a></td>  <td><a href="javascript:void(0)" onclick="Very_Random()">Random</a></td>  </tr>
+  </table>
+  <p class="Official_info">This is a personal project and is not intended for business.</p>
+  <p class="Official_info">All Multimedia rights are reserved to their respective owners.</p>
+  <p class="Official_info">More info is available in the HTML code.</p>
+</footer>
+</body>
+</html>

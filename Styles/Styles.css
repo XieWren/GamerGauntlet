@@ -1,0 +1,815 @@
+* {
+  font-family:'Segoe UI',Segoe,'Century Gothic',Helvetica,sans-serif;/*Segoe UI isn't the safest font to use*/
+  /*white-space:nowrap; /*Text does not wrap*/
+  box-sizing:border-box;/*The CSS box-sizing property allows us to include the padding and border in an element's total width and height.*/
+}
+
+/** {/*Check for ghost elements*/
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
+html {/*or document*/
+  width:100%;/*Makes website not freak out when dimensions change (as much)*/
+}
+body{
+  overflow-x: hidden;
+}
+
+#BG {
+  position:fixed;
+  right:0;
+  top:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+/*Header Start!!!*/
+header{
+  background-color:#151515;
+  height:100px;
+  min-width:100%;
+  top:0px;
+  left:0px;
+  position:absolute;
+  z-index:1;
+}
+
+#logo img{
+  height:75px;
+  width:auto;
+  cursor:pointer;
+  position:absolute;
+  margin-top:15px;
+  margin-left:10px;
+}
+
+#choose {
+  font-family:Perpetua,Garamond,'Brush Script MT';/*Perpetua is not web-safe*/
+  font-size:1.5em;
+  font-style: italic;
+  margin:0;
+}
+
+header p, .games_button, .difficulty_button{
+  color:white;
+  font-size:0.9em;
+}
+
+/*For when hovering on links*/
+/*Header*/#Choices a:hover, #featured_button a:hover, .More_Choices:hover, .Choices2:hover, a.More_Choices2:hover, #very_random:hover, .Table_Of_Contents a:hover, .Gallery_Content a:hover, .more_info:hover, #Before_After a:hover, #Elaborate_Choices a:hover, #Elaborate_Choice_2:hover span{
+  color:#729aca;
+  transition-duration:0.3s;
+}
+
+#Choices{
+  margin-right:35vw;
+  margin-top:15px;
+  text-align: center;
+}
+
+#Choices a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Sorting challenge by games*/
+.games_content{
+  display:none;
+  position:absolute;/*Will not affect other elements upon appearing*/
+  border-radius:8px;
+  text-align:left;
+  background-color:#2a2a2a;
+}
+.games_content p {
+  margin:0;
+}
+.games_content a {
+  padding:7.5px;
+  margin-bottom:0px;
+  display: block;
+}
+.games_content a:hover{
+  background-color:#2f2f2f
+}
+.game_choices{
+  display:inline-block;
+}
+.game_choices:hover .games_content {
+  display:block;
+  position: absolute;
+}
+.games_button {
+  font-weight: bold;
+  margin:0 1vw;
+}
+
+/*Sorting challenge by difficulty*/
+.difficulty_content {
+  display:none;
+  position:absolute;/*Will not affect other elements upon appearing*/
+  border-radius:8px;
+  text-align:left;
+  background-color:#2a2a2a;
+}
+.difficulty_content p {
+  margin:0;
+}
+.difficulty_content a {
+  padding:7.5px;
+  margin-bottom:0px;
+  display: block;
+}
+.difficulty_content a:hover{
+  background-color:#2f2f2f
+}
+.difficulty_choices{
+  display:inline-block;
+}
+.difficulty_choices:hover .difficulty_content {
+  display:block;
+  position: absolute;
+}
+.difficulty_button {
+  font-weight: bold;
+  margin:0 1vw;
+}
+
+/*Featured Challenges*/
+#featured_button {
+  display:inline-block;
+  font-weight:bold;
+  margin:0 1vw;
+}
+
+#More_Choices {
+  position:absolute;
+  bottom:35px;
+  margin-left:49vw;
+  float:right;
+}
+
+.More_Choices{
+  text-decoration: none;
+  color: white;
+  display:inline-block;
+  margin:0 1.5vw;
+}
+/*Search Button*/
+#Search {
+  width:auto;
+  height:15px;
+  bottom:2.5px;
+  position:relative;
+  z-index:2;
+}
+
+#Enter_Search {
+  border-radius:17.5px;
+  right:25px;
+  height:30px;
+  padding:5px 5px 5px 25px;
+  margin-right:0px;
+  outline-style:none;/*No outlines*/
+  border-style:none;/*No borders*/
+  position: relative;
+  z-index:1;
+}
+
+.Search {
+  position:relative;
+  float:right;
+  bottom:39.5px;
+}
+
+#Challenge_List {
+  position:absolute;
+  background-color:white;
+  display:none;/*Starts with not seeable*/
+  /*left:calc(10.5vw + 245px);/*Horrible value to find*/
+  left: calc(2vw + 10px);/*Another horrible value*/
+  border:1px solid black;
+  min-width:160px;
+}
+
+#Challenge_List a{
+  color:black;
+  text-decoration:none;
+  width:100%;
+}
+#Challenge_List p {
+  padding:5px;
+  width:100%;
+  margin:0px;
+}
+#Challenge_List p:hover a {
+  color:white;
+}
+#Challenge_List p:hover {
+  background-color:#2f2f2f;
+}
+
+#Menu{
+  float:right;/*Stick to the right*/
+  position:relative;
+  margin-right:30px;
+  top:16.5px;
+  width:auto;
+  display:none;
+  color:white;
+  cursor:pointer;/*Cursor becomes hand*/
+  z-index:1;
+}
+
+@media only screen and (max-width: 1225px) {/*Header change, based on window width*/
+  #More_Choices{
+    display:none;
+  }
+  #Menu{
+    display:block;
+  }
+  #Choices{/*Center what's left*/
+    margin-left:10vw;
+    margin-right:0vw;
+  }
+  .Choices2{/*Appear in sidebar*/
+    display:block;
+  }
+  /*Search Bar*/
+  .More_Choices {
+    margin:0px;/*Affects only search bar, as the other elements are not disaplayed*/
+  }
+  .Search {
+    display:block;
+    position:absolute;
+    bottom:-5px;
+    margin:0 7.5vw 20px;
+  }
+  #Enter_Search {
+    min-width:85vw;
+    right:0px;
+    border-radius:0px;
+    background-color:inherit;
+    border-bottom: 1px solid white;
+    color:white;
+  }
+  #Search {
+    top:25px;
+    left:7.5px;
+    background-color:white;
+    padding:2.5px;
+    border-radius:100px;
+  }
+  #Challenge_List {
+    min-width:85vw;
+    left:0px;
+    border-top:none;
+  }
+  #Challenge_List br {
+    display:none;
+  }
+  /*Changes to support change in elements within header*/
+  header {
+    height:145px;
+  }
+  #Content {
+    margin-top:calc(8em + 25px) !important; /*Not possible to make more specific to overwrite normal margin domensions*/
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #Choices{
+    display: none;
+  }
+  /*Sidenav time!*/
+  #sidenav #Enter_Search, #sidenav a:not(.closebtn) {
+    margin:0px auto auto auto;
+  }
+  .More_Choices2{
+    display:block;
+  }
+}
+
+@media only screen and (min-width: 680px) {/*Extra choices come out only when they are supposed to*/
+  .More_Choices2{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1225px) {
+  #sidenav a, #sidenav p{
+    display: none;
+  }
+}
+
+/* The side navigation menu */
+#sidenav {
+  height: 100%; /* Top-Bottom all the way */
+  width: 0; /*To be manipulated by JavaScript */
+  position: fixed; /*No move (usually)*/
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right:0;
+  background-color: #E6E6E6;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px;
+  transition-duration: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+.Choices2 {
+  margin-top:30px;
+}
+
+.Choices2,.More_Choices2{
+  text-decoration: none;
+  text-align: center;
+  color:black;
+}
+
+a.More_Choices2:last-of-type {
+  padding-bottom:25px;
+}
+
+#sidenav #Enter_Search {
+  display:flex;/*seperate rows*/
+  text-align: center;
+  margin:50px auto auto auto;
+  padding-left:5px;
+}
+
+#sidenav #Search {
+  display:none;
+}
+
+.closebtn{
+  text-align: right;
+  text-decoration: none;
+  color: black;
+}
+
+#choices_2{
+  text-align: center;
+  font-family:Perpetua,Garamond,'Brush Script MT';/*Perpetua is not web-safe*/
+  font-style: italic;
+  font-size: 1.5em;
+  margin-top:1.5em;
+}
+
+/*For non-wiki Walls Of Text*/
+#Content{
+  min-height:100vh;/*Ar least 1 window height of content*/
+  background-color:rgba(242, 238, 225, 0.9);
+  margin: 8em 3.5em 1.5em;
+  border-radius:20px;
+  padding-bottom:1.5em;
+}
+#Announce_WallOfText{
+  text-align:center;
+  padding: 10px 17.5vw;
+  /*background-color: none;(Why did no one tell me this worked*/
+}
+#Announce_WallOfText p{
+  font-size: 1.25em;
+}
+#Announce_WallOfText h2,#Wiki_WallOfText h2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+/*For wiki Walls of Text*/
+#Wiki_WallOfText{
+  min-height:100vh;/*Ar least 1 window height of content*/
+  background-color: #F2EEE1;
+  margin: 8em 3.5em 1.5em 3.5em;
+  padding: 2em 2.5em;
+  font-size: 15px;
+  border-radius:20px;
+  opacity:0.9;/*Makes transparentness*/
+  overflow-x: hidden;
+}
+
+@media only screen and (max-width: 875px) {/*Background disappears due to warping*/
+  #Wiki_WallOfText {
+    margin:0;
+    border-radius:0px;
+    width:100%;
+    opacity:0.95;
+  }
+  #Content {
+    margin:0 !important; /*Target inline CSS in suggestions*/
+    border-radius:0px;
+    width:100%;
+    background-color:rgba(242, 238, 225, 0.95);
+  }
+  #Header_Solver {
+    height:112.5px;
+  }
+  #Content #Elaborate_Choices {/*More specific than outside of media query*/
+    height:auto;
+  }
+  #Elaborate_Choices .break_time {/*More specific than outside of media query*/
+    display:block;
+  }
+  #Content #Elaborate_Choices div {/*More specific than outside of media query*/
+    width:75vw;
+    max-width:320px;
+  }
+  #Content #Elaborate_Choices div img {/*More specific than outside of media query*/
+    width:75vw;
+    height:75vw;
+    max-width:320px;
+    max-height:320px;
+    padding:1.25vw;
+  }
+}
+
+#Header_Solver {
+  visibility:hidden;
+}
+.Table_Of_Contents {/*For the Table of Contents*/
+  margin:50px auto 45px auto;
+  display:table;
+  z-index: 1;
+  border:1px solid black;
+  background-color:#faf8f3;;
+  list-style-position: inside;
+  padding:5px 40px 5px 5px;
+  width:;
+}
+.Table_Of_Contents p{
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top:5px;
+  margin-bottom:5px;
+}
+.Table_Of_Contents a {
+  color:black;
+  text-decoration: none;
+}
+.Table_Of_Contents ol ol{
+  list-style-type: lower-roman;
+}
+.Table_Of_Contents ol ol ol{
+  list-style-type: lower-alpha;
+}
+
+#very_random{/*For the random buttons that appear where you don't expect them*/
+  padding:3px 5px;
+  text-decoration: none;
+  color: inherit;
+  border:2px solid black;
+  font-size: 1em;
+  transition-duration:0.3s;
+}
+#very_random:hover{
+  border:3px solid #729aca;
+}
+
+.links{/*For the links in the Wall of Text*/
+  text-decoration:none;
+  color:#3a679c;
+  transition-duration:0.3s;
+}
+.links:hover{
+  color:#729aca;
+}
+
+.quote{
+  font-style: italic;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family:Perpetua,Garamond,'Brush Script MT';
+  color:
+}
+
+#Info {/*Short Summary Write-up*/
+  width:20em;
+  border:1px solid grey;
+  float:right;
+  display;
+  border-radius: 8px;
+  margin-left:3em;
+  background-color:#faf8f3;
+}
+#Info h5{
+  text-align: center;
+}
+@media only screen and (max-width:500px) {
+  #Info {
+    display:block;
+  }
+}
+
+@media only screen and (max-width: 365px) {/*Smallest device is 320px width*/
+  #Info {
+    width:275px;
+    margin-right:-1.75em;
+  }
+}
+
+.key{
+  font-weight: bold;
+  padding:5px 10px;
+}
+.value{
+  padding: 5px 10px;
+}
+.value img,.key img{
+  height:auto;
+  width:25px;
+  display:inline-block;
+}
+.Profile_Pic{
+  margin: auto;
+  padding: 5px 0px;
+  height:auto;
+  display: block;
+}
+.Subtitle{
+  font-weight: normal;
+  font-size: 1.15em;
+  text-align: center;
+  margin: 2px;
+  /*background-color:#ACE7FF;*/
+  background-color:#FFF5BA;
+}
+.Subtitle_Text{
+  text-align: center;
+  padding:0 1.5em;
+}
+.Gallery_Content{
+  /*overflow-x:auto;*/
+  margin-bottom: 1em;
+}
+.Gallery_Content tr:first-of-type td img{
+  margin-top:1.5em;
+}
+@media only screen and (max-width: 875px) {
+  .Gallery_Content{
+    overflow-x:auto;
+    overflow-y:hidden;
+  }
+}
+.Gallery_Content table{/*Specially for the gallery (that fails to do its job right)*/
+  width:100%;
+  height:15em;
+}
+.Gallery_Content td,.Gallery_Content img{
+  padding: 0;
+  margin: 0;
+}
+.Gallery_Content img:not(.Play_Button){
+  height:auto;
+  width:15em;
+  margin: auto;
+  display: block;
+  padding-top:3px;
+  padding:0 0.75em;
+}
+.Gallery_Content p{
+  text-align: center;
+  margin:1.5em auto 2em auto;
+  width:15em;
+  padding: 0;
+}
+.Gallery_Content a{
+  text-decoration: none;
+  color: black;
+}
+.Play_Button{
+  display:inline-block;
+  vertical-align:super;
+  width:auto;
+  height:15px;
+  position: relative;
+  top:7.5px;
+}
+a.more_info{
+  text-decoration: none;
+}
+.Value_Table:nth-child(2n+1){
+  text-align: right;
+}
+.Value_Table:nth-child(2n){
+  padding-left: 15px;
+}
+.Table_Of_Values{
+  width:75vw;
+  max-width:600px;
+}
+.Table_Of_Values td{
+  padding:5px;
+  padding-right:1em;
+}
+.Table_Of_Values td:nth-of-type(3n) {/*3rd column: 3, 6, 9, 12, ...*/
+  padding-right:1.5em;
+}
+.Table_Of_Values td:nth-of-type(3n-2) {/*1st column: 1, 4, 7, 10, ...*/
+  width:100px;
+}
+.Table_Of_Values td:nth-of-type(3n-1) {/*2nd column: 2, 5, 8, 11, ...*/
+  width:125px;
+}
+@media only screen and (max-width: 370px) {
+  .Table_Of_Values td{
+    padding-right:5px;
+    font-size:12px;
+  }
+}
+.Table_Of_Values{
+  background-color:#faf8f3;
+}
+.Table_Of_Values a {
+  color:#4f96fe;
+}
+footer {
+  height:275px;
+  color:white;
+  background-color:#151515;
+  left:0;
+  bottom:0;
+}
+#icon {
+  text-align: center;
+  padding:40px 30px 15px;
+  margin:0;
+}
+footer img {
+  width:auto;
+  height:40px;
+  display:inline-block;
+}
+#More_Choices_Back_Again {
+  margin:0px auto 50px;
+}
+#More_Choices_Back_Again a {
+  text-decoration:none;
+  color:white;
+  padding:10px 15px;
+}
+#More_Choices_Back_Again a:hover{
+  color:#bfd1e7;
+  background-color:black;
+  transition-duration:0.3s;
+}
+@media only screen and (max-width:380px) {
+  #More_Choices_Back_Again a{
+    padding:5px 7.5px;
+  }
+}
+.Official_info {
+  font-size:12px;
+  text-align: center;
+  line-height:12px;
+}
+#Before_After {
+  border-radius:8px;
+  margin-top:4.5em;
+  min-width:75vw;
+  background-color:#faf8f3;
+  margin: 0 auto;
+}
+#Before_After p{
+  padding:1em;
+  border-style:none;
+  text-align: center;
+  min-width:25vw;
+  max-height:;
+  margin:0;
+}
+@media only screen and (max-width: 430px){
+  #Before_After p{
+    font-size: 14px;
+    padding:10px;
+  }
+}
+#Before_After a {
+  color:black;
+  text-decoration: none;
+}
+#Before_After tr:first-child{/*First 3 only; 3-n does not work*/
+  font-weight: bold;
+  background-color:#FFF5BA;
+}
+#Before_After td:nth-of-type(1) {
+  border-top-left-radius:8px;
+}
+#Before_After td:nth-of-type(3) {
+  border-top-right-radius:8px;
+}
+
+/*Form in suggestion box*/
+#Form_body table {
+  border-collapse:collapse;
+  border: 1px black solid;
+  background-color:#E6E6E6;
+}
+#Form_body label {
+  padding-left:2.5vw;
+}
+#Form_body textarea {
+  min-width:30vw;
+  width:calc(100% + 5px);/*Gives the maximum width allowed that doesn't cause destruction of the site (and then add 5px)*/
+  resize:none;/*Prevents form height from being changed*/
+  padding:5px;
+  outline:0px none;
+  border-style:none;
+}
+#Form_body textarea:focus {
+  border:1.5px solid rgba(128,128,128,0.8);
+}
+#Form_body td {
+  padding:20px 15px;
+}
+#Form_body p {
+  margin-top:1rem;/*Similar to margin-bottom for paragraphs, to vertically align*/
+}
+#Form_body td:nth-last-of-type(2n) {/*Elements on left side of form*/
+  text-align:left;
+  height:100%;
+}
+#Form_body tr {
+  max-width:75vw;
+}
+@media only screen and (max-width:480px) {
+  #Form_body p {
+    font-size:1em;
+  }
+  #Form_body td:nth-of-type(2n) {
+    padding-right:auto;
+    padding-left:0px;
+  }
+}
+#Submit {
+  border:0px solid black;
+  background-color:white;
+  padding:3px 5px;
+  transition-duration:0.1s;
+  color:black;
+  text-decoration:none;
+}
+#Submit:hover {
+  border:2px solid black;
+  font-size: 1em;
+  transition-duration:0.3s;
+}
+#Form_body td:nth-of-type(2n) {/*Elements on right side of form*/
+  padding-right:15px;
+}
+
+#Elaborate_Choices {
+  position:relative;
+  margin:auto;
+  height:calc(27.5vw + 1.15em + 20px);
+  text-align: center;/*Centers the 3 elements (even though they aren't text, but I suppose they are inline)*/
+}
+#Elaborate_Choices div {
+  display:inline-block;
+  width:25vw;
+  margin:0px auto 40px;
+  background-color:white;
+}
+#Elaborate_Choices div img {
+  width:25vw;
+  height:25vw;
+  padding:1.25vw;
+}
+#Elaborate_Choices div p {
+  display: block;
+  padding:10px;
+  margin:0;
+  font-family:Tahoma,"Trebuchet MS",Trebuchet,"Segoe UI",Arial;
+  background-color:#212529;
+  color:inherit;/*Text white when not hovering, and blue when hovering*/
+}
+#Elaborate_Choices a {
+  text-decoration: none;
+  color:white;
+}
+#Elaborate_Choices span {
+  color:yellow;
+}
+#Elaborate_Choice_1 {
+
+}
+#Elaborate_Choice_2{
+
+}
+#Elaborate_Choice_3 {
+
+}
+.break_time {
+  display:none;
+}
+/*Much needed help:
+Position:https://www.freecodecamp.org/news/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26/
+Border vs Outline: https://developer.mozilla.org/en-US/docs/Web/CSS/outline
+Colour Codes: https://www.beautycolorcode.com
+Web-Safe fonts: https://kinsta.com/blog/web-safe-fonts/
+Detect ghost elements: https://blog.wernull.com/2013/04/debug-ghost-css-elements-causing-unwanted-scrolling/
+nth-child: https://css-tricks.com/useful-nth-child-recipies/
+nth-tester: https://css-tricks.com/examples/nth-child-tester/
+Min, Max, Clamp: https://css-tricks.com/min-max-and-clamp-are-css-magic/
+Centering in CSS: https://css-tricks.com/centering-css-complete-guide/
+*/

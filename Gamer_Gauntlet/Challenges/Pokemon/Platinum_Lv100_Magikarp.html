@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../../Styles/Styles.css">
+  <script type="text/javascript" src="../../../Styles/Script.js" defer></script>
+  <link rel="icon" href="../../Multimedia/Controller_Icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><!--Bootstrap Time People! (Proceeds to not use it)-->
+  <title>Gamer's Gauntlet</title>
+</head>
+<body>
+<img src="../../Multimedia/Background.gif" id="BG"><!--https://wallpapersafari.com/w/QWU0wS-->
+<div>
+<header id="header">
+  <a href="../../home.html" id="logo"><img src="../../Multimedia/Logo_Negative_Transparent.png" alt="Main Page"></a>
+  <div id="Choices">
+
+    <p id="choose">Choose your challenge of liking:</p>
+
+    <div class="game_choices">
+      <a href="../Games.html" class="games_button">By Games</a>
+      <div class="games_content">
+        <p><a href="../Games.html#Silksong" style="border-top-left-radius:8px;border-top-right-radius:8px;">Hollow Knight</a></p>
+        <p><a href="../Games.html#Creeper">Minecraft</a></p>
+        <p><a href="../Games.html#Sunflower">Plants vs Zombies</a></p>
+        <p><a href="../Games.html#Pkmn">Pokemon</a></p>
+        <p><a href="../Games.html#Minecraft" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Terraria</a></p>
+      </div>
+    </div>
+
+    <div class="difficulty_choices">
+      <a href="../Difficulty.html" class="difficulty_button">By Difficulty</a>
+      <div class="difficulty_content">
+        <p><a href="../Difficulty.html#Easy" style="border-top-left-radius:8px;border-top-right-radius:8px;">Easy</a></p>
+        <p><a href="../Difficulty.html#CbWorse">Could be Worse</a></p>
+        <p><a href="../Difficulty.html#SoS">Starting to Suffer</a></p>
+        <p><a href="../Difficulty.html#RnG">Massive Luck Required</a></p>
+        <p><a href="../Difficulty.html#Impossibru" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Help.</a></p>
+      </div>
+    </div>
+
+    <p id="featured_button" class="choices"><a href="../Featured.html">Featured</a></p>
+
+  </div>
+  <div id="More_Choices">
+    <a href="../../Others/Suggestions.html" class="More_Choices">Suggestion Box</a>
+    <a href="../../Others/About-Us.html" class="More_Choices">About</a>
+    <a href="javascript:void(0)" class="More_Choices" onclick="Very_Random()">Random</a>
+  </div>
+
+  <div class="Search">
+    <form name="Search_Bar" target="" method="post" class="More_Choices" autocomplete="off">
+      <img src="../../Multimedia/Search.ico" alt="" id="Search">
+      <input name="Search" type="text" id="Enter_Search" placeholder="Search Here..." onkeyup="List_Filter()" autocomplete="off">
+    </form>
+
+    <div id="Challenge_List">
+      <p><a href="../Hollow_Knight/Gun.html">[Hollow Knight] <br>Gun%</a></p>
+      <p><a href="../Terraria/No_WASD.html">[Terraria] <br>No WASD</a></p>
+      <p><a href="../Terraria/Terra_Toilet.html">[Terraria] <br>Terra Toilet%</a></p>
+    </div>
+  </div>
+
+  </header>
+</div>
+
+<h3 id="Menu"><span onclick="openNav()">&#9776;</span></h3><!--https://www.toptal.com/designers/htmlarrows/symbols/
+The sidenav-->
+<div id="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h1>&times;</h1></a>
+  <a href="../../Others/Suggestions.html" class="Choices2" style="margin-left:0px">Suggestion Box</a>
+  <a href="../../Others/About-Us.html" class="Choices2">About</a>
+  <a href="javascript:void(0)" class="Choices2" onclick="Very_Random()">Random</a>
+  <p id="choices_2" class="More_Choices2">Make a choice:</p>
+  <a href="../Games.html" class="More_Choices2">By Game</a>
+  <a href="../Difficulty.html" class="More_Choices2">By Difficulty</a>
+  <a href="../Featured.html" class="More_Choices2">Featured</a>
+</div>
+
+<!--Here begins the Wall of Text:-->
+<hr id="Header_Solver">
+<div id="Wiki_WallOfText" style="padding-top:0.5em;">
+<br><h2 style="margin-top:0;">Lvl 100 Magikarp</h2><hr>
+<div id="Info">
+  <p class="Subtitle">Lvl 100 Magikarp</p>
+  <img style="width:150px;" class="Profile_Pic" src="../../Multimedia/Challenges/Lvl100_Magikarp.gif" alt="">
+  <table>
+    <tr><td class='key'>Difficulty</td><td class='value'>Could be Worse</td></tr>
+    <tr><td class='key'>Rating</td><td class='value'>
+      <img src="../../Multimedia/Shiny_Star.webp" alt="">
+      <img src="../../Multimedia/Shiny_Star.webp" alt="">
+      <img src="../../Multimedia/Shiny_Star.webp" alt="">
+    </td></tr>    <!--3 out of 5 stars-->
+    <tr><td class="key">Type</td><td class="value">Challenge</td></tr>
+  </table>
+  <p class="Subtitle">Objective</p>
+  <p class="Subtitle_Text">Catch the Lvl 100 Magikarp</p>
+  <p class="Subtitle">Rules</p>
+  <p class="Subtitle_Text">No Cheats</p>
+</div>
+
+<p class="quote">Nobody believes me, but something lurks in the Resort Area. It's the hidden ruler of the area! You have to believe me!</p>
+
+<p>Ahh, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Magikarp_(Pok%C3%A9mon)">Magikarp</a>. The strongest <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_(species)">Pokémon</a> in existence. According to the <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9dex">Pokédex</a>, "It is said to be the world's weakest Pokémon. No one knows why it has managed to survive."</p>
+<!--This is an inside joke; there's a lot of them.-->
+<p>Oh wait. Um, ignore that. In fact, in order to prove that Magikarp is objectively the strongest Pokémon in the entire game, we are going to <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Caught_Pok%C3%A9mon">catch</a> a <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Level">Level</a> 100 Magikarp. Now, where would we find a guide on this... Oh wait.</p>
+
+<div class="Table_Of_Contents">
+<ol>
+  <p>Contents</p>
+  <li><a href="#Ttk">Things to know</a></li>
+  <li><a href="#Guide">Tricks & Tips</a>
+    <ol>
+      <li><a href="#Passive_Abilities">Passive Pokémon Abilities</a></li>
+      <li><a href="#Good_Pkmn">Good Pokémon Choices</a></li>
+    </ol>
+  </li>
+  <li><a href="#Variations" class="">Variations</a>
+    <ol>
+      <li><a href="#Lvl_91_99">Level 91-99 Magikarp</a></li>
+      <li><a href="#Nature_Magikarp">Nature Preserve: Level 100 Magikarp</a></li>
+      <li><a href="#Nature_Gyarados">Nature Preserve: Level 100 Gyarados</a></li>
+    </ol>
+  </li>
+  <li><a href="#Gallery" class="">Gallery</a></li>
+</ol>
+</div>
+
+<h4 id="Ttk">Things to know</h4><hr>
+<ul>
+  <li><p>The <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Resort_Area">Resort Area</a> in <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Platinum_Version">Pokémon Platinum</a>, is one of the only places where Level 100 Magikarp can be caught in the <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Wild_Pok%C3%A9mon">wild</a>.</p></li>
+  <li><p>Unfortunately, with a <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Super_Rod">Super Rod</a>, there is a 1 in 10,000 chance of capturing such a Magikarp.</p></li>
+  <li><p>There are 5 possible level ranges for Magikarp, each with a different probability of being chosen.</p></li>
+  <table style="text-align:center;">
+    <tr><td>Probability&nbsp;</td><td>&nbsp;Level Range</td></tr>
+    <tr><td>40%</td><td>40-60</td></tr>
+    <tr><td>40%</td><td>30-70</td></tr>
+    <tr><td>15%</td><td>20-80</td></tr>
+    <tr><td>4%</td><td>10-90</td></tr>
+    <tr><td>1%</td><td>1-100</td></tr>
+  </table><br>
+  <li><p>That means there is a 1 in 100 chance of getting the Level 1-100 range, and then another 1 in 100 chance of getting the Level 100 Magikarp within the range, giving the 1 in 10,000 chance.</p></li>
+  <li><p>For reference, the base chance of getting a <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Shiny_Pok%C3%A9mon">Shiny</a> Pokémon is 1 in 8,192 in <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Generation">Generations</a> <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Generation_I">1</a>-<a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Generation_V">5</a>, and 1 in 4,096 in Generations <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Generation_VI">6</a> onwards.</p></li>
+</ul>
+
+<h4 id="Guide">Tips & Tricks</h4><hr>
+<h5 id="Passive_Abilities">Passive Pokémon Abilities</h5>
+<ul>
+  <li><p>From Pokémon <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Emerald_Version">Emerald</a> onwards, a Pokémon with the <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Ability">abilities</a> <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Hustle_(Ability)">Hustle</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pressure_(Ability)">Pressure</a> and <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Vital_Spirit_(Ability)">Vital Spirit</a>, when placed in the first place in the <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Party">party</a>, have a 50% chance to force Pokémon <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Tall_grass">encounters</a> to be the highest level possible (in their encounter level range).</p></li>
+  <li><p>This means that, when getting the 1% chance for the Level 1-100 range, the 50% chance of it being forced to be the Level 100 Magikarp becomes 1 in 200, or 0.5%, a much better chance.</p></li>
+</ul>
+
+<h5 id="Good_Pkmn">Good Pokémon Choices (Ignoring Hidden Abilities)</h5>
+<ul>
+  <li><p>Pokémon you might want to use:</p></li>
+  <table class="Table_Of_Values">
+    <tr style="font-weight:bold;background-color:#FFF5BA">  <td>Pokémon </td>  <td>Ability</td>  <td>Location</td>  </tr>
+
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Tall_grass">Togepi</a></td>    <td>Hustle</td>        <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Cynthia">Cynthia's</a> <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Egg">Egg</a> (<a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Eterna_City">Eterna City</a>)<br>Route <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_230">230</a> (<a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9_Radar">Poké Radar</a>)</td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Togetic_(Pok%C3%A9mon)">Togetic</a></td>   <td>Hustle</td>        <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Evolution">Evolve</a> Togepi</td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Remoraid_(Pok%C3%A9mon)">Remoraid</a></td>  <td>Hustle</td>        <td>Routes <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_212">212</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_213">213</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_222">222</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_223">223</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_224" >224</a>, and <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_230">230</a><br><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pastoria_City">Pastoria City</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sunyshore_City">Sunyshore City</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_League_(Sinnoh)">Pokémon League</a></td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Dusclops_(Pok%C3%A9mon)">Dusclops</a></td>  <td>Pressure</td>      <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sendoff_Spring">Sendoff Spring</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Turnback_Cave">Turnback Cave</a></td> </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Dusknoir_(Pok%C3%A9mon)">Dusknoir</a></td>  <td>Pressure</td>      <td>Evolve Dusclops</td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Absol_(Pok%C3%A9mon)">Absol</a></td>     <td>Pressure</td>      <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Mt._Coronet">Mt. Coronet</a> (Summit)</td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Weavile_(Pok%C3%A9mon)">Weaville</a></td>  <td>Pressure</td>      <td>Evolve <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sneasel_(Pok%C3%A9mon)">Sneasel</a></td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Giratina_(Pok%C3%A9mon)">Giratina</a></td>  <td>Pressure</td>      <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Distortion_World">Distortion World</a><br><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Turnback_Cave">Turnback Cave</a></td>  </tr>
+
+  </table><br>
+  <li><p>Pokémon that may be more difficult to find:</p></li>
+  <table class="Table_Of_Values">
+    <tr style="font-weight:bold;background-color:#FFF5BA">  <td>Pokémon </td>  <td>Ability</td>  <td>Location</td>  </tr>
+
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Dialga_(Pok%C3%A9mon)">Dialga</a></td>      <td>Pressure</td>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Spear_Pillar">Spear Pillar</a> (Requires <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Adamant_Orb">Adamant Orb</a>)</td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Palkia_(Pok%C3%A9mon)">Palkia</a></td>      <td>Pressure</td>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Spear_Pillar">Spear Pillar</a> (Requires <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Lustrous_Orb">Lustrous Orb</a>)</td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Spiritomb_(Pok%C3%A9mon)">Spiritomb</a></td>   <td>Pressure</td>  <td>Route <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_209">209</a> (<a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Hallowed_Tower">Hallowed Tower</a>)</td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Vespiquen_(Pok%C3%A9mon)">Vespiquen</a></td>   <td>Pressure</td>  <td>Evolve <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Gender">Female</a> <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Combee_(Pok%C3%A9mon)">Combee</a> (<a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Honey_Tree">Honey Tree</a>)</td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Aerodactyl_(Pok%C3%A9mon)">Aerodactyl</a></td>  <td>Pressure</td>  <td>Revive from <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Old_Amber">Old Amber</a> at <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Oreburgh_Mining_Museum">Oreburgh Mining Museum</a></td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Moltres_(Pok%C3%A9mon)">Moltres</a></td>     <td>Pressure</td>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Roaming_Pok%C3%A9mon">Roaming</a> <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh">Sinnoh</a><br>(After talking to <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Professor_Oak">Prof. Oak</a> in <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Eterna_City">Eterna City</a>)</td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Zapdos_(Pok%C3%A9mon)">Zapdos</a></td>      <td>Pressure</td>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Roaming_Pok%C3%A9mon">Roaming</a> <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh">Sinnoh</a><br>(After talking to <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Professor_Oak">Prof. Oak</a> in <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Eterna_City">Eterna City</a>)</td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Articuno_(Pok%C3%A9mon)">Articuno</a></td>    <td>Pressure</td>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Roaming_Pok%C3%A9mon">Roaming</a> <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh">Sinnoh</a><br>(After talking to <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Professor_Oak">Prof. Oak</a> in <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Eterna_City">Eterna City</a>)</td>  </tr>
+
+  </table><br>
+  <!--
+  <li><p>Pokémon you are unlikely to use:</p></li>
+  <table class="Table_Of_Values">
+    <tr style="font-weight:bold;background-color:#FFF5BA">  <td>Pokémon </td>  <td>Ability</td>  <td>Location</td>  </tr>
+
+    <tr>  <td>Vigoroth</td>    <td>Vital Spirit</td>         <td>Evolve Slakoth (Eterna Forest, Swarm)</td>  </tr>
+    <tr>  <td>Rattata</td>     <td>Hustle</td>    index       <td>Route 225 and 226</td>  </tr>
+    <tr>  <td>Raticate</td>    <td>Hustle</td>               <td>Route 225 and 226<br>Evolve Rattata</td>  </tr>
+    <tr>  <td>Mankey</td>      <td>Vital Spirit</td>         <td>Routes 225 and 226 (Poké Radar)</td>  </tr>
+    <tr>  <td>Primeape</td>    <td>Vital Spirit</td>         <td>Routes 225 and 226 (Poké Radar)<br>Evolve Mankey</a></td>  </tr>
+    <tr>  <td>Delibird</td>    <td>Vital Spirit/Hustle</td>  <td>Route 217, Swarm</td>  </tr>
+    <tr>  <td>Corsola</td>     <td>Hustle</td>               <td>Route 230, Swarm</td>  </tr>
+
+
+  </table><br>
+  <li><p>Pokémon not native to Sinnoh:</p></li>
+  <table class="Table_Of_Values">
+    <tr style="font-weight:bold;background-color:#FFF5BA">  <td>Pokémon </td>  <td>Ability</td>  <td>Location</td>  </tr>
+
+    <tr>  <td>Mewtwo</td>   <td>Pressure</td>  <td>Trade</td>  </tr>
+    <tr>  <td>Entei</td>    <td>Pressure</td>  <td>Trade</td>  </tr>
+    <tr>  <td>Raikou</td>   <td>Pressure</td>  <td>Trade</td>  </tr>
+    <tr>  <td>Suicune</td>  <td>Pressure</td>  <td>Trade</td>  </tr>
+    <tr>  <td>Lugia</td>    <td>Pressure</td>  <td>Trade</td>  </tr>
+    <tr>  <td>Ho-Oh</td>    <td>Pressure</td>  <td>Trade</td>  </tr>
+    <tr>  <td>Deoxys</td>   <td>Pressure</td>  <td>Pal Park</td>  </tr>
+  </table><br>
+-->
+
+  <li><p>Of all the Pokémon, Giratina is the best choice as it's a required encounter.</p></li>
+  <li><p>Try to have a Pokémon that can inflict <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sleep_(status_condition)">Sleep</a> or <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Paralysis_(status_condition)">Paralysis</a> (not that Magikarp is hard to catch)</p></li>
+  <li><p>The best Pokéball to use is the <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Net_Ball">Net Ball</a>, as it has a 3× catch rate compared to the normal Pokéball, or the <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Quick_Ball">Quick Ball</a>.</p></li>
+  <li><p>With a bit of luck and time, you will be able to find the Level 100 Magikarp!</p></li>
+
+</ul>
+
+<h4 id="Variations">Variations</h4><hr>
+<h5 id="Lvl_91_99">Level 91-99 Magikarp (Massive Luck Required)</h5>
+<ul>
+  <li><p>Unlike Level 100 Magikarp, there is no method to specifically target Magikarp in this range. As such, the 1 in 10,000 chance remains.</p></li>
+  <li><p>However, Pokémon with the <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Intimidate_(Ability)">Intimidate</a> or <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Keen_Eye_(Ability)">Keen Eye</a> ability may be able to make the process quicker. If such a Pokémon is placed in the first position in the party, there is a 50% chance that a wild encounter can be avoided, but only if the Pokémon is at least 5 levels below it.</p></li>
+  <li><p>That means, with a Level 95 Pokémon, Magikarp in the level range 1-90 have a 50% chance of being avoided.</p></li>
+  <li><p>Pokémon you might want to use:</p></li>
+  <table class="Table_Of_Values">
+    <tr style="font-weight:bold;background-color:#FFF5BA">  <td>Pokémon </td>  <td>Ability</td>  <td>Location</td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Noctowl_(Pok%C3%A9mon)">Noctowl</a></td>  <td>Keen Eye</td>  <td>Routes <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_210">210</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_211">211</a> (<a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Time">Night</a>)<br><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Great_Marsh">Great Marsh</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Mt._Coronet">Mt. Coronet</a> (<a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Time">Night</a>)<br>Evolve <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Hoothoot_(Pok%C3%A9mon)">Hoothoot</a></td></tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pelipper_(Pok%C3%A9mon)">Pelipper</a></td>  <td>Keen Eye</td>  <td>
+Routes <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_219">219</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_220">220</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_221">221</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_223">223</a>, and <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_226">226</a> (<a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Surf_(move)">Surfing</a>)<br><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Iron_Island">Iron Island</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_League_(Sinnoh)">Pokémon League</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sunyshore_City">Sunyshore City</a> (Surfing)<br>Routes <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_222">222</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_224">224</a>, and <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_230">230</a> (<a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Tall_grass">Grass</a> or <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Surf_(move)">Surfing</a>)<br>Evolve <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Wingull_(Pok%C3%A9mon)">Wingull</a></td></tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Gyarados_(Pok%C3%A9mon)">Gyarados</a></td>  <td>Intimidate</td>  <td>Evolve Magikarp (Now where could we find that...)</td></tr><!--How Ironic-->
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Staraptor_(Pok%C3%A9mon)">Staraptor</a></td>  <td>Intimidate</td>  <td>Evolve <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Staravia_(Pok%C3%A9mon)">Staravia</a></td></tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Luxray_(Pok%C3%A9mon)">Luxray</a></td>  <td>Intimidate</td>  <td>Evolve <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Luxio_(Pok%C3%A9mon)">Luxio</a></td></tr>
+  </table><br>
+
+  <li><p>Pokémon that may be more difficult to find:</p></li>
+  <table class="Table_Of_Values">
+    <tr style="font-weight:bold;background-color:#FFF5BA;">  <td>Pokémon </td>  <td>Ability</td>  <td>Location</td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pidgeot_(Pok%C3%A9mon)">Pidgeot</a></td>  <td>Keen Eye</td>  <td>Evolve <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pidgeotto_(Pok%C3%A9mon)">Pidgeotto</a></td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Fearow_(Pok%C3%A9mon)">Fearow</a></td>  <td>Keen Eye</td>  <td>
+Routes <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_225">225</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_226">226</a>, and <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_227">227</a><br><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Stark_Mountain">Stark Mountain</a><br>Evolve <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Spearow_(Pok%C3%A9mon)">Spearow</a></td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Skarmory_(Pok%C3%A9mon)">Skarmory</a></td>  <td>Keen Eye</td>  <td>
+Route <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_227">227</a><br><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Stark_Mountain">Stark Mountain</a></td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Tauros_(Pok%C3%A9mon)">Tauros</a></td>  <td>Intimidate</td>  <td>Route <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_210">210</a> (<a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Stark_Mountain">Poké Radar</a>)</td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Tauros_(Pok%C3%A9mon)">Granbull</a></td>  <td>Intimidate</td>  <td>Evolve <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Snubbull_(Pok%C3%A9mon)">Snubbull</a></td>  </tr>
+    <tr>  <td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Masquerain_(Pok%C3%A9mon)">Masquerain</a></td>  <td>Intimidate</td>  <td>
+Route <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Sinnoh_Route_229">229</a><br>Evolve <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Surskit_(Pok%C3%A9mon)">Surskit</a></td>  </tr>
+  </table><br>
+
+<!--
+  <li><p>Pokémon you are unlikely to use:</p></li>
+  <table class="Table_Of_Values">
+    <tr style="font-weight:bold;background-color:#FFF5BA">  <td>Pokémon </td>  <td>Ability</td>  <td>Location</td>  </tr>
+
+    <tr>  <td>Pidgey</td>  <td>Keen Eye</td>  <td>Route 229</td>  </tr>
+    <tr>  <td>Pidgeotto</td>  <td>Keen Eye</td>  <td>Evolve Pidgey</td>  </tr>
+    <tr>  <td>Spearow</td>  <td>Keen Eye</td>  <td>
+Route 225</td>  </tr>
+    <tr>  <td>Farfetch'd</td>  <td>Keen Eye</td>  <td>
+Route 221, Swarm</td>  </tr>
+    <tr>  <td>Hitmonchan</td>  <td>Keen Eye</td>  <td>Evolve Tyrogue</td>  </tr>
+    <tr>  <td>Tyrogue</td>  <td>Keen Eye</td>  <td>Route 211 (west side, Poké Radar)</td>  </tr>
+    <tr>  <td>Sentret</td>  <td>Keen Eye</td>  <td>Route 202 (Poké Radar)</td>  </tr>
+    <tr>  <td>Furret</td>  <td>Keen Eye</td>  <td>Evolve Sentret</td>  </tr>
+    <tr>  <td>Hoothoot</td>  <td>Keen Eye</td>  <td>Routes 205, 210, 211 (Night)<br>Great Marsh, Eterna Forest (Night)</td>  </tr>
+    <tr>  <td>Sneasel</td>  <td>Keen Eye</td>  <td>
+Routes 216 and 217<br>Acuity Lakefront, Lake Acuity, Snowpoint Temple</td>  </tr>
+    <tr>  <td>Wingull</td>  <td>Keen Eye</td>  <td>Routes 213, 222, 226, and 230 (Grass)<br>Routes 213, 219, 220, 221, and 222 (Surfing)<br>Sunyshore City, Iron Island, Pokémon League (Surfing)</td>  </tr>
+    <tr>  <td>Starly</td>  <td>Keen Eye</td>  <td>Routes 201, 202, 203, and 204, Lake Verity</td>  </tr>
+    <tr>  <td>Chatot</td>  <td>Keen Eye</td>  <td>
+Routes 213, 218, 222 (Morning)<br>Trade Buizel at Eterna Condominiums</td>  </tr>
+    <tr>  <td>Snubbull</td>  <td>Intimidate</td>  <td>
+Route 209, Swarm</td>  </tr>
+    <tr>  <td>Stantler</td>  <td>Intimidate</td>  <td>
+Route 207 (Poké Radar)</td>  </tr>
+    <tr>  <td>Hitmontop</td>  <td>Intimidate</td>  <td>Evolve Tyrogue</td>  </tr>
+    <tr>  <td>Mighteyena</td>  <td>Intimidate</td>  <td>Evolve Poochyena</td>  </tr>
+    <tr>  <td>Staravia</td>  <td>Intimidate</td>  <td>
+Routes 209, 210, 212, 215<br>Trophy Garden, Lake Valor, Sendoff Spring, Valor Lakefront</td>  </tr>
+    <tr>  <td>Luxio</td>  <td>Intimidate</td>  <td>
+Route 222</td>  </tr>
+    <tr>  <td>Shinx</td>  <td>Intimidate</td>  <td>
+Routes 202, 203, and 204<br>Valley Windworks</td>  </tr>
+  </table><br>
+-->
+
+</ul>
+
+<h5 id="Nature_Magikarp">[Black 2, White 2] Nature Preserve: Level 100 Magikarp (Starting to Suffer)</h5>
+<ul>
+  <li><p>In the <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Nature_Preserve">Nature Preserve</a>, the odds of catching a Lvl 100 Magikarp remains the same. However, to even gain access to the Nature Preserve, the player needs to see every Pokémon in the <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_Unova_Pok%C3%A9dex_number_(Black_2_and_White_2)">Unova Pokédex</a> (with the exception of <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Victini_(Pok%25C3%25A9mon)">Victini</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Keldeo_(Pok%25C3%25A9mon)">Keldeo</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Meloetta_(Pok%25C3%25A9mon)">Meloetta</a> and <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Genesect_(Pok%25C3%25A9mon)">Genesect</a>).</p></li>
+  <li><p>After doing so, they can obtain a <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Permit">Permit</a> from <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Professor_Juniper">Prof. Juniper</a>, which they can use at <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Mistralton_City">Mistralton City</a> for a plane ride there with <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Skyla">Skyla</a>.</p></li>
+  <li><p>This makes the challenge a bit more tedious as <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Trade">trading</a> is required in order to access the following Pokémon, as no in-game <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Trainer">trainers</a> use them:</p>
+  <table class="Table_Of_Values">
+    <tr style="font-weight:bold;background-color:#FFF5BA"><td>Pokémon</td><td>Condition</td></tr>
+    <tr><td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Black_and_White_Versions_2">Rufflet</a></td><td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Black_and_White_Versions_2">Black 2</a> only</td></tr>
+    <tr><td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Skitty_(Pok%C3%A9mon)">Skitty</a></td><td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Black_and_White_Versions_2">Black 2</a> only</td></tr>
+    <tr><td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Vullaby_(Pok%C3%A9mon)">Vullaby</a></td><td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Black_and_White_Versions_2">White 2</a> only</td></tr>
+    <tr><td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Buneary_(Pok%C3%A9mon)">Buneary</a></td><td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_Black_and_White_Versions_2">White 2</a> only</td></tr>
+    <tr><td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Snivy_(Pok%C3%A9mon)">Snivy</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Serperior_(Pok%C3%A9mon)">Serperior</a></td><td>If <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Tepig_(Pok%C3%A9mon)">Tepig</a> was <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Starter_Pok%C3%A9mon">chosen</a></td></tr>
+    <tr><td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Oshawott_(Pok%C3%A9mon)">Oshawott</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Samurott_(Pok%25C3%25A9mon)">Samurott</a></td><td>If <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Snivy_(Pok%25C3%25A9mon)">Snivy</a> was <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Starter_Pok%C3%A9mon">chosen</a></td></tr>
+    <tr><td><a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Tepig_(Pok%C3%A9mon)">Tepig</a>, <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Emboar_(Pok%C3%A9mon)">Emboar</a></td><td>If <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Oshawott_(Pok%C3%A9mon)">Oshawott</a> was <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Starter_Pok%C3%A9mon">chosen</a></td></tr>
+  </table><br></ul>
+
+<h5 id="Nature_Gyarados">[Black 2, White 2] Nature Preserve: Level 100 Gyarados (Massive Luck Required)</h5>
+<ul>
+  <li><p>This is the equivalent of watching grass grow, except you have to concentrate in order for the grass to grow.</p></li>
+  <li><p>The same rules apply to getting into the Nature Preserve, except that Gyarados can only be encountered by fishing in <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Phenomenon#Rippling_water">rippling water</a>.</p></li>
+  <li><p>In order to encounter rippling water, the player must take a random number of steps. This may be problematic as <a class="more_info" href="https://bulbapedia.bulbagarden.net/wiki/Phenomenon#Rustling_grass">rustling grass</a> may occur instead; this can be avoided by entering an encounter, but will still take a while.</p></li>
+</ul>
+
+<br><h4 id="Gallery">Gallery</h4><hr>
+<div class="Gallery_Content">
+  <table>
+    <tr>
+      <td>
+          <img src="https://i.ytimg.com/vi/3ydOUW3bgnc/hqdefault.jpg" alt="By Marriland">
+      </td>
+
+      <td><img src="https://i.ytimg.com/vi/nXBnFSlWn2w/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLBJ04iIPHis-i-3v25YIUaVOCsZow" alt="By AbsolBlogsPokémon"></td>
+
+      <td><img src="https://i.ytimg.com/vi/0klSuD4Ak1E/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDQJEjvlxQUj-14W-fsJf2I0A6ULA" alt="By AbsolBlogsPokémon"></td>
+
+    </tr>
+    <tr>
+      <td><p><a href="" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Marriland talks about the Level 100 'Ruler of the Resort Area'</a></p></td>
+      <td><p><a href="" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> AbsolBlogsPokémon explaining how to catch the Level 100 Magikarp</a></p></td>
+      <td><p><a href="" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> AbsolBlogsPokémon catching the Level 100 Magikarp in the Nature Preserve — with a different method</a></p></td><!--Space bar for extra distance between text and button-->
+    </tr>
+  </table>
+</div>
+<table id="Before_After">
+  <tr><td><p>Previous</p></td>  <td><p>Index</p></td>  <td><p>Next</p></td> </tr>
+  <tr><td><p>Start</p></td>  <td><p><a href="">Hollow Knight</a></p></td>  <td><p><a href="">PvZ:<br>Adventure Mode, No Sunflowers</a></p></td></tr>
+</table>
+</div>
+<footer>
+  <h2 id="icon"><img src="../../Multimedia/Controller_Icon.png"> Gamer's Gauntlet</h2>
+  <!--Icon found here: https://commons.wikimedia.org/wiki/File:Video-Game-Controller-Icon-D-Edit.svg-->
+  <table id="More_Choices_Back_Again">
+    <tr>  <td><a href="../../Others/Suggestions.html">Suggestion Box</a></td>  <td><a href="../../Others/About-Us.html">About</a></td>  <td><a href="" onclick="Very_Random()">Random</a></td>  </tr>
+  </table>
+  <p class="Official_info">This is a personal project and is not intended for business.</p>
+  <p class="Official_info">All Multimedia rights are reserved to their respective owners.</p>
+  <p class="Official_info">More info is available in the HTML code.</p>
+</footer>
+</body>
+</html>

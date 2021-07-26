@@ -1,0 +1,225 @@
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../Styles/Styles.css">
+    <script type="text/javascript" src="../../../Styles/Script.js" defer></script>
+    <link rel="icon" href="../../Multimedia/Controller_Icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><!--Bootstrap Time People! (Proceeds to not use it)-->
+    <title>Gamer's Gauntlet</title>
+  </head>
+  <body style="background-color:#FFF5BA;">
+  <img src="../../Multimedia/Background.gif" id="BG"><!--https://wallpapersafari.com/w/QWU0wS-->
+  <div>
+  <header id="header">
+    <a href="../../index.html" id="logo"><img src="../../Multimedia/Logo_Negative_Transparent.png" alt="Main Page"></a>
+    <div id="Choices">
+
+      <p id="choose">Choose your challenge of liking:</p>
+
+      <div class="game_choices">
+        <a href="../Games.html" class="games_button">By Games</a>
+        <div class="games_content">
+          <p><a href="../Games.html#Silksong" style="border-top-left-radius:8px;border-top-right-radius:8px;">Hollow Knight</a></p>
+          <p><a href="../Games.html#Creeper">Minecraft</a></p>
+          <p><a href="../Games.html#Sunflower">Plants vs Zombies</a></p>
+          <p><a href="../Games.html#Pkmn">Pokemon</a></p>
+          <p><a href="../Games.html#Minecraft" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Terraria</a></p>
+        </div>
+      </div>
+
+      <div class="difficulty_choices">
+        <a href="../Difficulty.html" class="difficulty_button">By Difficulty</a>
+        <div class="difficulty_content">
+          <p><a href="../Difficulty.html#Easy" style="border-top-left-radius:8px;border-top-right-radius:8px;">Easy</a></p>
+          <p><a href="../Difficulty.html#CbWorse">Could be Worse</a></p>
+          <p><a href="../Difficulty.html#SoS">Starting to Suffer</a></p>
+          <p><a href="../Difficulty.html#RnG">Massive Luck Required</a></p>
+          <p><a href="../Difficulty.html#Impossibru" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Help.</a></p>
+        </div>
+      </div>
+
+      <p id="featured_button" class="choices"><a href="../Featured.html">Featured</a></p>
+
+    </div>
+    <div id="More_Choices">
+      <a href="../../Others/Suggestions.html" class="More_Choices">Suggestion Box</a>
+      <a href="../../Others/About-Us.html" class="More_Choices">About</a>
+      <a href="javascript:void(0)" class="More_Choices" onclick="Very_Random()">Random</a>
+    </div>
+
+    <div class="Search">
+      <form name="Search_Bar" target="" method="post" class="More_Choices" autocomplete="off">
+        <img src="../../Multimedia/Search.ico" alt="" id="Search">
+        <input name="Search" type="text" id="Enter_Search" placeholder="Search Here..." onkeyup="List_Filter()" autocomplete="off">
+      </form>
+
+      <div id="Challenge_List">
+        <p><a href="../Pokemon/Platinum_Lv100_Magikarp.html">[Pokemon Platinum] <br>Lv100 Magikarp</a></p>
+        <p><a href="../Terraria/No_WASD.html">[Terraria] <br>No WASD</a></p>
+        <p><a href="../Terraria/Terra_Toilet.html">[Terraria] <br>Terra Toilet%</a></p>
+        <p><a href="../Hollow_Knight/Gun.html">[Hollow Knight] <br>Gun%</a></p>
+      </div>
+    </div>
+
+  </header>
+  </div>
+
+  <h3 id="Menu"><span onclick="openNav()">&#9776;</span></h3><!--https://www.toptal.com/designers/htmlarrows/symbols/
+  The sidenav-->
+  <div id="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h1>&times;</h1></a>
+    <a href="../../Others/Suggestions.html" class="Choices2" style="margin-left:0px">Suggestion Box</a>
+    <a href="../../Others/About-Us.html" class="Choices2">About</a>
+    <a href="javascript:void(0)" class="Choices2" onclick="Very_Random()">Random</a>
+    <p id="choices_2" class="More_Choices2">Make a choice:</p>
+    <a href="../Games.html" class="More_Choices2">By Game</a>
+    <a href="../Difficulty.html" class="More_Choices2">By Difficulty</a>
+    <a href="../Featured.html" class="More_Choices2">Featured</a>
+  </div>
+
+    <!--Here begins the Wall of Text:-->
+    <hr id="Header_Solver">
+    <div id="Wiki_WallOfText" style="padding-top:0.5em;">
+    <br><h2 style="margin-top:0;">Perpetually Seeing Stars</h2><hr>
+    <div id="Info">
+      <p class="Subtitle">Perpetually Seeing Stars</p>
+      <img style="width:75%;" class="Profile_Pic" src="../../Multimedia/Challenges/Seeing_Stars.png" alt="By Popcap and EA">
+      <table>
+        <tr><td class='key'>Difficulty</td><td class='value'>Easy</td></tr>
+        <tr><td class='key'>Rating</td><td class='value'>
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt=""></td></tr>
+          <!--4 out of 5 stars-->
+        <tr><td class="key">Type</td><td class="value">Challenge</td></tr>
+      </table>
+      <p class="Subtitle">Objective</p>
+      <p class="Subtitle_Text">Set up a permanent farm in the Seeing Stars Mini-game</p>
+      <p class="Subtitle">Rules</p>
+      <p class="Subtitle_Text">No Cheating or Glitches</p>
+    </div>
+
+    <p class="quote">"I'm pretty sure the developers were aware of this fact, because the drop rate for coins is very minimal."</p>
+
+    <p>I have been told previously that <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Starfruit_(PvZ)">Starfruits</a> are extremely good for their price. 5 shots for 125 <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Sun">Sun</a>, compared to 100 Sun for a Peashooter? (Though honestly, unless you spam a lot of them, they aren't very accurate – but otherwise, they shred through zombies.)</p>
+
+    <p>That being said, we can prove this point by setting up a perpetually <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Mini-games">Mini-game</a> of <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Seeing_Stars">Seeing Stars</a> ,using the power of Starfruits and then some.</p>
+
+    <p>(Also, <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Magnifying_Grass">Magnifying Grass</a> from <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Plants_vs._Zombies_2">PvZ2</a>? Yeah. A game changer like Starfruit. Too bad no one knows how good it is when used right, and spend all their cash on useless <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Category:Premium_plants#Money_premium_plants">premium plants</a> like <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Snow_Pea_(PvZ2)">Snow Pea</a> instead.)</p><!--This is an inside joke; there's a lot of them.-->
+
+    <div class="Table_Of_Contents">
+    <ol>
+      <p>Contents</p>
+      <li><a href="#Ttk">Things to know</a></li>
+      <li><a href="#Guide">Guide</a>
+      <ol>
+        <li><a href="#Plants">Plants to Use</a></li>
+        <li><a href="#Gameplay">Gameplay</a></li>
+      </ol></li>
+
+      <li><a href="#Variations">Variations</a>
+      <ol>
+        <li><a href="#Normal">Normal levels</a></li>
+      </ol></li>
+
+      <li><a href="#Gallery">Gallery</a></li>
+    </ol>
+    </div>
+
+    <h4 id="Ttk">Things to know</h4><hr>
+    <ul>
+
+      <li><p>The whole of the game will take place in the Seeing Stars Mini-game, due to the low health of zombies that you have to fight (the strongest being the <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Buckethead_Zombie">Buckethead Zombie</a>).</p></li>
+      <li><p>The point of the game is to place Starfruit on the <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Lawn">lawn</a> to form a large Star pattern, but we can easily make the game run perpetually.</p></li>
+      <li><p>However, this means that the Seeing Stars Mini-game will first have to be unlocked. this means 4 other Mini-games have to first be beaten, being one of the below: </p>
+      <ul>
+        <li><a class=more_info href="https://plantsvszombies.fandom.com/wiki/ZomBotany">ZomBotany</a></li>
+        <li><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Wall-nut_Bowling">Wall-Nut Bowling</a></li>
+        <li><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Slot_Machine">Slot Machine</a></li>
+        <li><a class=more_info href="https://plantsvszombies.fandom.com/wiki/It%2527s_Raining_Seeds">It's Raining Seeds</a></li>
+        <li><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Beghouled">Beghouled</a></li>
+        <li><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Invisi-ghoul">Invisi-ghoul</a></li>
+      </ul></li><br>
+      <li><p>On Mobile versions, the Seeing Stars Mini-game does not go on forever; instead it goes through 4 <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Flag_Zombie">Flags</a>, upon which you will lose if you do not plant the final Starfruit (before the last zombie dies).</p></li>
+
+    </ul>
+
+    <br><h4 id="Guide">Guide</h4><hr>
+    <ol>
+
+      <h5 id="Plants">Plants to Use</h5>
+        <li><p>A lot of plants we are using will be <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Crazy_Dave%2527s_Twiddydinkies#Upgrades">Upgraded Plants</a>, so we will need quite a number of <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Seed_slot">Seed Slots</a>. The following 10 plants are shown according to importance:
+          <table class="Table_Of_Values">
+            <tr style="font-weight:bold;background-color:#FFF5BA">  <th>Seed Slot</th>  <th><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Money">Cost</a></th> <th>Plant</th>  </tr>
+            <tr>  <td>01.</td>  <td>-</td>  <td><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Starfruit_(PvZ)">Starfruit</a>*</td>  </tr>
+            <tr>  <td>02.</td>  <td>-</td>  <td><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Melon-pult_(PvZ)">Melon Pult</a>*</td>  </tr>
+            <tr>  <td>03.</td>  <td>-</td>  <td><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Winter_Melon_(PvZ)">Winter Melon</a>*</td>  </tr>
+            <tr>  <td>04.</td>  <td>-</td>  <td><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Fume-shroom_(PvZ)">Fume Shroom</a>*</td>  </tr>
+            <tr>  <td>05.</td>  <td>-</td>  <td><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Gloom-shroom_(PvZ)">Gloom Shroom</a>*</td>  </tr>
+            <tr>  <td>06.</td>  <td>-</td>  <td><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Coffee_Bean_(PvZ)">Coffee Bean</a>*</td>  </tr>
+            <tr>  <td>07.</td>  <td>$750</td>  <td><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Sunflower_(PvZ)">Sunflower</a>*</td>  </tr>
+            <tr>  <td>08.</td>  <td>$5,000</td>  <td><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Twin_Sunflower_(PvZ)">Twin Sunflower</a></td>  </tr>
+            <tr>  <td>09.</td>  <td>$25,000</td>  <td><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Pumpkin_(PvZ)">Pumpkin</a></td>  </tr>
+            <tr>  <td>10.</td>  <td>$80,000</td>  <td><a class=more_info href="https://plantsvszombies.fandom.com/wiki/Imitater_(PvZ)">Imitater</a></td>  </tr>
+          </table>
+        </p></li>
+
+      <h5 id="Gameplay">Gameplay</h5>
+        <li><p>On starting out, plant Sunflowers in the first 2 columns (minimally).</p></li>
+        <li><p>Start filling in the 4th column with Starfruits. This gives you one row of Starfruit, which early on, is very powerful.</p></li>
+        <li><p>Start replacing Sunflowers in the first column with Melon-Pults when you have sufficient Sun, and upgrade them to Winter Melons. If you need more Sun, you can upgrade the second row of Sunflowers to Twin Sunflowers.</p></li>
+        <li><p>Proceed to plant Fume Shrooms in the 7th column, on the 1st and 3rd rows, after you have placed at least 3 Winter Melons. If you feel the <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Zombies_(PvZ)">zombies</a> may be too overwhelming, add more Starfruits, and protect the Gloom Shrooms with Pumpkins.</p></li>
+        <li><p>In the end, all Starfruits should be placed (save for one in the second column). The 7th column should be filled with Gloom Shrooms, and Winter Melons placed in every other location.</p></li>
+        <li><p>If done well, the zombies should die before making it to the 7th column, making the level basically perpetually running, so long as you don't place the Final Starfruit. Sit back and enjoy your hard work as you collect coins (and maybe go get a snack).</p></li>
+        <li><p><b><i>(Important!!! The lawn must be symmetrical, as much as possible, so as to not trigger the OCD of everyone you ever know, who will immediately declare you as a menace to society.)</i></b></p></li><!--This is an inside joke; there's a lot of them.-->
+
+    </ol>
+
+    <br><h4 id="Variations">Variations</h4><hr>
+    <h5 id="Normal">Normal Levels (Easy)</h5>
+    <ul>
+      <li><p>This is pretty easy, so long as the <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Adventure_Mode">level</a> isn't a Mini-game level.</p></li>
+      <li><p>Simply complete the level the <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Adventure_Mode/Strategy_guide">normal way</a>, but leave one zombie alive. You can delay it for as long as possible, so long as there is consistently a <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Wall-nut_(PvZ)">Wall-Nut</a>, <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Tall-nut_(PvZ)">Tall-Nut</a> or Pumpkin for it to eat.</p></li>
+      <li><p>While you mess around, you can place <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Marigold_(PvZ)">Marigolds</a> on the lawn, and if you are feeling lazy, place ~4 <a class=more_info href="https://plantsvszombies.fandom.com/wiki/Gold_Magnet">Gold Magnets</a> around to collect soins for you.</p></li>
+      <li><p>If you are feeling risky, you could go get a snack while the zombie snacks on the Wall-Nut, Tall-Nut or Pumpkin.</p></li>
+    </ul>
+
+    <br><h4 id="Gallery">Gallery</h4><hr>
+    <div class="Gallery_Content">
+    <table>
+      <tr>
+        <td><img src="https://static.wikia.nocookie.net/plantsvszombies/images/1/1c/Twinkle_Winkle.png" alt="By PvZ Wiki"></td>
+
+        <td><img src="https://i.ytimg.com/vi/Z_gg-4CxnTo/hq720.jpg" alt="By Detara"></td>
+      </tr>
+
+      <tr>
+        <td><p>Seeing Stars Completed, the normal way</p></td>
+        <td><p><a href="https://youtu.be/Z_gg-4CxnTo" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Detara showing off how to turn Seeing Stars into a screensaver</a></p></td>
+        <!--Space bar for extra distance between text and button-->
+      </tr>
+
+    </table>
+    </div>
+    <table id="Before_After">
+      <tr><td><p>Previous</p></td>  <td><p>Index</p></td>  <td><p>Next</p></td> </tr>
+      <tr><td><p>Start</p></td>  <td><p><a href="">Hollow Knight</a></p></td>  <td><p><a href="">PvZ:<br>Adventure Mode, No Sunflowers</a></p></td></tr>
+    </table>
+    </div>
+    <footer>
+      <h2 id="icon"><img src="../../Multimedia/Controller_Icon.png"> Gamer's Gauntlet</h2>
+      <!--Icon found here: https://commons.wikimedia.org/wiki/File:Video-Game-Controller-Icon-D-Edit.svg-->
+      <table id="More_Choices_Back_Again">
+        <tr>  <td><a href="../../Others/Suggestions.html">Suggestion Box</a></td>  <td><a href="../../Others/About-Us.html">About</a></td>  <td><a href="" onclick="Very_Random()">Random</a></td>  </tr>
+      </table>
+      <p class="Official_info">This is a personal project and is not intended for business.</p>
+      <p class="Official_info">All Multimedia rights are reserved to their respective owners.</p>
+      <p class="Official_info">More info is available in the HTML code.</p>
+    </footer>
+    </body>
+    </html>

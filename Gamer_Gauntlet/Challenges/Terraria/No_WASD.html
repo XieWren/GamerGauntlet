@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../../Styles/Styles.css">
+  <script type="text/javascript" src="../../../Styles/Script.js" defer></script>
+  <link rel="icon" href="../../Multimedia/Controller_Icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><!--Bootstrap Time People! (Proceeds to not use it)-->
+  <title>Gamer's Gauntlet</title>
+</head>
+<body>
+<img src="../../Multimedia/Background.gif" id="BG"><!--https://wallpapersafari.com/w/QWU0wS-->
+<div>
+<header id="header">
+  <a href="../../index.html" id="logo"><img src="../../Multimedia/Logo_Negative_Transparent.png" alt="Main Page"></a>
+  <div id="Choices">
+
+    <p id="choose">Choose your challenge of liking:</p>
+
+    <div class="game_choices">
+      <a href="../Games.html" class="games_button">By Games</a>
+      <div class="games_content">
+        <p><a href="../Games.html#Silksong" style="border-top-left-radius:8px;border-top-right-radius:8px;">Hollow Knight</a></p>
+        <p><a href="../Games.html#Creeper">Minecraft</a></p>
+        <p><a href="../Games.html#Sunflower">Plants vs Zombies</a></p>
+        <p><a href="../Games.html#Pkmn">Pokemon</a></p>
+        <p><a href="../Games.html#Minecraft" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Terraria</a></p>
+      </div>
+    </div>
+
+    <div class="difficulty_choices">
+      <a href="../Difficulty.html" class="difficulty_button">By Difficulty</a>
+      <div class="difficulty_content">
+        <p><a href="../Difficulty.html#Easy" style="border-top-left-radius:8px;border-top-right-radius:8px;">Easy</a></p>
+        <p><a href="../Difficulty.html#CbWorse">Could be Worse</a></p>
+        <p><a href="../Difficulty.html#SoS">Starting to Suffer</a></p>
+        <p><a href="../Difficulty.html#RnG">Massive Luck Required</a></p>
+        <p><a href="../Difficulty.html#Impossibru" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Help.</a></p>
+      </div>
+    </div>
+
+    <p id="featured_button" class="choices"><a href="../Featured.html">Featured</a></p>
+
+  </div>
+  <div id="More_Choices">
+    <a href="../../Others/Suggestions.html" class="More_Choices">Suggestion Box</a>
+    <a href="../../Others/About-Us.html" class="More_Choices">About</a>
+    <a href="javascript:void(0)" class="More_Choices" onclick="Very_Random()">Random</a>
+  </div>
+
+  <div class="Search">
+    <form name="Search_Bar" target="" method="post" class="More_Choices" autocomplete="off">
+      <img src="../../Multimedia/Search.ico" alt="" id="Search">
+      <input name="Search" type="text" id="Enter_Search" placeholder="Search Here..." onkeyup="List_Filter()" autocomplete="off">
+    </form>
+
+    <div id="Challenge_List">
+      <p><a href="../Hollow_Knight/Gun.html">[Hollow Knight] <br>Gun%</a></p>
+      <p><a href="../Pokemon/Platinum_Lv100_Magikarp.html">[Pokemon Platinum] <br>Lv100 Magikarp</a></p>
+      <p><a href="../Terraria/Terra_Toilet.html">[Terraria] <br>Terra Toilet%</a></p>
+    </div>
+  </div>
+
+  </header>
+</div>
+
+<h3 id="Menu"><span onclick="openNav()">&#9776;</span></h3><!--https://www.toptal.com/designers/htmlarrows/symbols/
+The sidenav-->
+<div id="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h1>&times;</h1></a>
+  <a href="../../Others/Suggestions.html" class="Choices2" style="margin-left:0px">Suggestion Box</a>
+  <a href="../../Others/About-Us.html" class="Choices2">About</a>
+  <a href="javascript:void(0)" class="Choices2" onclick="Very_Random()">Random</a>
+  <p id="choices_2" class="More_Choices2">Make a choice:</p>
+  <a href="../Games.html" class="More_Choices2">By Game</a>
+  <a href="../Difficulty.html" class="More_Choices2">By Difficulty</a>
+  <a href="../Featured.html" class="More_Choices2">Featured</a>
+</div>
+
+<!--Here begins the Wall of Text:-->
+<hr id="Header_Solver">
+<div id="Wiki_WallOfText" style="padding-top:0.5em;">
+<br><h2 style="margin-top:0;">No Movement Keys</h2><hr>
+<div id="Info">
+  <p class="Subtitle">No Movement Keys</p>
+  <img style="width:32px;" class="Profile_Pic" src="https://static.wikia.nocookie.net/terraria_gamepedia/images/a/a6/Chilled.png" alt="By Terraria Wiki">
+  <table>
+    <tr><td class='key'>Difficulty</td><td class='value'>Starting to Suffer</td></tr>
+    <tr><td class='key'>Rating</td><td class='value'>
+      <img src="../../Multimedia/Shiny_Star.webp" alt="">
+      <img src="../../Multimedia/Shiny_Star.webp" alt="">
+      <img src="../../Multimedia/Shiny_Star.webp" alt="">
+      <img src="../../Multimedia/Shiny_Star.webp" alt="">
+      <img src="../../Multimedia/Shiny_Star.webp" alt="">
+    </td></tr>    <!--5 out of 5 stars-->
+    <tr><td class="key">Type</td><td class="value">Playthrough</td></tr>
+  </table>
+  <p class="Subtitle">Objective</p>
+  <p class="Subtitle_Text">Defeat Moon Lord</p>
+  <p class="Subtitle">Rules</p>
+  <p class="Subtitle_Text">Fresh world, fresh equipment</p>
+</div>
+
+<p class="quote">"You better have a lot of free time on your hands, because this is going to take a long, long time."</p>
+
+<p>Ahh, movement keys. Something all of us use while playing Terraria. Even I am using them while typing this out. Now, imagine not being able to use them. That's tough. It's like trying to operate a computer without a mouse, or a television without a remote.</p>
+
+<p>However, just like all great companies, design is an aspect <a class="more_info" href"https://terraria.fandom.com/wiki/Re-Logic">Re-Logic</a> is obviously talented at. It's like how a television always has manual controls that can be used even without a remote. It's like how the Tab key allows one to navigate around options on a computer even without a mouse. If you don't expect these kinds of situations, and create a fail-safe, then you simply aren't a good designer of products/games.</p>
+
+<p>Now that we have gotten that out of the way, why not let's test out this fail-safe that Re-Logic created? I am sure it will be fun!</p>
+
+<p>(P.S. Re-Logic did not in actuality create a fail-safe, its just a coincidence that it's possible; also my analogy was a stretch and a half, but let's not talk about that. Instead, let's both pretend you never saw this.)</p>
+
+<div class="Table_Of_Contents">
+<ol>
+  <p>Contents</p>
+  <li><a href="#Ttk">Things to know</a></li>
+  <li><a href="#Guide" class="">Guide</a>
+    <ol>
+      <li><a href="#Getting_Started">Getting Started</a></li>
+      <li><a href="#Ninja_Slime">Boss 1: King Slime</a></li>
+      <li><a href="#Meteor">Meteor Armour</a></li>
+      <li><a href="#Other_Bosses">The unremarkable bosses</a></li>
+      <li><a href="#WoF">Wall of Flesh</a></li>
+      <li><a href="#Hardmode_Time">The Hardmode Grind</a></li>
+      <li><a href="#Mecha_Mayhem">The Mech Bosses</a></li>
+      <li><a href="#Plantera">Plantera</a></li>
+      <li><a href="#Golem">Golem</a></li>
+      <li><a href="#Events">Martian Madness & The Frost Moon</a></li>
+      <li><a href="#Cultist_And_Pillars">Lunatic Cultist & The Pillars</a></li>
+      <li><a href="#ML">Moon Lord</a></li>
+    </ol>
+  </li>
+  <li><a href="#Variations" class="">Variations</a>
+    <ol>
+      <li><a href="#Expert">Expert Mode</a></li>
+      <li><a href="#Master">Master Mode</a></li>
+      <li><a href="#Calamity">Calamity Classic Mode</a></li>
+    </ol>
+  </li>
+  <li><a href="#Gallery" class="">Gallery</a></li>
+</ol>
+</div>
+
+<h4 id="Ttk">Things to know</h4><hr>
+<ul>
+  <li><p>So, what do no movement keys mean? Well, we are talking about the arrow keys and the buttons W, A, S and D. Any button other than that is fair game.</p></li>
+  <li><p>That means that movement options such as walking or <a class="more_info" href"https://terraria.fandom.com/wiki/Shield_of_Cthulhu">dash</a><a class="more_info" href"https://terraria.fandom.com/wiki/Tabi">ing</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Ropes">climbing</a> and navigating <a class="more_info" href"https://terraria.fandom.com/wiki/Platforms">platforms</a>, are not allowed. Any other movements are fair game.</p></li>
+  <li><p>For more information on game controls, see <a class="more_info" href="https://terraria.fandom.com/wiki/Game_controls">here</a>. It should help make things clearer.</p></li>
+</ul>
+<br><h4 id="Guide">Guide</h4><hr>
+<ol>
+  <h5 id="Getting_Started">Getting Started</h5>
+  <li><p>Unbind movement keys to prevent accidental usage. Yes, this is a thing to ensure you never make any mistakes and accidentally press WASD.</p></li>
+
+  <li><p>Now, we want to generate a <a class="more_info" href"https://terraria.fandom.com/wiki/World">world</a> with <a class="more_info" href"https://terraria.fandom.com/wiki/Trees">trees</a> around, so that we can minimally craft a <a class="more_info" href"https://terraria.fandom.com/wiki/Work_Benches">Work Bench</a>. If you want, you can wait for <a class="more_info" href"https://terraria.fandom.com/wiki/Guide">Guidey</a> to aggro some <a class="more_info" href"https://terraria.fandom.com/wiki/Slimes">slimes</a>, which will hopefully attack YOU instead (cause why not), so you can poke them with the <a class="more_info" href"https://terraria.fandom.com/wiki/Copper_Shortsword">Copper Shortsword</a> for their <a class="more_info" href"https://terraria.fandom.com/wiki/Gel">gel</a> to make <a class="more_info" href"https://terraria.fandom.com/wiki/Torches">torches</a>.</p></li>
+
+  <li><p>So what should we do, now that we basically cannot move? Well, we can always dig straight down. We are looking for a <a class="more_info" href"https://terraria.fandom.com/wiki/Hooks">Hook</a>, which we can use to navigate around, without the use of the WASD buttons. We could try to get a <a class="more_info" href"https://terraria.fandom.com/wiki/Hook">hook</a> and <a class="more_info" href"https://terraria.fandom.com/wiki/Chain">chains</a> for the standard Grappling Hook, but grinding without movement keys is horrible. Instead, we are going to get a <a class="more_info" href"https://terraria.fandom.com/wiki/Gems">Gem</a> Hook, which can be crafted using 15 of any type of gem. </p></li>
+
+  <li><p>However, we need some mobility to be able to mine them. This can be easily solved after you mine enough <a class="more_info" href"https://terraria.fandom.com/wiki/Iron_Ore">iron</a>/<a class="more_info" href"https://terraria.fandom.com/wiki/Lead_Ore">lead</a> ore to craft <a class="more_info" href"https://terraria.fandom.com/wiki/Lead_Ore">minecart</a> <a class="more_info" href"https://terraria.fandom.com/wiki/Minecart_Track">tracks</a>, or if you <a class="more_info" href"https://terraria.fandom.com/wiki/Minecart_Track#Abandoned_Mine_Tracks">stumble on some</a> by accident. If the tracks are in your range, you will be able to 'teleport' to them.</p></li>
+
+  <li><p>At the same time, you may face trouble while mining straight down, such as falling into a pit full of <a class="more_info" href"https://terraria.fandom.com/wiki/Water">water</a>, and <a class="more_info" href"https://terraria.fandom.com/wiki/Drowning">drowning</a>, or not falling into a pit full of water, and <a class="more_info" href"https://terraria.fandom.com/wiki/Fall_damage">breaking your knees</a>. If you block the top of the lake after digging 3 blocks below it, we can jump up every now and then to replenish air supply. As for the pit, we can actually place 2 layers of blocks below us. If we mine the top layer, we can add new blocks below the second layer. Rinse and repeat to get all the way to the bottom, slowly but surely.</p></li>
+
+  <li><p>After getting the hook, you can finally get some important things that don't seem to make any sense at first. These include:
+    <ul>
+      <li><a class="more_info" href"https://terraria.fandom.com/wiki/Hermes_Boots">Hermes Boots</a> for mobility</li>
+      <li>A minimum of 20 <a class="more_info" href"https://terraria.fandom.com/wiki/Gold_Ore">Gold</a>/<a class="more_info" href"https://terraria.fandom.com/wiki/Platinum_Ore">Platinum</a> Ore, in increasing increments of 20</li>
+      <li>At least 1 <a class="more_info" href"https://terraria.fandom.com/wiki/Ruby">Ruby</a>, though you will probably find more</li>
+    </ul><br>
+     After getting enough items, proceed to commit die to return to the <a class="more_info" href"https://terraria.fandom.com/wiki/Layers#Surface">surface</a>. Craft all your ores into the various items you need, as well as a couple <a class="more_info" href"https://terraria.fandom.com/wiki/Gold_Crown">Gold</a>/<a class="more_info" href"https://terraria.fandom.com/wiki/Platinum_Crown">Platinum Crowns</a>, and prepare for the <a class="more_info" href"https://terraria.fandom.com/wiki/King_Slime">Mr. Royal Blue</a>.</p></li>
+
+  <h5 id="Ninja_Slime">Boss 1: King Slime</h5>
+  <li><p>To craft a <a class="more_info" href"https://terraria.fandom.com/wiki/Slime_Crown">Slime Crown</a>, you will need to bring a Crown and 20 Gel to a <a class="more_info" href"https://terraria.fandom.com/wiki/Demon_Altar">Demon</a>/<a class="more_info" href"https://terraria.fandom.com/wiki/Crimson_Altar">Crimson</a> Altar. While most spawn in the <a class="more_info" href"https://terraria.fandom.com/wiki/The_Corruption">Corruption</a>/<a class="more_info" href"https://terraria.fandom.com/wiki/The_Crimson">Crimson</a>, some spawn in the <a class="more_info" href"https://terraria.fandom.com/wiki/Underground">Underground Level</a>, which you may be able to find with less diffculty.</p></li>
+
+  <li><p>Prepare a bridge made of blocks near <a class="more_info" href"https://terraria.fandom.com/wiki/Space">Space</a>, but without spawning any <a class="more_info" href"https://terraria.fandom.com/wiki/Harpy">Harpies</a>. This will be helpful for <a class="more_info" href"https://terraria.fandom.com/wiki/Hardmode">Hardmode</a> later. Note that platforms are not being used, as grappling to them gets the player stuck in the platforms unless they jumped and lose momentum, which may not be ideal.</p></li>
+
+  <li><p>Anyways, spawn King Slime, and simply by utilising the ancient art of 'get away from your enemy', you can more or less take out King Slime. A good weapon to have would probably be a <a class="more_info" href"https://terraria.fandom.com/wiki/Bows">bow</a> with <a class="more_info" href"https://terraria.fandom.com/wiki/Flaming_Arrow">Flaming</a>/<a class="more_info" href"https://terraria.fandom.com/wiki/Frostburn_Arrow">Frostburn</a> <a class="more_info" href"https://terraria.fandom.com/wiki/Arrows">Arrows</a>; you don't really need much to take out the weakest boss in the game.</p></li>
+
+  <h6>Aftermath</h6>
+
+  <li><p>What we do want though, is the drops. King Slime drops the <a class="more_info" href"https://terraria.fandom.com/wiki/Solidifier">Solidifier</a>, which allows us to craft <a class="more_info" href"https://terraria.fandom.com/wiki/Slime_Block">Slime Blocks</a> out of Gel. However, what's important is that combining Slime Blocks with <a class="more_info" href"https://terraria.fandom.com/wiki/Ice_Block">Ice Blocks</a> creates <a class="more_info" href"https://terraria.fandom.com/wiki/Frozen_Slime_Block">Frozen Slime Blocks</a>. When moving on these blocks, you maintain 100% of your momentum, which is very useful to retain the Grappling Hook's velocity if you let go while being pulled in.</p></li>
+
+  <h5 id="Meteor">Meteor Armour</h5>
+  <li><p>If you got some <a class="more_info" href"https://terraria.fandom.com/wiki/Bomb">bombs</a> through exploring, the <a class="more_info" href"https://terraria.fandom.com/wiki/Demolitionist">Demolitionist</a> should have spawned. Grab some <a class="more_info" href"https://terraria.fandom.com/wiki/Explosives_(class)">explosives</a>, take a visit to the Corruption/Crimson, and blow up 1 or 2 <a class="more_info" href"https://terraria.fandom.com/wiki/Shadow_Orb">Shadow Orb</a>/<a class="more_info" href"https://terraria.fandom.com/wiki/Crimson_Heart">Crimson Heart</a> (Destroying a third will spawn the <a class="more_info" href"https://terraria.fandom.com/wiki/Eater_of_Worlds">Eater of Worlds</a> or <a class="more_info" href"https://terraria.fandom.com/wiki/Brain_of_Cthulhu">Brain of Cthulhu</a>). A <a class="more_info" href"https://terraria.fandom.com/wiki/Meteorite_(biome)">meteor</a> should spawn somewhere in the world not long after.</p></li>
+
+  <li><p>The amazing synergy between the <a class="more_info" href"https://terraria.fandom.com/wiki/Meteor_armor">Meteor Armor</a> and <a class="more_info" href"https://terraria.fandom.com/wiki/Space_Gun">Space Gun</a> is more than likely to carry you through the rest of <a class="more_info" href"https://terraria.fandom.com/wiki/Pre-Hardmode">Pre-Hardmode</a>. Just make sure not to die to the <a class="more_info" href"https://terraria.fandom.com/wiki/Meteor_Head">Meteor Heads</a>!</p></li>
+
+  <h5 id="Other_Bosses">The unremarkable bosses</h5>
+  <li><p>That being said, with speed that is difficult to reach even with Hardmode Gear, bosses such as <a class="more_info" href"https://terraria.fandom.com/wiki/Eye_of_Cthulhu">Eye of Cthulhu</a>, Brain of Cthulhu, and Eater of Worlds easily fall in your path. They are not very remarkable to talk about, not requiring much strategy, especially in <a class="more_info" href"https://terraria.fandom.com/wiki/Classic_Mode">Classic Mode</a>.</p></li>
+
+  <li><p><a class="more_info" href"https://terraria.fandom.com/wiki/Queen_Bee">Queen Bee</a> and <a class="more_info" href"https://terraria.fandom.com/wiki/Skeletron">Skeletron</a>, however, will require a few changes in strategy. With Queen Bee, it is a good idea to get a <a class="more_info" href"https://terraria.fandom.com/wiki/Bezoar">Bezoar</a> beforehand, for <a class="more_info" href"https://terraria.fandom.com/wiki/Poisoned">Poison</a> Immunity. With Skeletron, make sure to switch direction before the Head Spin attack, as you can easily get stunlocked if you run out of platform space.</p></li>
+
+  <h5 id="WoF">Wall of Flesh</h5>
+  <h6>Preparations</h6>
+  <li><p>If you feel the Space Gun isn't cutting it and need to change up your weapons, good weapons to use are:
+  <ul>
+    <li>Melee: <a class="more_info" href"https://terraria.fandom.com/wiki/Enchanted_Sword_(item)">Enchanted Sword</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Starfury">Starfury</a>, <b><a class="more_info" href"https://terraria.fandom.com/wiki/Sunfury">Sunfury</a></b></li>
+    <li>Ranger: <a class="more_info" href"https://terraria.fandom.com/wiki/Molten_Fury">Molten Fury</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Hellwing_Bow">Hellwing Bow</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Phoenix_Blaster">Pheonix Blaster</a>, <b><a class="more_info" href"https://terraria.fandom.com/wiki/Beenade">Beenades</a></b></li>
+    <li>Mage: <a class="more_info" href"https://terraria.fandom.com/wiki/Magic_Missile">Magic Missile</a>, <b><a class="more_info" href"https://terraria.fandom.com/wiki/Flamelash">Flamelash</a></b>, <a class="more_info" href"https://terraria.fandom.com/wiki/Demon_Scythe">Demon Scythe</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Water_Bolt">Water Bolt</a></li>
+    <li>Summoner: <b><a class="more_info" href"https://terraria.fandom.com/wiki/Vampire_Frog_Staff">Vampire Frog Staff</a></b>(which jump and hit multiple times), <a class="more_info" href"https://terraria.fandom.com/wiki/Hornet_Staff">Hornet Staff</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Imp_Staff">Imp Staff</a></li>
+  </ul></p></li>
+  <li><p>If you need more gel for Slime Blocks for the hellbridge, you can farm King Slime as he drops more gel than is needed to summon him. Alternatively, with the <a class="more_info" href"https://terraria.fandom.com/wiki/Mechanic">mechanic</a> and a <a class="more_info" href"https://terraria.fandom.com/wiki/Timers">timer</a>, one can rig up <a class="more_info" href"https://terraria.fandom.com/wiki/Statues#Slime_Statue">Slime Statues</a> that spawn in lava, and leave them for a while and get a snack.</p></li>
+  <h6>The Fight</h6>
+  <li><p>Nothing to it. You can move faster than the Wall of Flesh all the time. Make sure to slow down once in a while so that the Wall is on screen for you to hit. If you have enough bridge, you can definitely win.</p></li>
+
+  <h5 id="Hardmode_Time">The Hardmode Grind</h5>
+  <li><p>Do the normal <a class="more_info" href="https://terraria.fandom.com/wiki/Ores#Hardmode">Hardmode ore</a> grind, being
+  <ol>
+    <li>Destroy Demon/Crimson <a class="more_info" href="https://terraria.fandom.com/wiki/Altars">Altars</a> with the Pwnhammer</li>
+    <li>Mine <a class="more_info" href"https://terraria.fandom.com/wiki/Cobalt_Ore">Cobalt</a>/<a class="more_info" href"https://terraria.fandom.com/wiki/Palladium_Ore">Palladium</a></li>
+    <li>Craft a Cobalt/Palladium <a class="more_info" href"https://terraria.fandom.com/wiki/Pickaxes">Pickaxe</a>/<a class="more_info" href"https://terraria.fandom.com/wiki/Drills">Drill</a></li>
+    <li>Mine <a class="more_info" href"https://terraria.fandom.com/wiki/Mythril_Ore">Mythril</a>/<a class="more_info" href"https://terraria.fandom.com/wiki/Orichalcum_Ore">Orichalcum</a></li>
+    <li>Craft a <a class="more_info" href"https://terraria.fandom.com/wiki/Hardmode_Anvils">Mythril/Orichalcum Anvil</a></li>
+    <li>Mine <a class="more_info" href"https://terraria.fandom.com/wiki/Adamantite_Ore">Adamantite</a>/Titanium</li>
+    <li>Craft <a class="more_info" href"https://terraria.fandom.com/wiki/Hardmode_Forges">Adamantite/Titanium Forge</a></li>
+  </ol></p></li>
+  <li><p>In the list of possible Armour sets you can use, good options include:
+    <ul>
+      <li><a class="more_info" href"https://terraria.fandom.com/wiki/Frost_armor">Frost Armour</a>, because of the helpful Frostburn debuff it provides</li>
+      <li><a class="more_info" href"https://terraria.fandom.com/wiki/Forbidden_armor">Forbidden Armour</a>, if you choose to play magic/summoner</li>
+      <li><a class="more_info" href"https://terraria.fandom.com/wiki/Palladium_armor">Palladium Armour</a>, because of the high health regeneration</li>
+      <li><a class="more_info" href"https://terraria.fandom.com/wiki/Titanium_armor">Titanium</a>/<a class="more_info" href"https://terraria.fandom.com/wiki/Adamantite_armor">Adamantite</a> Armour, if you are lazy and don't want to farm</li>
+      <li><a class="more_info" href"https://terraria.fandom.com/wiki/Spider_armor">Spider Armour</a>, as an easy armour set to acquire that increases survivability while you try to get the other sets</li>
+    </ul></p></li>
+  <li><p>You can also get a pair of <a class="more_info" href"https://terraria.fandom.com/wiki/Wings">wings</a> (<a class="more_info" href"https://terraria.fandom.com/wiki/Wings#Frozen_Wings">Frozen Wings</a> being the current best), a <a class="more_info" href"https://terraria.fandom.com/wiki/Hooks#Worm_Hook">Worm</a>/<a class="more_info" href"https://terraria.fandom.com/wiki/Hooks#Tendon_Hook">Tendon</a>/<a class="more_info" href"https://terraria.fandom.com/wiki/Hooks#Illuminant_Hook">Illuminant</a> Hook, and the <a class="more_info" href"https://terraria.fandom.com/wiki/Ankh_Shield">Ankh Shield</a>.</p></li>
+
+  <h5 id="Mecha_Mayhem">The Mech Bosses</h5>
+  <h6>Preparations</h6>
+  <li><p>It is incredibly unlikely that spawners for all the Mech Bosses will drop during grinding. This means the following items will have to be gathered (for 1 round of boss fights):
+  <ul>
+    <li>15 <a class="more_info" href"https://terraria.fandom.com/wiki/Iron_Bar">Iron</a> or <a class="more_info" href"https://terraria.fandom.com/wiki/Lead_Bar">Lead</a> Bars</li>
+    <li>9 <a class="more_info" href"https://terraria.fandom.com/wiki/Soul_of_Light">Souls of Light</a></li>
+    <li>9 <a class="more_info" href"https://terraria.fandom.com/wiki/Soul_of_Night">Souls of Night</a></li>
+    <li>6 <a class="more_info" href"https://terraria.fandom.com/wiki/Rotten_Chunk">Rotten Chunks</a> or <a class="more_info" href"https://terraria.fandom.com/wiki/Vertebra">Vertebrae</a></li>
+    <li>3 <a class="more_info" href"https://terraria.fandom.com/wiki/Lens">Lenses</a></li>
+    <li>30 <a class="more_info" href"https://terraria.fandom.com/wiki/Bone">Bones</a></li>
+  </ul></p></li>
+  <li><p>This will require fighting and defeating Skeletron, as access to the <a class="more_info" href"https://terraria.fandom.com/wiki/Dungeon">Dungeon</a> is needed to collect Bones; if you have not done so yet, now is the best time to do so. With Hardmode Gear, Skeletron should be easy to defeat.</p></li>
+  <h6>The Fight</h6>
+  <li><p>Remember when <a class="more_info" href"https://terraria.fandom.com/wiki/Daedalus_Stormbow">Daedalus Stormbow</a> got nerfed in 1.4? Yeah, me neither. The combination with <a class="more_info" href"https://terraria.fandom.com/wiki/Holy_Arrow">Holy arrows</a> still absolutely shred the Mech Bosses. In case you forgot, they drop from <a class="more_info" href"https://terraria.fandom.com/wiki/Mimics">Hallowed Mimics</a> with a 25% drop chance. If you are worried, test it out on Skeletron first.</p></li>
+  <li><p>Against <a class="more_info" href"https://terraria.fandom.com/wiki/The_Destroyer">The Destroyer</a>, make sure it cannot reach your platforms as you will definitely have a difficult time moving around, especially without WASD keys.</p></li>
+  <li><p>Against <a class="more_info" href"https://terraria.fandom.com/wiki/Skeletron_Prime">Skeletron Prime</a>, try not to move too fast, unless Prime uses its Head Spin attack. Target the Laser Arm, and you are good to take him out after that.</p></li>
+  <li><p>Against <a class="more_info" href"https://terraria.fandom.com/wiki/The_Twins">The Twins</a>, try to move in a single direction, and only turn when you have to. The Twins will require more vertical mobility than the other Mech Bosses, and as such it's a really good idea to set up columns of platforms in mid-air that can be grappled to to move sideways if needed.</p></li>
+
+  <h5 id="Plantera">Plantera</h5>
+  <li><p>The <a class="more_info" href"https://terraria.fandom.com/wiki/Steampunker">steampunker</a> should have spawned in by now. Set up two <a class="more_info" href"https://terraria.fandom.com/wiki/Teleporter">teleporters</a> in the <a class="more_info" href"https://terraria.fandom.com/wiki/Underground_Jungle">Underground Jungle</a>, with the <a class="more_info" href"https://terraria.fandom.com/wiki/Plantera%2527s_Bulb">Plantera Bulb</a> in the middle. When <a class="more_info" href"https://terraria.fandom.com/wiki/Plantera">Plantera</a> spawns, teleport between the two teleporters with the help of <a class="more_info" href"https://terraria.fandom.com/wiki/Pressure_Plates">Pressure Plates</a> and a low ceiling to avoid Plantera's attacks. Try to close off the space to prevent Plantera' ranged attacks from hitting you, while ensuring you can still attack the Plant.</p></li>
+  <li><p>Alternatively, with a set of <a class="more_info" href"https://terraria.fandom.com/wiki/Turtle_armor">Turtle Armour</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Fetid_Baghnakhs">Fetid Baghnakhs</a> and some <a class="more_info" href"https://terraria.fandom.com/wiki/Recovery_potions">health potions</a>, one can stand in place and win a DPS race against Plantera. For better survivability (in case you are worried), the following items can be considered:
+  <ul>
+    <!--The list of all the items you ever need to cheese a boss-->
+    <h6>Potions</h6>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Ironskin_Potion">Ironskin Potions</a></li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Endurance_Potion">Endurance Potions</a></li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Lifeforce_Potion">Lifeforce Potions</a></li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Rage_Potion">Rage Potions</a></li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Wrath_Potion">Wrath Potions</a></li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Thorns_Potion">Thorns Potions</a></li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Flask_of_Ichor">Flask of Ichor</a></li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Food_and_drink_potions">Items</a> that grant the <a class="more_info" href"https://terraria.fandom.com/wiki/Well_Fed">Well Fed </a>Buff and its upgrades</li><br>
+    <h6>Accessories</h6>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Moon_Charm">Moon Charm</a> and its upgrades</li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Moon_Stone">Moon Stone</a> and its upgrades</li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Cross_Necklace">Cross Necklace</a> and its upgrades</li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Frozen_Turtle_Shell">Frozen Turtle Shell</a></li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Worm_Scarf">Worm Scarf</a> (if in <a class="more_info" href"https://terraria.fandom.com/wiki/Expert_Mode">Expert Mode</a>)</li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Brain_of_Confusion">Brain of Confusion</a> (if in <a class="more_info" href"https://terraria.fandom.com/wiki/Expert_Mode">Expert Mode</a>)</li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Titan_Glove">Titan Glove</a> and its upgrades</li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Feral_Claws">Feral Claws</a> and its upgrades</li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Warrior_Emblem">Warrior Emblem</a></li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Avenger_Emblem">Avenger Emblem</a></li><br>
+    <h6>Others</h6>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Bast_Statue">Bast Statue</a></li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Sharpening_Station">Sharpening Station</a></li>
+    <li><a class="more_info" href"https://terraria.fandom.com/wiki/Dryad's_Blessing">Dryad's Blessing</a></li>
+  </ul></p></li>
+  <li><p>If this feels too cheesy, set up two layers of frozen slime blocks, with the top layer around 15 blocks to the left/right of the bottom layer, as well as one extra long corridor of frozen slime blocks.</p></li>
+  <li><p>In the first phase, circle around Plantera using the two layers of platforms, dodging any of her Thorn Balls.</p></li>
+  <li><p>In the second phase, head down the long corridor of Frozen Slime, as Plantera will try to charge you instead.</p></li>
+
+  <h5 id="Golem">Golem</h5>
+  <li><p>For <a class="more_info" href"https://terraria.fandom.com/wiki/Golem">Golem</a>, Holy Arrows with Frostburn is still really viable, as long as you upgrade to a <a class="more_info" href"https://terraria.fandom.com/wiki/Chlorophyte_Shotbow">Clorophyte Shotbow</a>.</p></li>
+  <li><p>Alternatively, get <a class="more_info" href"https://terraria.fandom.com/wiki/Spectre_armor">Spectre armour</a> with Hood to facetank, or Turtle Armour and <a class="more_info" href"https://terraria.fandom.com/wiki/Vampire_Knives">Vampire Knives</a> if you have Crimson.</p></li>
+  <li><p>(Though honestly, do you really need a guide on beating Golem?)<!--This is an inside joke; there's a lot of them.--> Okay if you do, add a layer of Frozen Slime Blocks on the floor, <a class="more_info" href"https://terraria.fandom.com/wiki/Hammers">hammering</a> them when there are slopes. If you want, you can place Teleporters on either side so that you can maintain mobility.</p></li>
+  <li><p>Trap Golem in a corner using blocks (starting around 7-10 blocks above the ground), then attack its knees.</p></li>
+
+  <h5 id="Events">Martian Madness & The Frost Moon</h5>
+  <h6>Math</h6>
+  <li><p>If you need help understanding this part, a simple mathematical equation should prove helpful:
+  <p>Spectre Hood = Broken<br><a class="more_info" href"https://terraria.fandom.com/wiki/Razorpine">Razorpine</a> = Broken<br>Spectre Armour + Razorpine = Insanely Broken</p></p></li>
+  <h6>Martian Madness</h6>
+  <li><p>But before that, we will need something to help us actually get the Razorpine in the first place. That would be the <a class="more_info" href"https://terraria.fandom.com/wiki/Laser_Machinegun">Laser Machinegun</a>, which is definitely not a weaker Razorpine.</p></li>
+  <li><p>Seeing that the <a class="more_info" href"https://terraria.fandom.com/wiki/Martian_Saucer">Martian Saucer</a> is most likely always faster than you, a good method to fight it would be to use Teleporters again. Before the event, set up two teleporters the same way you did Plantera, but in a room with <a class="more_info" href"https://terraria.fandom.com/wiki/Background_walls">Background Walls</a> (to prevent spawns).</p></li>
+  <li><p>Using <a class="more_info" href"https://terraria.fandom.com/wiki/Summon_weapons#List_of_Minions">Summons</a> or <a class="more_info" href"https://terraria.fandom.com/wiki/Summon_weapons#List_of_Sentries">Sentries</a>, one can take out the Martian Saucer while avoiding its attacks via the teleporters.</p></li>
+  <h6>Frost Moon</h6>
+  <li><p>If you are lazy and don't want to do Martian Madness first, you can. It may be more difficult to defeat <a class="more_info" href"https://terraria.fandom.com/wiki/Everscream">Everscreams</a>, though.</p></li>
+  <li><p>Consider setting up an arena in the air, with a ceiling and <a class="more_info" href"https://terraria.fandom.com/wiki/Lava">lava</a> on the floor. Grounded enemies can't reach you, while the <a class="more_info" href"https://terraria.fandom.com/wiki/Elf_Copter">Elf Copters</a> can't shoot through the ceiling. Everscream however, will be able to pass through blocks to reach the player; so long as the arena is small enough, you essentially only have to deal with spawning Everscreams.</p></li>
+  <li><p>With a bit of time and luck, the Razorpine is yours. Heck, while taking the trouble, why not get the <a class="more_info" href"https://terraria.fandom.com/wiki/Blizzard_Staff">Blizzard Staff</a> as well? It's essentially the group attacking weapon (as opposed to high single-target DPS).</p></li>
+
+  <h5 id="Cultist_And_Pillars">Lunatic Cultist & The Pillars</h5>
+  <li><p>With good enough armour (you know, like the one we just talked about), face tank with even a bit of dodging is more than enough on Classic Mode.</p></li>
+  <li><p>Otherwise, if you are lazy to grind two extra events, the Twins Arena is really good for both vertical and horizontal mobility. Just make sure to always be there to hit the <a class="more_info" href"https://terraria.fandom.com/wiki/Lunatic_Cultist">Cultist</a> when he splits, as the <a class="more_info" href"https://terraria.fandom.com/wiki/Phantasm_Dragon">Phantasm Dragon</a>, like many worm-based enemies, will mess you up without the help of WASD.</p></li>
+  <li><p>After beating the Cultist, <a class="more_info" href"https://terraria.fandom.com/wiki/Lunar_Events">Pillar Time</a>! Every pillar has a different strategy to increase survivability (Remember, it doesn't matter if you die, because every enemy defeated is progress! It's alright to spawn several <a class="more_info" href"https://terraria.fandom.com/wiki/Graveyard">graveyard</a> biomes, that's very natural.)</p></li>
+  <li><p>To improve survivability on all pillars, going into its range and killing a few enemies at a time, while slow, is a great way to ensure not dying.</p></li>
+  <h6>Solar Pillar</h6>
+  <li><p>Good luck!<!--This is an inside joke; there's a lot of them.--> That is, unless you have a proper arena around the area utilising hammered frozen slime blocks that slope upwards for vertical mobility (while avoiding the <a class="more_info" href"https://terraria.fandom.com/wiki/Crawltipede">Crawltipedes</a>).</p></li>
+  <li><p>Technically, it is possible to build them beforehand by putting 4 of them at regular intervals around the map, to increase the chances of the <a class="more_info" href"https://terraria.fandom.com/wiki/Solar_Pillar">Solar Pillar</a> spawning in the vicinity of one.</p></li>
+  <h6>Vortex Pillar</h6>
+  <li><p>Stay in a 3 by 2 hole and fire Area of Effect / Homing weapons outwards, as most enemies cannot hit you effectively unless they get into or above the hole.</p></li>
+  <li><p>When attacking the <a class="more_info" href"https://terraria.fandom.com/wiki/Vortex_Pillar">Vortex Pillar</a>, try to always be at a different height to prevent getting shot.</p></li>
+  <h6>Nebula Pillar</h6>
+  <li><p>Always stay moving, to prevent <a class="more_info" href"https://terraria.fandom.com/wiki/Brain_Suckler">Brain Sucklers</a> in the <a class="more_info" href"https://terraria.fandom.com/wiki/Nebula_Pillar">Nebula Pillar's</a> range from reaching you, and usually avoid homing enemy attacks (Looking at you, <a class="more_info" href"https://terraria.fandom.com/wiki/Evolution_Beast">Evolution Beast</a>).</p></li>
+  <h6>Stardust Pillar</h6>
+  <li><p>Farm <a class="more_info" href"https://terraria.fandom.com/wiki/Star_Cell">Star Cells</a> outside of <a class="more_info" href"https://terraria.fandom.com/wiki/Stardust_Pillar">Stardust Pillar</a> range, then get in and finish the job quickly.</p></li>
+
+  <h5 id="ML">Moon Lord</h5>
+  <li><p><a class="more_info" href"https://terraria.fandom.com/wiki/Moon_Lord">Moon Lord</a> Time! If you can't make it to a nearby arena in time, there's always manual spawning with the <a class="more_info" href"https://terraria.fandom.com/wiki/Celestial_Sigil">Celestial Sigil</a>.</p></li>
+  <li><p>Weapon Choices:
+    <ul>
+      <li>Melee:<br><b><a class="more_info" href"https://terraria.fandom.com/wiki/Solar_Eruption">Solar Eruption</a></b>, <a class="more_info" href"https://terraria.fandom.com/wiki/Terra_Blade">Terra Blade</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Influx_Waver">Influx Waver</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Possessed_Hatchet">Possessed Hatchet</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/North_Pole">North Pole</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Daybreak">Daybreak</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/The_Eye_of_Cthulhu">The Eye of Cthulhu</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Flairon">Flairon</a></li><br>
+
+      <li>Ranger:<br><b><a class="more_info" href"https://terraria.fandom.com/wiki/Phantasm">Phantasm</a></b>, <a class="more_info" href"https://terraria.fandom.com/wiki/Tsunami">Tsunami</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Eventide">Eventide</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Aerial_Bane">Aerial Bane</a>, <b><a class="more_info" href"https://terraria.fandom.com/wiki/Vortex_Beater">Vortex Beater</a></b>, <a class="more_info" href"https://terraria.fandom.com/wiki/Xenopopper">Xenopopper</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Chain_Gun">Chain Gun</a></li><br>
+
+      <li>Mage:<br><b><a class="more_info" href"https://terraria.fandom.com/wiki/Blizzard_Staff">Blizzard Staff</a></b>, <a class="more_info" href"https://terraria.fandom.com/wiki/Razorpine">Razorpine</a>, <b><a class="more_info" href"https://terraria.fandom.com/wiki/Stellar_Tune">Stellar Tune</a></b>, <a class="more_info" href"https://terraria.fandom.com/wiki/Razorblade_Typhoon">Razorblade Typhoon</a>, <a class="more_info" href="https://terraria.fandom.com/wiki/Nightglow">Nightglow</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Betsy's_Wrath">Betsy's Wrath</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Laser_Machinegun">Laser Machinegun</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Nebula_Blaze">Nebula Blaze</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Nebula_Arcanum">Nebula Arcanum</a></li><br>
+
+      <li>Summoner:<br><a class="more_info" href"https://terraria.fandom.com/wiki/Terraprisma">Terraprisma</a>, <b><a class="more_info" href"https://terraria.fandom.com/wiki/Stardust_Dragon_Staff">Stardust Dragon Staff</a></b>, <a class="more_info" href"https://terraria.fandom.com/wiki/Xeno_Staff">Xeno Staff</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Sanguine_Staff">Sanguine Staff</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Stardust_Cell_Staff">Stardust Cell Staff</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Raven_Staff">Raven Staff</a>, <b><a class="more_info" href"https://terraria.fandom.com/wiki/Kaleidoscope">Kaleidoscope</a></b>, <a class="more_info" href"https://terraria.fandom.com/wiki/Morning_Star">Morning Star</a>, <a class="more_info" href"https://terraria.fandom.com/wiki/Dark_Harvest">Dark Harvest</a></li><br>
+    </ul>
+  </p></li>
+  <li><p>Honestly, Moon Lord is pretty cheese-proof without minecarts or <a class="more_info" href"https://terraria.fandom.com/wiki/Asphalt_Block">asphalt</a>. Add to that 1.4's gimmick of letting Phantasmal deathray pass through blocks, and you have a bit of a problem.</p></li>
+  <li><p>This means teleporters are the way to go. Set up two teleporters close enough to each other such that Moon Lord doesn't teleport to you as well, but far enough to avoid getting hit by the <a class="more_info" href"https://terraria.fandom.com/wiki/Phantasmal_Deathray">Phantasmal Deathray</a> on the other side. Include pressure plates and a low ceiling like in the Plantera fight.</p></li>
+  <li><p>It is a good idea to flood the teleporters with <a class="more_info" href"https://terraria.fandom.com/wiki/Honey">Honey</a>, and to include <a class="more_info" href"https://terraria.fandom.com/wiki/Campfires">Campfires</a> and <a class="more_info" href"https://terraria.fandom.com/wiki/Heart_Lantern">Heart Lanterns</a>. Try to fit <a class="more_info" href"https://terraria.fandom.com/wiki/House">housing</a> for the <a class="more_info" href"https://terraria.fandom.com/wiki/Nurse">Nurse</a> and the <a class="more_info" href"https://terraria.fandom.com/wiki/Dryad">Dryad</a> if needed.</p></li>
+  <li><p>Buff up, get the Celestial Sigil (or wait for impending doom). Try to take out all 3 <a class="more_info" href"https://terraria.fandom.com/wiki/True_Eye_of_Cthulhu">True Eyes</a> at the same time, and with luck, you will have completed your Terraria no WASD challenge!</p></li>
+
+</ol>
+
+<br><h4 id="Variations">Variations</h4><hr>
+
+<h5 id="Expert">Expert Mode (Starting to Suffer)</h5>
+<ul>
+  <li><p>It is very likely that you will face a lot more difficulty in fighting bosses, and may be forced to cheese some bosses (Moon Lord being the most likely candidate, in before you get the <a class="more_info" href"https://terraria.fandom.com/wiki/Rod_of_Discord">Rod of Discord</a>).</p></li>
+  <li><p>However, as long as you can dodge well enough, the strategies mentioned for the other bosses should be good enough to win the game.</p></li>
+</ul>
+
+<h5 id="Master">Master Mode (Massive Luck Required)</h5>
+<ul>
+  <li><p>Um... Look. Just commit cheese, okay? There is legitimately no way you can beat these bosses unless you try an ungodly amount of times, and honestly, why would you want to suffer this much?</p></li>
+</ul>
+
+<h5 id="Calamity">Calamity Classic Mode (Starting to Suffer)</h5>
+<ul>
+  <li><p>Given the sheer difficulty of the <a class="more_info" href"https://calamitymod.fandom.com/wiki/Calamity_Mod_Wiki">Calamity Mod</a>, it's really quite surprising that <b>the <a class="more_info" href"https://calamitymod.fandom.com/wiki/The_Slime_God">Slime God</a> <a class="more_info" href"https://calamitymod.fandom.com/wiki/Lore_items">Lore Item</a> can save your life.</b> It helps you maintain your speed as if you are always sliding, so with a Hook that gives fast enough acceleration, you are basically good to go!</p></li>
+  <li><p>Being Calamity however, you probably will have to take a couple of tries to beat every single boss though.</p></li>
+  <li><p>If trying the challenge out on Expert Mode, you will just need to dodge better. On <a class="more_info" href"https://calamitymod.fandom.com/wiki/Revengeance_Mode">Revengeance</a> and <a class="more_info" href"https://calamitymod.fandom.com/wiki/Death_Mode">Death Mode</a>, however, the extreme changes in boss <a class="more_info" href"https://calamitymod.fandom.com/wiki/AI">A</a><a class="more_info" href"https://terraria.fandom.com/wiki/AI">I</a> may be bad for your mental health. So uh, maybe don't try it?</p></li>
+</ul>
+
+<br><h4 id="Gallery">Gallery</h4><hr>
+<div class="Gallery_Content">
+  <table>
+    <tr>
+      <td colspan="2"><img src="https://i.ytimg.com/vi/PeXuldH3lBU/hq720.jpg" alt=""></td>
+
+      <td colspan="2"><img src="https://i.ytimg.com/vi/SEK_EZps8YY/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLA8HKlNKcDgB_k1DB7Gws2G-JxsWQ" alt=""></td>
+
+      <td colspan="2"><img src="https://i.ytimg.com/vi/JEJOKohsg0Q/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLDNuMUzzPbtIo2H_G86RGkSO-tt9w" alt=""></td>
+
+    </tr>
+    <tr>
+      <td colspan="2"><p><a href="https://www.youtube.com/watch?v=PeXuldH3lBU" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> ShyGuyMask testing and beating Terraria without WASD Keys (1.3)</a></p></td>
+      <td colspan="2"><p><a href="https://www.youtube.com/watch?v=SEK_EZps8YY&t=1s" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> CrabBar responding and beating Terraria in Expert Mode, Part 1 (1.3)</a></p></td>
+      <td colspan="2"><p><a href="https://www.youtube.com/watch?v=JEJOKohsg0Q" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> CrabBar responding and beating Terraria in Expert Mode, Part 2, Electric Boogaloo (1.3)</a></p></td><!--Space bar for extra distance between text and button-->
+    </tr>
+    <tr>
+      <td colspan="3"><br><img src="https://i.ytimg.com/vi/x_gm4XEklDM/hq720.jpg" alt=""></td>
+      <td colspan="3"><br><img src="https://i.ytimg.com/vi/MVbO8xK2SUQ/hq720.jpg" alt=""></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p><a href="https://www.youtube.com/watch?v=x_gm4XEklDM&t=4s" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> ShyGuyMask proceeding to beat Classic Post-Moon Lord Calamity wihtout WASD (1.3)</a></p></td>
+      <td colspan="3"><p><a href="https://www.youtube.com/watch?v=MVbO8xK2SUQ" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Also a ShyGuyMask taking out Master Mode Daytime Empress of Light without WASD (1.4)</a></p></td>
+    </tr>
+  </table>
+  </div>
+  <table id="Before_After">
+    <tr><td><p>Previous</p></td>  <td><p>Index</p></td>  <td><p>Next</p></td> </tr>
+    <tr><td><p>Start</p></td>  <td><p><a href="">Hollow Knight</a></p></td>  <td><p><a href="">PvZ:<br>Adventure Mode, No Sunflowers</a></p></td></tr>
+  </table>
+  </div>
+  <footer>
+    <h2 id="icon"><img src="../../Multimedia/Controller_Icon.png"> Gamer's Gauntlet</h2>
+    <!--Icon found here: https://commons.wikimedia.org/wiki/File:Video-Game-Controller-Icon-D-Edit.svg-->
+    <table id="More_Choices_Back_Again">
+      <tr>  <td><a href="../../Others/Suggestions.html">Suggestion Box</a></td>  <td><a href="../../Others/About-Us.html">About</a></td>  <td><a href="" onclick="Very_Random()">Random</a></td>  </tr>
+    </table>
+    <p class="Official_info">This is a personal project and is not intended for business.</p>
+    <p class="Official_info">All Multimedia rights are reserved to their respective owners.</p>
+    <p class="Official_info">More info is available in the HTML code.</p>
+  </footer>
+  </body>
+  </html>

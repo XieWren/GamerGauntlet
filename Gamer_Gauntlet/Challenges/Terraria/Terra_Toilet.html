@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../../Styles/Styles.css">
+  <script type="text/javascript" src="../../../Styles/Script.js" defer></script>
+  <link rel="icon" href="../../Multimedia/Controller_Icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><!--Bootstrap Time People! (Proceeds to not use it)-->
+  <title>Gamer's Gauntlet</title>
+</head>
+<body>
+<img src="../../Multimedia/Background.gif" id="BG"><!--https://wallpapersafari.com/w/QWU0wS-->
+<div>
+<header id="header">
+  <a href="../../index.html" id="logo"><img src="../../Multimedia/Logo_Negative_Transparent.png" alt="Main Page"></a>
+  <div id="Choices">
+
+    <p id="choose">Choose your challenge of liking:</p>
+
+    <div class="game_choices">
+      <a href="../Games.html" class="games_button">By Games</a>
+      <div class="games_content">
+        <p><a href="../Games.html#Silksong" style="border-top-left-radius:8px;border-top-right-radius:8px;">Hollow Knight</a></p>
+        <p><a href="../Games.html#Creeper">Minecraft</a></p>
+        <p><a href="../Games.html#Sunflower">Plants vs Zombies</a></p>
+        <p><a href="../Games.html#Pkmn">Pokemon</a></p>
+        <p><a href="../Games.html#Minecraft" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Terraria</a></p>
+      </div>
+    </div>
+
+    <div class="difficulty_choices">
+      <a href="../Difficulty.html" class="difficulty_button">By Difficulty</a>
+      <div class="difficulty_content">
+        <p><a href="../Difficulty.html#Easy" style="border-top-left-radius:8px;border-top-right-radius:8px;">Easy</a></p>
+        <p><a href="../Difficulty.html#CbWorse">Could be Worse</a></p>
+        <p><a href="../Difficulty.html#SoS">Starting to Suffer</a></p>
+        <p><a href="../Difficulty.html#RnG">Massive Luck Required</a></p>
+        <p><a href="../Difficulty.html#Impossibru" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Help.</a></p>
+      </div>
+    </div>
+
+    <p id="featured_button" class="choices"><a href="../Featured.html">Featured</a></p>
+
+  </div>
+  <div id="More_Choices">
+    <a href="../../Others/Suggestions.html" class="More_Choices">Suggestion Box</a>
+    <a href="../../Others/About-Us.html" class="More_Choices">About</a>
+    <a href="javascript:void(0)" class="More_Choices" onclick="Very_Random()">Random</a>
+  </div>
+
+  <div class="Search">
+    <form name="Search_Bar" target="" method="post" class="More_Choices" autocomplete="off">
+      <img src="../../Multimedia/Search.ico" alt="" id="Search">
+      <input name="Search" type="text" id="Enter_Search" placeholder="Search Here..." onkeyup="List_Filter()" autocomplete="off">
+    </form>
+
+    <div id="Challenge_List">
+      <p><a href="../Hollow_Knight/Gun.html">[Hollow Knight] <br>Gun%</a></p>
+      <p><a href="../Pokemon/Platinum_Lv100_Magikarp.html">[Pokemon Platinum] <br>Lv100 Magikarp</a></p>
+      <p><a href="../Terraria/No_WASD.html">[Terraria] <br>No WASD</a></p>
+    </div>
+  </div>
+
+  </header>
+</div>
+
+<h3 id="Menu"><span onclick="openNav()">&#9776;</span></h3><!--https://www.toptal.com/designers/htmlarrows/symbols/
+The sidenav-->
+<div id="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h1>&times;</h1></a>
+  <a href="../../Others/Suggestions.html" class="Choices2" style="margin-left:0px">Suggestion Box</a>
+  <a href="../../Others/About-Us.html" class="Choices2">About</a>
+  <a href="javascript:void(0)" class="Choices2" onclick="Very_Random()">Random</a>
+  <p id="choices_2" class="More_Choices2">Make a choice:</p>
+  <a href="../Games.html" class="More_Choices2">By Game</a>
+  <a href="../Difficulty.html" class="More_Choices2">By Difficulty</a>
+  <a href="../Featured.html" class="More_Choices2">Featured</a>
+</div>
+
+<!--Here begins the Wall of Text:-->
+<hr id="Header_Solver">
+<div id="Wiki_WallOfText" style="padding-top:0.5em;">
+<br><h2 style="margin-top:0;">Terra Toilet%</h2><hr>
+<div id="Info">
+  <p class="Subtitle">Terra Toilet %</p>
+  <img style="width:35px;" class="Profile_Pic" src="../../Multimedia/Challenges/Terra_Toilet.png" alt="">
+  <table>
+    <tr><td class='key'>Difficulty</td><td class='value'>Could be Worse</td></tr>
+    <tr><td class='key'>Rating</td><td class='value'>
+      <img src="../../Multimedia/Shiny_Star.webp" alt="">
+      <img src="../../Multimedia/Shiny_Star.webp" alt="">
+      <img src="../../Multimedia/Shiny_Star.webp" alt="">
+      <img src="../../Multimedia/Shiny_Star.webp" alt="">
+    </td></tr>    <!--4 out of 5 stars-->
+    <tr><td class="key">Type</td><td class="value">Playthrough</td></tr>
+  </table>
+  <p class="Subtitle">Objective</p>
+  <p class="Subtitle_Text">Sit on a Terra Toilet</p>
+  <p class="Subtitle">Rules</p>
+  <p class="Subtitle_Text">Fresh world, fresh equipment</p>
+</div>
+
+<p class="quote">"Seriously? THIS is what you used the Broken Hero Sword for?"</p>
+
+<p>Usually, a <a class="more_info" href="https://terraria.fandom.com/wiki/Broken_Hero_Sword">Broken Hero Sword</a> is used to craft the <a class="more_info" href="https://terraria.fandom.com/wiki/Terra_Blade">Terra Blade</a>, one of the materials for the <a class="more_info" href="https://terraria.fandom.com/wiki/Zenith">Zenith</a>, the most powerful weapon in the game. However, in the Terraria 1.4 <a class="more_info" href="https://terraria.fandom.com/wiki/1.4.0.1">Journey's End</a> update, the Broken Hero Sword gained a new use; to be crafted into the Terra Toilet. Very quickly, this became a meme speedrun category for Terraria enthusiasts.</p>
+
+<p>In this guide however, we will not be teaching how to speedrun the game, but instead give a guide on how this can be achieved.</p>
+
+<p>Some steps have been thrown in to make the game more manageable for the average player, to ensure the gameplay remains fun and interesting for them throughout the playthrough. Have fun.</p>
+
+<div class="Table_Of_Contents">
+<ol>
+  <p>Contents</p>
+  <li><a href="#Ttk">Things to know</a></li>
+  <li><a href="#Guide" class="">Guide (Optimal Route)</a>
+    <ol>
+      <li><a href="#Getting_Started">Getting Started</a></li>
+      <li><a href="#Preparations_for_Hardmode">Preparations for Hardmode</a></li>
+      <li><a href="#Hardmode">Hardmode</a></li>
+      <li><a href="#The_Mech_Bosses">The Mech Boses</a></li>
+      <li><a href="#Suddenly_Jungle_Temple">Suddenly Jungle Temple</a></li>
+      <li><a href="#Back_to_Mech_Bosses">...Back to Mech Bosses!</a></li>
+      <li><a href="#Plantera">Plantera?</a></li>
+      <li><a href="#The_Eclipse">The Eclipse</a></li>
+    </ol>
+  </li>
+  <li><a href="#Variations" class="">Variations</a>
+    <ol>
+      <li><a href="#Expert_Mode">Expert Mode</a></li>
+      <li><a href="#Master_Mode">Master Mode</a></li>
+      <li><a href="#Journey_Mode">Journey Mode</a></li>
+      <li><a href="#Actual_Speedrun">Actual Speedrun</a></li>
+      <li><a href="#Calamity_Auric_Toilet">Calamity Auric Toilet %</a></li>
+    </ol>
+  </li>
+  <li><a href="#Gallery" class="">Gallery</a></li>
+</ol>
+</div>
+
+<h4 id="Ttk">Things to know</h4><hr>
+<ul>
+  <li><p>The crafting recipe for the Terra Toilet requires a toilet and a Broken Hero Sword</p></li>
+  <li><p>Broken Hero Swords have a 25% (43.75% in <a class=more_info href="https://terraria.fandom.com/wiki/Expert_Mode">higher</a><a class=more_info href="https://terraria.fandom.com/wiki/Master_Mode"> difficulties</a>) chance of dropping from <a class="more_info" href="https://terraria.fandom.com/wiki/Mothron">Mothrons</a>, which only spawn during a Solar Eclipse after all 3 <a class=more_info href="https://terraria.fandom.com/wiki/Mechanical_bosses">mechanical bosses</a> have been defeated (The Twins, Destroyer and Skeletron Prime)</p></li>
+  <li><p>The 3 Mech Bosses are only spawnable with materials in a hardmode world, so <a class="more_info" href="https://terraria.fandom.com/wiki/Wall_of_Flesh">Wall of Flesh</a> has to be defeated.</p></li>
+</ul>
+<br><h4 id="Guide">Guide (Optimal Route)</h4><hr>
+<ol>
+  <h5 id="Getting_Started">Getting Started</h5>
+  <li><p>Upon first spawning in, quickly build a couple <a class="more_info" href="https://terraria.fandom.com/wiki/House">houses</a> for NPCs (5 is a good number).</p></li>
+
+  <li><p>While waiting, go underground to look for the following:</p>
+  <ul style="margin:1em 0;line-height:2em;">
+    <li><a class="more_info" href="https://terraria.fandom.com/wiki/Life_Crystal">Life Crystals</a></li>
+    <li>Materials for a <a class=more_info href="https://terraria.fandom.com/wiki/Furnace">Furnace</a> and <a class="more_info" href="https://terraria.fandom.com/wiki/Anvil">Anvil</a></li>
+    <li>Mobility Accessories such as a <a class="more_info" href="https://terraria.fandom.com/wiki/Cloud_in_a_Bottle">Cloud in a Bottle</a> and <a class="more_info"href="https://terraria.fandom.com/wiki/Hermes_Boots">Hermes Boots</a></li>
+    <li><a class="more_info" href="https://terraria.fandom.com/wiki/Gems">Gems</a> for a Gem <a class="more_info"href="https://terraria.fandom.com/wiki/Hooks">Hook</a></li>
+    <li><a class="more_info" href="https://terraria.fandom.com/wiki/Bomb">Bombs</a> to get the <a class="more_info"href="https://terraria.fandom.com/wiki/Demolitionist">demolitionist</a> to spawn</li>
+  </ul>
+
+  <p>Anvils can sometimes be found in <a class="more_info" href="https://terraria.fandom.com/wiki/Underground_Cabin">Underground Cabins</a>.</p>
+  <p><a class="more_info" href="https://terraria.fandom.com/wiki/Skeleton_Merchant">Skeleton Merchants</a> sell bombs, so if you find him, sell whatever loot you don't need, and buy at least a stack of 99. Though they are slower than <a class="more_info" href="https://terraria.fandom.com/wiki/Dynamite">dynamite</a>, you can only get them from the demolitionist, and bombs are more cost efficient anyways.</p></li>
+  <!--Adding <p> within <li> allows new paragraphs (with spacing) without a new list number.-->
+  <li><p>After getting what you need, head to the <a class="more_info" href="https://terraria.fandom.com/wiki/Underground_Jungle">Underground Jungle</a>. You will want to be looking for the <a class="more_info" href="https://terraria.fandom.com/wiki/Boomstick">Boomstick</a> as its probably the best item you can get at the moment.</p>
+  <p>If you don't trust your abilities, the <a class="more_info" href="https://terraria.fandom.com/wiki/Musket">Musket</a>/<a class="more_info" href="https://terraria.fandom.com/wiki/The_Undertaker">Undertaker</a> from <a class="more_info" href="https://terraria.fandom.com/wiki/Shadow_Orb">Shadow Orbs</a>/<a class="more_info" href="https://terraria.fandom.com/wiki/Crimson_Heart">Crimson Hearts</a> is a weaker alternative.</p></li>
+
+  <li><p>After achieving Boomstick, return to base and sell everything you don't need, and get some dynamite from the Demolitionist and more bullets from the <a class="more_info" href="https://terraria.fandom.com/wiki/Arms_Dealer">Arms Dealer</a>(if they spawn).</p></li>
+
+  <h5 id="Preparations_for_Hardmode">Preparations for Hardmode</h5>
+  <li><p>Start using bombs/dynamite to make a <a class="more_info" href="https://terraria.fandom.com/wiki/Guide:Travel#Hellevator">hellevator</a> down to the <a class="more_info" href="https://terraria.fandom.com/wiki/The_Underworld">Underworld</a>.</p></li>
+
+  <li><p>Using the blocks acquired on the way, prepare a bridge to travel on while fighting the Wall of Flesh.</p></li>
+
+  <li><p>If a <a class="more_info" href="https://terraria.fandom.com/wiki/Guide_Voodoo_Doll">Voodoo Demon</a> spawns while building the bridge, good for you! If none spawn, building a house for the guide in the Underworld, then killing him with lava is an alternative to getting the Wall of Flesh to spawn.</p></li>
+
+  <li><p>The plan for killing Wall of Flesh is to lay down dynamite on the bridge for the Wall of Flesh to 'float' into. However, that may be difficult (without armour) for the average player to do.</p>
+  <p>Alternatively, the <a class="more_info" href="https://terraria.fandom.com/wiki/Space_Gun">Space Gun</a> with <a class="more_info" href="https://terraria.fandom.com/wiki/Meteor_armor">Meteor Armour</a> is a strong pairing due to Space Gun not costing any mana, but may be more time-consuming.</p>
+  <p>After killing the Wall of Flesh, <a class="more_info" href="https://terraria.fandom.com/wiki/Hardmode">Hardmode</a> begins. To mine hardmode ore, the <a class="more_info" href="https://terraria.fandom.com/wiki/Molten_Pickaxe">Molten Pickaxe</a> is needed, so bombing <a class="more_info" href="https://terraria.fandom.com/wiki/Hellstone">Hellstone</a> is needed (though crafting the armour is optional, as Tier 1 hardmode ore is easily better.)</p></li>
+
+  <h5 id="Hardmode">Hardmode</h5>
+  <li><p>Do the normal <a class="more_info" href="https://terraria.fandom.com/wiki/Ores#Hardmode">Hardmode ore</a> grind, being</p>
+  <ol style="margin:1em 0;line-height:2em;">
+    <li>Destroy Demon/Crimson <a class="more_info" href="https://terraria.fandom.com/wiki/Altars">Altars</a> with the Pwnhammer</li>
+    <li>Mine Cobalt/Palladium</li>
+    <li>Craft a Cobalt/Palladium Pickaxe/Drill</li>
+    <li>Mine Mythril/Orichalcum</li>
+    <li>Craft a Mythril/Orichalcum <b>Anvil</b></li>
+  </ol>
+  <p>Unless one is exceedingly lucky, finding all 3 mech boss <a class="more_info" href="https://terraria.fandom.com/wiki/Consumables#Summoning_items">spawners</a> is not feasible. Luckily, they can be crafted at the <a class="more_info" href="https://terraria.fandom.com/wiki/Hardmode_Anvils">Mythril/Orichalcum Anvil</a>.</p>
+
+  <p>Finding the Third Tier of Hardmode Ore is not required, of which the reason will become evident later on, as the Titanium/Adamantite <a class="more_info" href="https://terraria.fandom.com/wiki/Hardmode_Forges">Forges</a> are not required.</p></li>
+
+  <h5 id="The_Mech_Bosses">The Mech Bosses</h5>
+  <li><p>The <a class="more_info" href="https://terraria.fandom.com/wiki/The_Destroyer">Destroyer</a> is the first mech boss to take out. After gathering enough <a class="more_info" href="https://terraria.fandom.com/wiki/Soul_of_Night">Souls of Night</a> (Underground <a class="more_info" href="https://terraria.fandom.com/wiki/Underground_Corruption">Corruption</a>/<a class="more_info" href="https://terraria.fandom.com/wiki/Underground_Crimson">Crimson</a>), craft a <a class="more_info" href="https://terraria.fandom.com/wiki/Mechanical_Worm">Mechanical Worm</a> to be spawned at night.</p>
+  <ul style="margin:1em 0;">
+    <li>If you are alright with cheesing the boss, build a 2 by 3 room at least 100 blocks high (to be safe, 150 blocks), with platforms to stand on. This prevents the Destroyer from even reaching you. Drop dynamite down at the Destroyer. As the <a class="more_info" href="https://terraria.fandom.com/wiki/Probe">probes</a> Destroyer spawns die from the explosions the moment they spawn, they should not be a problem. If all goes well, it should die before 4:30am.</li>
+    <li>A less cheesy method of taking out Destroyer, would be the <a class="more_info" href="https://terraria.fandom.com/wiki/Daedalus_Stormbow">Daedalus Stormbow</a> - <a class="more_info" href="https://terraria.fandom.com/wiki/Holy_Arrow">Holy Arrow</a> combination. However, if you prefer a challenge, the <a class="more_info" href="https://terraria.fandom.com/wiki/Mythril_Repeater">Mythril</a> or <a class="more_info" href="https://terraria.fandom.com/wiki/Orichalcum_Repeater">Orichalcum</a> Repeater could be used instead, though the Titanium/Adamantite Forge will be required, and a good reforge may be needed for Destroyer to be taken out before 4:30am.</li>
+  </ul></li>
+  <li><p>Destroyer, upon defeat, should drop <a class="more_info" href="https://terraria.fandom.com/wiki/Hallowed_Bar">Hallowed Bars</a>. Using the Mythril/Orichalcum Anvil, the best time-efficient weapon is the <a class="more_info" href="https://terraria.fandom.com/wiki/Hallowed_Repeater">Hallowed Repeater</a>, which will be the primary weapon for the rest of the run.</p></li>
+
+  <li><p>To get a <a class="more_info" href="https://terraria.fandom.com/wiki/Mechanical_Skull">Mechanical Skull</a> for <a class="more_info" href="https://terraria.fandom.com/wiki/Skeletron_Prime">Skeletron Prime</a>, <a class="more_info" href="https://terraria.fandom.com/wiki/Bone">bones</a> are needed from the <a class="more_info" href="https://terraria.fandom.com/wiki/Dungeon">Dungeon</a>. That means defeating <a class="more_info" href="https://terraria.fandom.com/wiki/Skeletron">Skeletron</a>, which should be easy with Hardmode gear. If you are lucky, there should still be time before the night ends to do so, allowing us entry to the Dungeon before the end of the night.</p></li>
+
+  <li><p>Upon getting the bones needed, if nightime is still some time away, pay a visit to the <a class="more_info" href="https://terraria.fandom.com/wiki/Jungle_Temple">Jungle Temple</a>.</p></li>
+  <h5 id="Suddenly_Jungle_Temple">Suddenly Jungle Temple</h5>
+  <li><p>(No Major Glitches) To find the Temple, dig/bomb straight downwards in the Jungle in intervals of around 60-100 blocks. An easy way to get into the temple without the <a class="more_info" href="https://terraria.fandom.com/wiki/Temple_Key">Temple Key</a> is to place three platforms in front of the door, hammer them downwards and <a class="more_info" href="https://terraria.fandom.com/wiki/Hoik#One-Way_Wall">walk through</a> while holding down. Once in, grab 2-3 <a class="more_info" href="https://terraria.fandom.com/wiki/Solar_Tablet">Solar Tablets</a> worth of <a class="more_info" href="https://terraria.fandom.com/wiki/Solar_Tablet_Fragment">fragments</a>, and return to base.</p></li>
+  <li><p>Alternatively, standing at the entrance (in front of natural Lizahrd Brick Wall) allows <a class="more_info" href="https://terraria.fandom.com/wiki/Lihzahrd">Lizahrds</a> and <a class="more_info" href="https://terraria.fandom.com/wiki/Flying_Snake">Flying Snakes</a> to spawn in the area. As each enemy has a 1 in 7 chance to drop 1-2 Solar Tablet Fragments, it is a possible alternative to fighting <a class="more_info" href="https://terraria.fandom.com/wiki/Plantera">Plantera</a> for access to the Temple.</p></li>
+
+  <h5 id="Back_to_Mech_Bosses">...Back to Mech Bosses!</h5>
+  <li><p>If it is nightime and the Jungle Temple has not been found, prepare for battle with the other two mechanical bosses (<a class="more_info" href="https://terraria.fandom.com/wiki/The_Twins">Twins</a> and Skeletron Prime). Purchase a <a class="more_info" href="https://terraria.fandom.com/wiki/Wings#Jetpack">jetpack</a> from the <a class="more_info" href="https://terraria.fandom.com/wiki/Steampunker">steampunker</a> (if arrived) and craft the Toilet part of the Terra Toilet. If you have beaten the game once already, you should be familiar with how the bosses work and be able to survive consistently. For the arena, a simple <a class="more_info" href="https://terraria.fandom.com/wiki/Platforms">platform</a> around 50 blocks above the ground will do.</p></li>
+
+  <h5 id="Plantera">Plantera?</h5>
+  <li><p>Classic Plantera Strategy: Dig a giant box arena with layers of platforms to navigate around the <a class="more_info" href="https://terraria.fandom.com/wiki/Plantera%2527s_Bulb">Bulb</a>. When fighting Plantera, fly around it in a big circle to avoid her projectiles. Plantera's Thorn Balls should fall to the bottom of the arena.</p>
+  <p>In Phase 2, the arena is a lot tighter, and Plantera's Tentacles are more likely to stunlock the player without <a class="more_info" href="https://terraria.fandom.com/wiki/Knockback">Knockback</a> immunity. If you are unable to beat Plantera, consider getting the <a class="more_info" href="https://terraria.fandom.com/wiki/Cobalt_Shield">Cobalt Shield</a> while in the Dungeon.</p></li>
+
+  <h5 id="The_Eclipse">The Eclipse</h5>
+  <li><p>Players should have enough Hallowed Bars to craft at least 2 pieces of <a class="more_info" href="https://terraria.fandom.com/wiki/Hallowed_armor">Hallowed Armour</a> after both The Twins and Skeletron Prime are defeated. Once daytime arrives, summon the <a class="more_info" href="https://terraria.fandom.com/wiki/Solar_Eclipse">Solar Eclipse</a> using the Solar Tablets, and wait for a <a class="more_info" href="https://terraria.fandom.com/wiki/Mothron">Mothron</a> to spawn.</p></li>
+  <li><p>After surviving long enough for a Mothron to spawn, killing the Mothron without getting killed, and getting the Broken Hero Sword to drop, head back to the Anvil to craft the <a class="more_info" href="https://terraria.fandom.com/wiki/Toilets#Terra_Toilet">Terra Toilet</a>. Sit on it, and the speedrun/adventure is complete!</p></li>
+</ol>
+
+<br><h4 id="Variations">Variations</h4><hr>
+<h5 id="Expert_Mode">Expert Mode (Starting to Suffer)</h5>
+<ul>
+  <li><p>Starting exploration is more dangerous due to increased enemy damage, especially in the Underground Jungle</p></li>
+  <li><p>Wall of Flesh is faster, so dynamite timing will differ.</p></li>
+  <li><p>Destroyer, if using Mythril/Orichalcum gear, may be a lot more difficult to defeat by 4:30am. Consider using Adamantite/Titanium gear, or the Daedalus Stormbow.</p></li>
+  <li><p>Solar Eclipse enemies are more likely to kill you near the end. The moment an enemy <a class="more_info" href="https://terraria.fandom.com/wiki/Banners_(enemy)">banner</a> is dropped, consider putting it up to reduce enemy damage and defence.</p></li>
+</ul>
+
+<h5 id="Master_Mode">Master Mode (Massive Luck Required)</h5>
+<ul>
+  <li><p>I am not sure if this is considered a speedrun anymore. You are better off playing the game normally, unless you can no-hit bosses for durations 3 times longer than in <a class="more_info" href="https://terraria.fandom.com/wiki/Classic_Mode">Classic Mode</a>, especially without armour.</p></li>
+</ul>
+
+<h5 id="Journey_Mode">Journey Mode (Easy)</h5>
+<ul>
+  <li><p>On the opposite end of the spectrun, there is <a class="more_info" href="https://terraria.fandom.com/wiki/Journey_Mode">Journey Mode</a>. While the game is easier, speedrunning is more difficult as the timing is more tight; even split second decisions make a decision</p></li>
+</ul>
+
+< id="Actual_Speedrun">Actual Speedrun (Could be Worse)</h5>
+<ul>
+  <li><p>Honestly, there's probably a set seed that makes everything easier, but I wouldn't know. If you <b>are</b> speedrunning with a set seed, it would be a good idea to load up a world with the same seed, and look at it through <a class="more_info" href="https://terraria.fandom.com/wiki/Map_viewers">TEdit</a> beforehand to have an idea of locations such as the Jungle Temple and Dungeon.</p></li>
+  <li><p>RNG is also important, as you might get unlucky with enemy spawns and get killed</p></li>
+  <p><li>It should also be noted that you would need to defeat every boss with possibly lacklustre equipment. That means it would be a good idea to practice beforehand to ensure bosses can be consistently beat.</p></li>
+</ul>
+<h5 id="Calamity_Auric_Toilet">Calamity Auric Toilet% (Starting to Suffer)</h5>
+<ul>
+  <li><p>Now. I would give a guide on this, but I have not played <a class="more_info" href="https://calamitymod.fandom.com/wiki/Calamity_Mod_Wiki">Calamity</a>, and have no idea how to do it. Given the sheer difficulty of Calamity, however, I imagine it would just be a regular Calamity playthrough while skipping optional bosses.</p></li>
+</ul>
+
+<br><h4 id="Gallery">Gallery</h4><hr>
+<div class="Gallery_Content">
+  <table>
+    <tr>
+      <td>
+        <a href="https://terraria.fandom.com/wiki/File:Hoik-Horizontal-One-Way.gif" target="_blank">
+          <img src="https://static.wikia.nocookie.net/terraria_gamepedia/images/b/b2/Hoik-Horizontal-One-Way.gif" alt="By Terraria wiki (Bless them)">
+        </a>
+      </td>
+
+      <td><img src="https://i.ytimg.com/vi/gy67RaGMado/maxresdefault.jpg" alt="By Max Overpower"></td>
+
+      <td><img src="https://i.ytimg.com/vi/lkNtVYgRFzY/maxresdefault.jpg" alt="By Icysnowman"></td>
+
+    </tr>
+    <tr>
+      <td><p>Hoiking through a wall, the method used to pass through the Jungle Temple door</p></td>
+      <td><p><a href="https://youtu.be/gy67RaGMado" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Terra Toilet% <br>Random Classic Mode</a></p></td>
+      <td><p><a href="https://youtu.be/lkNtVYgRFzY" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Terra Toilet%<br>Seeded Classic Mode<br>(Co-op)</a></p></td><!--Space bar for extra distance between text and button-->
+    </tr>
+    <tr>
+      <td colspan="3"><img src="https://i.ytimg.com/vi/ursN72aqCwI/hq720.jpg" alt="By Gungnir"></td>
+    </tr>
+    <tr>
+      <td colspan="3"><p><a href="https://youtu.be/ursN72aqCwI" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Gungnir trying out <br>(and being kind of bad at)<br> Terra Toilet%</a></p></td>
+    </tr>
+  </table>
+  </div>
+  <table id="Before_After">
+    <tr><td><p>Previous</p></td>  <td><p>Index</p></td>  <td><p>Next</p></td> </tr>
+    <tr><td><p>Start</p></td>  <td><p><a href="">Hollow Knight</a></p></td>  <td><p><a href="">PvZ:<br>Adventure Mode, No Sunflowers</a></p></td></tr>
+  </table>
+  </div>
+  <footer>
+    <h2 id="icon"><img src="../../Multimedia/Controller_Icon.png"> Gamer's Gauntlet</h2>
+    <!--Icon found here: https://commons.wikimedia.org/wiki/File:Video-Game-Controller-Icon-D-Edit.svg-->
+    <table id="More_Choices_Back_Again">
+      <tr>  <td><a href="../../Others/Suggestions.html">Suggestion Box</a></td>  <td><a href="../../Others/About-Us.html">About</a></td>  <td><a href="" onclick="Very_Random()">Random</a></td>  </tr>
+    </table>
+    <p class="Official_info">This is a personal project and is not intended for business.</p>
+    <p class="Official_info">All Multimedia rights are reserved to their respective owners.</p>
+    <p class="Official_info">More info is available in the HTML code.</p>
+  </footer>
+  </body>
+  </html>

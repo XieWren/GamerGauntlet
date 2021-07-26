@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../Styles/Styles.css">
+    <script type="text/javascript" src="../../../Styles/Script.js" defer></script>
+    <link rel="icon" href="../../Multimedia/Controller_Icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><!--Bootstrap Time People! (Proceeds to not use it)-->
+    <title>Gamer's Gauntlet</title>
+  </head>
+  <body style="background-color:#FFF5BA;">
+  <img src="../../Multimedia/Background.gif" id="BG"><!--https://wallpapersafari.com/w/QWU0wS-->
+  <div>
+  <header id="header">
+    <a href="../../index.html" id="logo"><img src="../../Multimedia/Logo_Negative_Transparent.png" alt="Main Page"></a>
+    <div id="Choices">
+
+      <p id="choose">Choose your challenge of liking:</p>
+
+      <div class="game_choices">
+        <a href="../Games.html" class="games_button">By Games</a>
+        <div class="games_content">
+          <p><a href="../Games.html#Silksong" style="border-top-left-radius:8px;border-top-right-radius:8px;">Hollow Knight</a></p>
+          <p><a href="../Games.html#Creeper">Minecraft</a></p>
+          <p><a href="../Games.html#Sunflower">Plants vs Zombies</a></p>
+          <p><a href="../Games.html#Pkmn">Pokemon</a></p>
+          <p><a href="../Games.html#Minecraft" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Terraria</a></p>
+        </div>
+      </div>
+
+      <div class="difficulty_choices">
+        <a href="../Difficulty.html" class="difficulty_button">By Difficulty</a>
+        <div class="difficulty_content">
+          <p><a href="../Difficulty.html#Easy" style="border-top-left-radius:8px;border-top-right-radius:8px;">Easy</a></p>
+          <p><a href="../Difficulty.html#CbWorse">Could be Worse</a></p>
+          <p><a href="../Difficulty.html#SoS">Starting to Suffer</a></p>
+          <p><a href="../Difficulty.html#RnG">Massive Luck Required</a></p>
+          <p><a href="../Difficulty.html#Impossibru" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Help.</a></p>
+        </div>
+      </div>
+
+      <p id="featured_button" class="choices"><a href="../Featured.html">Featured</a></p>
+
+    </div>
+    <div id="More_Choices">
+      <a href="../../Others/Suggestions.html" class="More_Choices">Suggestion Box</a>
+      <a href="../../Others/About-Us.html" class="More_Choices">About</a>
+      <a href="javascript:void(0)" class="More_Choices" onclick="Very_Random()">Random</a>
+    </div>
+
+    <div class="Search">
+      <form name="Search_Bar" target="" method="post" class="More_Choices" autocomplete="off">
+        <img src="../../Multimedia/Search.ico" alt="" id="Search">
+        <input name="Search" type="text" id="Enter_Search" placeholder="Search Here..." onkeyup="List_Filter()" autocomplete="off">
+      </form>
+
+      <div id="Challenge_List">
+        <p><a href="../Pokemon/Platinum_Lv100_Magikarp.html">[Pokemon Platinum] <br>Lv100 Magikarp</a></p>
+        <p><a href="../Terraria/No_WASD.html">[Terraria] <br>No WASD</a></p>
+        <p><a href="../Terraria/Terra_Toilet.html">[Terraria] <br>Terra Toilet%</a></p>
+        <p><a href="../Hollow_Knight/Gun.html">[Hollow Knight] <br>Gun%</a></p>
+      </div>
+    </div>
+
+    </header>
+  </div>
+
+  <h3 id="Menu"><span onclick="openNav()">&#9776;</span></h3><!--https://www.toptal.com/designers/htmlarrows/symbols/
+  The sidenav-->
+  <div id="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h1>&times;</h1></a>
+    <a href="../../Others/Suggestions.html" class="Choices2" style="margin-left:0px">Suggestion Box</a>
+    <a href="../../Others/About-Us.html" class="Choices2">About</a>
+    <a href="javascript:void(0)" class="Choices2" onclick="Very_Random()">Random</a>
+    <p id="choices_2" class="More_Choices2">Make a choice:</p>
+    <a href="../Games.html" class="More_Choices2">By Game</a>
+    <a href="../Difficulty.html" class="More_Choices2">By Difficulty</a>
+    <a href="../Featured.html" class="More_Choices2">Featured</a>
+  </div>
+
+    <!--Here begins the Wall of Text:-->
+    <hr id="Header_Solver">
+    <div id="Wiki_WallOfText" style="padding-top:0.5em;">
+    <br><h2 style="margin-top:0;">Minecraft Manhunt: Speedrunner</h2><hr>
+    <div id="Info">
+      <p class="Subtitle">Minecraft Manhunt: Speedrunner</p>
+      <img style="width:75%;" class="Profile_Pic" src="../../Multimedia/Challenges/Speedrunning_Mode.gif" alt="By maledrawsarts (Tumblr)">
+      <table>
+        <tr><td class='key'>Difficulty</td><td class='value'>Massive Luck Required</td></tr>
+        <tr><td class='key'>Rating</td><td class='value'>
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt=""></td></tr>
+          <!--3 out of 5 stars-->
+        <tr><td class="key">Type</td><td class="value"></td></tr>
+      </table>
+      <p class="Subtitle">Objective</p>
+      <p class="Subtitle_Text">Kill the Ender Dragon.<br>Or die trying.</p>
+      <p class="Subtitle">Rules</p>
+      <p class="Subtitle_Text">All's fair in love and war.<br>Just don't cheat.<br>Good luck; go forth and conquer!</p>
+    </div>
+
+    <p class="quote">"Come here, George!!"</p>
+
+    <p></p>
+
+    <p></p>
+
+    <div class="Table_Of_Contents">
+    <ol>
+      <p>Contents</p>
+      <li><a href="#Ttk">Things to know</a></li>
+
+      <li><a href="#Guide" class="">Guide (Optimal Route)</a>
+      <ol>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ol></li>
+
+      <li><a href="#Variations" class="">Variations</a>
+      <ol>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+      </ol></li>
+
+      <li><a href="#Gallery" class="">Gallery</a></li>
+    </ol>
+    </div>
+
+    <h4 id="Ttk">Things to know</h4><hr>
+    <ul>
+
+      <li><p></p></li>
+      <li><p></p></li>
+      <li><p></p></li>
+      <li><p></p></li>
+      <li><p></p></li>
+
+    </ul>
+
+    <br><h4 id="Guide">Guide</h4><hr>
+    <ol>
+
+        <h5 id="">Starting Out</h5>
+        <p><b>Hunter Objective:</b> Beat you to death</p>
+          <li><h6>Plan A: </h6></li>
+          <ul>
+            <li><p></p></li>
+            <li><p></p></li>
+            <li><p></p></li>
+            <li><p></p></li>
+          </ul>
+          <p><b>Can be countered by:</b>
+          <ul>
+            <li>Tree Boosting</li>
+            <li>Village Pillaging</li>
+            <li>Ravine.</li>
+            <li>Under The Sea</li>
+          </ul></p>
+
+          <li><h6>Plan B: </h6></li>
+          <ul>
+            <li><p></p></li>
+            <li><p></p></li>
+            <li><p></p></li>
+            <li><p></p></li>
+            <li><p></p></li>
+            <li><p></p></li>
+          </ul>
+          <p><b>Can be countered by:</b>
+          <ul>
+            <li>Breaking and Entering</li>
+            <li>Getting Lucky (Armour and Iron)</li>
+          </ul></p>
+
+
+
+        <li><p></p></li>
+
+
+
+        <h5 id="">To the Nether!</h5>
+        <p><b>Hunter Objective:</b> Gear up to your level, then come after you</h6></li>
+        <li><h6>Plan A: </h6></li>
+        <ul>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+        </ul>
+        <p><b>Can be countered by:</b>
+        <ul>
+          <li>Wall Mining</li>
+        </ul></p>
+
+        <li><h6>Plan B: </h6></li>
+        <ul>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+          <li><p></p></li>
+        </ul>
+        <p><b>Can be countered by:</b>
+        <ul>
+          <li>Underground Lava Lake</li>
+        </ul></p>
+
+        <li><h6>Plan C: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+        <p><b>Can be countered by:</b>
+        <ul>
+          <li></li>
+        </ul></p>
+
+
+
+        <li><p></p></li>
+        <li><p></p></li>
+
+
+
+        <h5 id="">On the hunt for a Nether Fortress</h5>
+        <p><b>Hunter Objective:</b> Burn you in a lava lake <br>
+
+        <li><h6>Plan A: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+        <li><h6>Plan B: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+        <li><h6>Plan C: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+
+
+        <li><p></p></li>
+
+
+
+        <h5 id="">Return to the Overworld</h5>
+        <p><b>Hunter Objective:</b> Protect the Nether Portal</p>
+
+        <li><h6>Plan A: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+        <li><h6>Plan B: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+        <li><h6>Plan C: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+        <li><h6>Plan D: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+
+
+        <li><p></p></li>
+
+
+
+        <h5 id="">The hunt for the Stronghold</h5>
+        <p><b>Hunter Objective:</b> Prevent you from getting to the Stronghold</p>
+
+        <li><h6>Plan A: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+        <li><h6>Plan B: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+
+
+        <li><p></p></li>
+
+
+
+        <h5 id="">Activate the End Portal</h5>
+        <p><b>Hunter Objective:</b> Defend the End Portal</p>
+
+        <li><h6>Plan A: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+        <li><h6>Plan B: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+        <li><h6>Plan C: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+        <li><h6>Plan D: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+
+
+        <li><p></p></li>
+
+
+
+        <h5 id="">Deafeat the Dragon in the End</h5>
+        <p><b>Hunter Objective:</b> Throw you into the Void, or kill you before you kill the Dragon</p>
+
+        <li><h6>Plan A: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+        <li><h6>Plan B: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+        <li><h6>Plan C: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+        <li><h6>Plan D: </h6></li>
+        <ul>
+          <li><p></p></li>
+        </ul>
+
+      </ol>
+
+      <br><h4 id="Variations">Variations</h4><hr>
+      <h5 id="">Speedrunner vs Assassin: Speedrunner ()</h5>
+      <ul>
+        <li><p><b>Speedrunner Objective:</b> Kill the Ender Dragon</p></li>
+        <li><p></p></li>
+        <li><p></p></li>
+      </ul>
+
+      <h5 id="">Minecraft Mansave: Noob ()</h5>
+      <ul>
+        <li><p><b>Noob Objective:</b> Get themselves killed</p></li>
+        <li><p></p></li>
+        <li><p></p></li>
+      </ul>
+
+      <h5 id="">Minecraft Manhunt: Wither Edition ()</h5>
+      <ul>
+        <li><p><b>Speedrunner Objective:</b> Kill the Wither</p></li>
+        <li><p></p></li>
+        <li><p></p></li>
+      </ul>
+
+    </ol>
+
+    <br><h4 id="Gallery">Gallery</h4><hr>
+    <div class="Gallery_Content">
+    <table>
+      <tr>
+        <td><img src="" alt="By "></td>
+
+        <td><img src="" alt="By "></td>
+
+        <td><img src="" alt="By "></td>
+
+      </tr>
+      <tr>
+        <td><p><a href="" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> </a></p></td>
+        <td><p><a href="" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> </a></p></td>
+        <td><p><a href="" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> </a></p></td>
+        <!--Space bar for extra distance between text and button-->
+      </tr>
+      <tr>
+        <td colspan="3"><img src="" alt="By "></td>
+      </tr>
+      <tr>
+        <td colspan="3"><p><a href="" target="_blank"><img src="" class="Play_Button"> </a></p></td>
+      </tr>
+    </table>
+    </div>
+    <table id="Before_After">
+      <tr><td><p>Previous</p></td>  <td><p>Index</p></td>  <td><p>Next</p></td> </tr>
+      <tr><td><p>Start</p></td>  <td><p><a href="">Hollow Knight</a></p></td>  <td><p><a href="">PvZ:<br>Adventure Mode, No Sunflowers</a></p></td></tr>
+    </table>
+    </div>
+    <footer>
+      <h2 id="icon"><img src="../../Multimedia/Controller_Icon.png"> Gamer's Gauntlet</h2>
+      <!--Icon found here: https://commons.wikimedia.org/wiki/File:Video-Game-Controller-Icon-D-Edit.svg-->
+      <table id="More_Choices_Back_Again">
+        <tr>  <td><a href="../../Others/Suggestions.html">Suggestion Box</a></td>  <td><a href="../../Others/About-Us.html">About</a></td>  <td><a href="" onclick="Very_Random()">Random</a></td>  </tr>
+      </table>
+      <p class="Official_info">This is a personal project and is not intended for business.</p>
+      <p class="Official_info">All Multimedia rights are reserved to their respective owners.</p>
+      <p class="Official_info">More info is available in the HTML code.</p>
+    </footer>
+    </body>
+    </html>

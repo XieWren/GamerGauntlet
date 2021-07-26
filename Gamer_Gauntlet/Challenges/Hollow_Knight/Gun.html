@@ -1,0 +1,420 @@
+
+<!--██    █████  ██████   █████  ██       █████   ██████  ██  ██████ ███████
+    ██   ██   ██ ██   ██ ██   ██ ██      ██   ██ ██       ██ ██      ██
+    ██   ███████ ██████  ██   ██ ██      ██   ██ ██   ██  ██  █████  █████
+    ██   ██   ██ ██      ██   ██ ██      ██   ██ ██    ██ ██      ██ ██
+    ██   ██   ██ ██       █████  ███████  █████   ██████  ██ ██████  ███████-->
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../Styles/Styles.css">
+    <script type="text/javascript" src="../../../Styles/Script.js" defer></script>
+    <link rel="icon" href="../../Multimedia/Controller_Icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><!--Bootstrap Time People! (Proceeds to not use it)-->
+    <title>Gamer's Gauntlet</title>
+  </head>
+  <body style="background-color:#FFF5BA;">
+  <img src="../../Multimedia/Background.gif" id="BG"><!--https://wallpapersafari.com/w/QWU0wS-->
+  <div>
+  <header id="header">
+    <a href="../../index.html" id="logo"><img src="../../Multimedia/Logo_Negative_Transparent.png" alt="Main Page"></a>
+    <div id="Choices">
+
+      <p id="choose">Choose your challenge of liking:</p>
+
+      <div class="game_choices">
+        <a href="../Games.html" class="games_button">By Games</a>
+        <div class="games_content">
+          <p><a href="../Games.html#Silksong" style="border-top-left-radius:8px;border-top-right-radius:8px;">Hollow Knight</a></p>
+          <p><a href="../Games.html#Creeper">Minecraft</a></p>
+          <p><a href="../Games.html#Sunflower">Plants vs Zombies</a></p>
+          <p><a href="../Games.html#Pkmn">Pokemon</a></p>
+          <p><a href="../Games.html#Minecraft" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Terraria</a></p>
+        </div>
+      </div>
+
+      <div class="difficulty_choices">
+        <a href="../Difficulty.html" class="difficulty_button">By Difficulty</a>
+        <div class="difficulty_content">
+          <p><a href="../Difficulty.html#Easy" style="border-top-left-radius:8px;border-top-right-radius:8px;">Easy</a></p>
+          <p><a href="../Difficulty.html#CbWorse">Could be Worse</a></p>
+          <p><a href="../Difficulty.html#SoS">Starting to Suffer</a></p>
+          <p><a href="../Difficulty.html#RnG">Massive Luck Required</a></p>
+          <p><a href="../Difficulty.html#Impossibru" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Help.</a></p>
+        </div>
+      </div>
+
+      <p id="featured_button" class="choices"><a href="../Featured.html">Featured</a></p>
+
+    </div>
+    <div id="More_Choices">
+      <a href="../../Others/Suggestions.html" class="More_Choices">Suggestion Box</a>
+      <a href="../../Others/About-Us.html" class="More_Choices">About</a>
+      <a href="javascript:void(0)" class="More_Choices" onclick="Very_Random()">Random</a>
+    </div>
+
+    <div class="Search">
+      <form name="Search_Bar" target="" method="post" class="More_Choices" autocomplete="off">
+        <img src="../../Multimedia/Search.ico" alt="" id="Search">
+        <input name="Search" type="text" id="Enter_Search" placeholder="Search Here..." onkeyup="List_Filter()" autocomplete="off">
+      </form>
+
+      <div id="Challenge_List">
+        <p><a href="../Pokemon/Platinum_Lv100_Magikarp.html">[Pokemon Platinum] <br>Lv100 Magikarp</a></p>
+        <p><a href="../Terraria/No_WASD.html">[Terraria] <br>No WASD</a></p>
+        <p><a href="../Terraria/Terra_Toilet.html">[Terraria] <br>Terra Toilet%</a></p>
+      </div>
+    </div>
+
+    </header>
+  </div>
+
+  <h3 id="Menu"><span onclick="openNav()">&#9776;</span></h3><!--https://www.toptal.com/designers/htmlarrows/symbols/
+  The sidenav-->
+  <div id="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h1>&times;</h1></a>
+    <a href="../../Others/Suggestions.html" class="Choices2" style="margin-left:0px">Suggestion Box</a>
+    <a href="../../Others/About-Us.html" class="Choices2">About</a>
+    <a href="javascript:void(0)" class="Choices2" onclick="Very_Random()">Random</a>
+    <p id="choices_2" class="More_Choices2">Make a choice:</p>
+    <a href="../Games.html" class="More_Choices2">By Game</a>
+    <a href="../Difficulty.html" class="More_Choices2">By Difficulty</a>
+    <a href="../Featured.html" class="More_Choices2">Featured</a>
+  </div>
+
+    <!--Here begins the Wall of Text:-->
+    <hr id="Header_Solver">
+    <div id="Wiki_WallOfText" style="padding-top:0.5em;">
+    <br><h2 style="margin-top:0;">Gun%</h2><hr>
+    <div id="Info">
+      <p class="Subtitle">Gun%</p>
+      <img style="width:75%;" class="Profile_Pic" src="../../Multimedia/Challenges/HK_Gun.gif" alt="">
+      <table>
+        <tr><td class='key'>Difficulty</td><td class='value'>Could be Worse</td></tr>
+        <tr><td class='key'>Rating</td><td class='value'>
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt=""></td></tr>    <!--3 out of 5 stars, because it's not hard enough anymore (yes that's what players with 112% completion say)-->
+        <tr><td class="key">Type</td><td class="value">Playthrough</td></tr>
+      </table>
+      <p class="Subtitle">Objective</p>
+      <p class="Subtitle_Text">Defeat the Hollow Knight</p>
+      <p class="Subtitle">Rules</p>
+      <p class="Subtitle_Text">No major glitches; skips allowed</p>
+    </div>
+
+    <p class="quote">"So yes I knick-knacked paddy-whacked gave the bug a gun."</p>
+
+    <p>Yup. We doing this now. After the wait for <a class="more_info" href="https://www.hollowknightsilksong.com">Silksong</a><!--This is an inside joke; there's a lot of them.--> drove all the modders insane, they went and gave the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Knight">Knight</a> an AK. (Imagine what <a class="more_info" href="https://hollowknight.fandom.com/wiki/Great_Nailsage_Sly">Sly</a> would do if he got his hands on one of these... I shudder to think of it.)</p><!--This is an inside joke; there's a lot of them.-->
+
+    <p>Do note though that there are some skips that can be pulled off with a gun (Yes I said that). If you don't want to carry out these skips (or just want to murder everyone; how dare you), then I will be going through some alternatives as well. Of course, if you completed the game before without a gun, you probably already know all the correct routes to take in order to do so. So without further ado, Gun%.</p>
+
+    <div class="Table_Of_Contents">
+    <ol>
+      <p>Contents</p>
+      <li><a href="#Ttk">Things to know</a></li>
+
+      <li><a href="#Guide" class="">Guide (Optimal Route)</a>
+      <ol>
+        <li><a href="#Getting_Started">Getting Started</a></li>
+        <li><a href="#False_Knight">False Knight & Vengeful Spirit?</a></li>
+        <li><a href="#Greenpath">Greenpath & Hornet(?)</a></li>
+        <li><a href="#Mantis_Village">Fungal Wastes & Mantis Village</a></li>
+        <li><a href="#Dream_Nail">Back to Crossroads for Dream Nail</a></li>
+        <li><a href="#City_of_Tears">Right side of City now?!</a></li>
+        <li><a href="#Lemm">Lemm and Geo</a></li>
+        <li><a href="#So_Many_Choices">Royal Waterways? Crystal Peaks? Fungal Wastes?</a></li>
+        <li><a href="#Fog_Canyon">How my Parents went to school: Fog Canyon & Uumuu</a></li>
+        <li><a href="#Gardens">Queen's Gardens & Deepnest?</a></li>
+        <li><a href="#Fungal_Wastes">Fungal Wastes & Deepnest?</a></li>
+        <li><a href="#Distant_Village">Distant Village</a></li>
+        <li><a href="#THK">The Hollow Knight</a></li>
+      </ol></li>
+
+      <li><a href="#Variations" class="">Variations</a>
+      <ol>
+        <li><a href="#True_Ending">True Ending</a></li>
+        <li><a href="#Godhome">Godhome Ending</a></li>
+        <li><a href="#112">112%</a></li>
+        <li><a href="#PoP">Path of Pain</a></li>
+        <li><a href="#Rando">Room/Enemy/Item Randomisation Mod</a></li>
+      </ol></li>
+
+      <li><a href="#Gallery" class="">Gallery</a></li>
+    </ol>
+    </div>
+
+    <h4 id="Ttk">Things to know</h4><hr>
+    <ul>
+      <li><p>This is a Modded playthrough of Hollow Knight using the <a class="more_info" href="https://github.com/TTacco/Hollow-Point">Hollow Point</a> mod. If you need help with installing the mod, the modding community will be more than happy to help you over in the <a class="more_info" href="https://discord.com/invite/hollowknight">Discord server</a>.</p></li>
+      <li><p>Since this is modded, it would be a good idea to save a copy of your game files before adding any mods to it to prevent any possible loss of progress.</p></li>
+      <h5>Anyways,</h5>
+      <li><p>To defeat the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Hollow_Knight">Hollow Knight</a>, the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Dreamers">3 dreamers</a> will have to be taken out. That means fighting <a class="more_info" href="https://hollowknight.fandom.com/wiki/Uumuu">Uumuu</a> and the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Watcher_Knight">Watcher Knights</a>, and going through <a class="more_info" href="https://hollowknight.fandom.com/wiki/Deepnest">Deepnest</a>.</p></li>
+      <li><p>I will mostly be using the <a class="more_info" href="https://steamcommunity.com/sharedfiles/filedetails/?id=1861523602">any% route</a>, with slight changes for players who may be less competent.</p></li>
+      <li><p>This means that we will cover some possible <a class="more_info" href="https://hollowknight.fandom.com/wiki/Geo">Geo</a> that can be collected on the run, as well as possible ways that they will be spent.</p></li>
+
+      <li><p>Possible Geo that can be acquired:</p>
+      <table class="Value_Table">
+        <tr><td>&nbsp;&nbsp;200</td><td><a class="more_info" href="https://hollowknight.fandom.com/wiki/False_Knight">False Knight</a></td></tr><!--&nbsp; = Non-Breaking Space Bar-->
+        <tr><td>&nbsp;&nbsp;65</td><td><a class="more_info" href="https://hollowknight.fandom.com/wiki/Vengefly_King">Vengefly King</a></td></tr>
+        <tr><td>&nbsp;&nbsp;50</td><td><a class="more_info" href="https://hollowknight.fandom.com/wiki/Gruz_Mother">Gruz Mother</a></td></tr>
+        <tr><td>&nbsp;&nbsp;420</td><td><a class="more_info" href="https://hollowknight.fandom.com/wiki/Gorgeous_Husk">Gorgeous Husk</a></td></tr>
+        <tr><td>&nbsp;&nbsp;650</td><td>Watcher Knights</td></tr>
+      </table></li><br>
+
+      <li><p>Possible Geo to spend:</p>
+      <table class="Value_Table">
+        <tr><td>30</td><td>Forgotten Crossroads <a class="more_info" href="https://hollowknight.fandom.com/wiki/Map_and_Quill">Map</a></td></tr>
+        <tr><td>120</td><td><a class="more_info" href="https://hollowknight.fandom.com/wiki/Map_and_Quill">Quill</a></td></tr>
+        <tr><td>220</td><td><a class="more_info" href="https://hollowknight.fandom.com/wiki/Wayward_Compass">Wayward Compass</a></td></tr>
+        <tr><td>50</td><td>Forgotten Crossroads <a class="more_info" href="https://hollowknight.fandom.com/wiki/Fast_Travel_(Hollow_Knight)">Stag</a></td></tr>
+        <tr><td>60</td><td>Greenpath Map</td></tr>
+        <tr><td>140</td><td>Greenpath Stag</td></tr>
+        <tr><td>75</td><td>Fungal Wastes Map</td></tr>
+        <tr><td>120</td><td>Queen's Station Map</td></tr>
+        <tr><td>300</td><td>King's Station Map</td></tr>
+        <tr><td>1800</td><td><a class="more_info" href="https://hollowknight.fandom.com/wiki/Lumafly_Lantern">Lumafly Lantern</a></td></tr>
+        <tr><td>250</td><td>Distant Village Stag</td></tr>
+      </table></li><br>
+
+      <li><p>We will be avoiding collecting <a class="more_info" href="https://hollowknight.fandom.com/wiki/Shaman_Stone">Shaman Stone</a>, as some spells, while helpful, may hurt the Knight (in Hollow Point)</p></li>
+
+    </ul>
+
+    <br><h4 id="Guide">Guide (Optimal Route)</h4><hr>
+    <ol>
+      <h5 id="Getting_Started">Getting Started</h5>
+        <li><p>Normal <a class="more_info" href="https://hollowknight.fandom.com/wiki/Dirtmouth#Sub-area:_King.27s_Pass">King's Pass</a> stuff, really. The difference is that you can shoot upwards below where <a class="more_info" href="https://hollowknight.fandom.com/wiki/Fury_of_the_Fallen">Fury of the Fallen</a> is located, as the gun has recoil. This allows the Knight to 'fly' upwards.</p></li>
+        <li><p>There is a part along King's Pass where the floor falls under the Knight's feet. This can be avoided, again, by gun, in order to cross the gap. How does this help? Nothing, really. It just makes your journey quicker. Do note though, that each shot consumes <a class="more_info" href="https://hollowknight.fandom.com/wiki/Soul">soul</a>, so it would be a good idea to stock up before attempting any skips.</p></li>
+        <li><p>Note: Hitting enemies still replenishes the soul meter, so as long as it hits the target, you should always have soul.</p></li>
+
+      <h5 id="False_Knight">False Knight & Vengeful Spirit?</h5>
+        <li><p>After taking the long way around to the False Knight at <a class="more_info" href="https://hollowknight.fandom.com/wiki/Forgotten_Crossroads">Forgotten Crossroads</a>, proceed to gun him down. (Armour giving soul? What?) Take note that every time he is hit out of his stagger, he gets mad at the center of the floor momentarily, so just stand at the side to avoid getting ground-pounded.</p></li>
+        <li><p>After his first angry slamming, you can actually smack the left wall to break it and skip the False Knight. However, you lose out on his Geo, which may be important for the Lantern later on (for <a class="more_info" href="https://hollowknight.fandom.com/wiki/Deepnest">Deepnest</a>).</p></li>
+        <li><p>After gunning down the poor maggot, continue to the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Forgotten_Crossroads#Sub-area:_Ancestral_Mound">Ancestral Mound</a> to pick up the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Vengeful_Spirit">Vengeful Spirit</a>. Funnily enough, the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Elder_Baldur">Elder Baldur</a> is not immune to the gun if shot from a distance, so that can be done to quicken the fight.</p></li>
+
+      <h5 id="Greenpath">Greenpath & Hornet(?)</h5>
+        <li><p>Did I mention that Elder Baldurs can be hurt by gun? That's right, that whole journey was for absolutely no reason! You could have took out the Elder Baldur guarding <a class="more_info" href="https://hollowknight.fandom.com/wiki/Greenpath">Greenpath</a> all along!</p></li>
+        <li><p>Look, before you scream at me, remember that its always better to have upgrades than to not have upgrades. Besides, False Knight's Geo is always useful.</p></li>
+        <li><p>Proceeding towards Greenpath, the trip should be relatively uneventful, until we reach the part where you first see <a class="more_info" href="https://hollowknight.fandom.com/wiki/Hornet">Hornet</a>. Hornet will run away and the Knight will need to give chase. However, it is possible for one to reach the edge instead of going around, by, again utilising Gun. Simply jump as high as possible and fire upwards.</p></li>
+        <li><p>Alternatively, if you feel that's a tad bit cheap, you can utilise the Vengeful Spirit skip, which speedrunners use. That is, if you are a speedrunner.</p></li>
+        <li><p>Another method (yes there is another) is to capture the attention of the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Squit">Squit</a> below you. With the correct timing, it is possible to <a class="more_info" href="https://hollowknight.fandom.com/wiki/Nail#Nail-bouncing">pogo</a> on it (up to 2 times) to gain extra height. If the Squit dies, exiting and re-entering the room allows it to respawn for another try.</p></li>
+        <li><p>Hornet is a fairly uneventful <a class="more_info" href="https://hollowknight.fandom.com/wiki/Hornet_Protector">fight</a>, so we won't be going through how to fight her. If you took her out <a class="more_info" href="https://hollowknight.fandom.com/wiki/Hornet_Sentinel">in Kingdom's Edge</a> with a <a class="more_info" href="https://hollowknight.fandom.com/wiki/Nail">nail</a>, you can take her out in Greenpath with a Gun.</p></li>
+        <li><p>However, it is possible to get to <a class="more_info" href="https://hollowknight.fandom.com/wiki/Fungal_Wastes">Fungal Wastes</a> without <a class="more_info" href="https://hollowknight.fandom.com/wiki/Mothwing_Cloak">Mothwing Cloak</a> from <a class="more_info" href="https://hollowknight.fandom.com/wiki/Fungal_Wastes#Sub-area:_Queen.27s_Station">Queen's Station</a> (going down from Greenpath instead of left). How? Gun, of course. Another trick is to fire diagonally downwards so the Knight moves in the opposite direction as well.</p></li>
+        <li><p>While a Vengeful Spirit skip could be utilised instead, without Mothwing Cloak and Geo from Vengefly King and <a class="more_info" href="https://hollowknight.fandom.com/wiki/Moss_Knight">Moss Knights</a>, it makes traversing the game a lot slower, and the skips more difficult.</p></li>
+
+      <h5 id="Mantis_Village">Fungal Wastes & Mantis Village</h5>
+        <li><p>There are 2 methods to enter the Fungal Wastes. The first method is through Forgotten Crossroads, by going right from the Aspid ambush room. The second is by going through the other side of Queen's Station after passing from Greenpath to <a class="more_info" href="https://hollowknight.fandom.com/wiki/Fog_Canyon">Fog Canyon</a>.</p></li>
+        <li><p>Fungal Wastes, again, is relatively uneventful, except until the entrance of <a class="more_info" href="https://hollowknight.fandom.com/wiki/Fungal_Wastes#Sub-area:_Mantis_Village">Mantis Village</a>. Instead of going towards the right like one normally would without <a class="more_info" href="https://hollowknight.fandom.com/wiki/Mantis_Claw">Mantis Claw</a>, the gun helps you skip a part again. Usually, speedrunners pogo off a <a class="more_info" href="https://hollowknight.fandom.com/wiki/Sporg">Sporg</a>'s explosive spores (God Gamers they are) in order to reach the top. With the power of Gun however, that is not required.</p></li>
+        <li><p>Upon entering the Mantis Village, it is possible to take out the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Mantis_Warrior">Mantis Warrior</a> guarding the lever, before pogoing on the surrounding <a class="more_info" href="https://hollowknight.fandom.com/wiki/Mantis_Youth">Mantis Youths</a> and firing downwards to reach the ledge before Mantis Claw, instead of going all the way around. This saves only a couple of seconds though, and is mostly used for if you want novelty points.</p></li>
+        <li><p>Before leaving the Mantis Village, head down to the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Dashmaster">Dashmaster</a>'s statue and get his <a class="more_info" href="https://hollowknight.fandom.com/wiki/Category:Charms">charm</a>. It increases the power of 'upwards propulsion'.</p></li>
+
+      <h5 id="Dream_Nail">Back to Crossroads for Dream Nail</h5>
+        <li><p>Now that you have Mantis Claw, either walk or take the stag back to Forgotten Crossroads from Queen's Station. The next objective is Gruz Mother. If you beat her before with a nail, you can beat her with a Gun. Simple.<p></li>
+        <li><p>Wake up <a class="more_info" href="https://hollowknight.fandom.com/wiki/Sly">Sly</a> so he goes back to <a class="more_info" href="https://hollowknight.fandom.com/wiki/Dirtmouth">Dirtmouth</a>, then go to <a class="more_info" href="https://hollowknight.fandom.com/wiki/Salubra">Salubra</a>'s. With Dashmaster, firing downwards allows one to propel the Knight up to the hidden ledge where <a class="more_info" href="https://hollowknight.fandom.com/wiki/Resting_Grounds#Sub-area:_Blue_Lake">Blue Lake</a> can be entered. (Speedrunners may be familiar with this tactic, but using the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Shade">Shade</a> instead.)</p></li>
+        <li><p>Unlock the lever that accesses Resting Grounds after crossing the Lake, pay your respects at te Dreamer Memorial, and get blasted into a dream where <a class="more_info" href="https://hollowknight.fandom.com/wiki/Seer">Seer</a> gives you the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Dream_Nail">Dream Nail</a>.</p></li>
+
+      <h5 id="City_Of_Tears">Right side of City now?!</h5>
+        <li><p>To the direct right side of Blue Lake, there is an elevator that can take the Knight directly to the right side of the <a class="more_info" href="https://hollowknight.fandom.com/wiki/City_of_Tears">City of Tears</a>. This also indirectly opens up the left side of the City, the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Royal_Waterways">Royal Waterways</a>, <a class="more_info" href="https://hollowknight.fandom.com/wiki/City_of_Tears#Sub-area:_Soul_Sanctum">Soul Sanctum</a>, <a class="more_info" href="https://hollowknight.fandom.com/wiki/City_of_Tears#Sub-area:_Watcher.27s_Spire">Lurien's Tower</a> and <a class="more_info" href="https://hollowknight.fandom.com/wiki/Lemm">Lemm's</a> relic shop.</p></li>
+
+      <h5 id="Watcher_Knights">Guide: Watcher Knights with nothing</h5>
+        <li><p>Speedrunners pogo off a background object to reach the upper levels of Lurien's Tower, but we are more superior than that. Yup, Gun propulsion again.</p></li>
+        <li><p>If you want <a class="more_info" href="https://hollowknight.fandom.com/wiki/Monarch_Wings">Monarch Wings</a> for Lurien's Tower though, you will need <a class="more_info" href="https://hollowknight.fandom.com/wiki/Crystal_Heart">Crystal Heart</a> (assuming you aren't using Gun), and thus early Lumafly Lantern or <a class="more_info" href="https://hollowknight.fandom.com/wiki/Desolate_Dive">Desolate Dive</a> (which would be normal progression route). If you already completed the game once, the route should be easy enough to remember, so I am gonna leave you to that if you are determined to use the Gun only for attacking.</p></li>
+        <li><p>That being said, if you can beat <a class="more_info" href="https://hollowknight.fandom.com/wiki/Lost_Kin">Lost Kin</a> with a nail, you can beat <a class="more_info" href="https://hollowknight.fandom.com/wiki/Broken_Vessel">Broken Vessel</a> with a Gun.</p></li>
+        <li><p>After reaching the room before Watcher Knights, break the breakable ceiling to smash a chandelier on a Watcher Knight. Now, the odds are 1 to 5 instead of 1 to 6.</p></li><!--This is an inside joke; there's a lot of them.-->
+        <li><p>...Not that you would need these odds. Watcher Knights are normally a pain, but due to their low health (compared to other bosses at that stage, at least), they should fall before they can do anything too damaging.</p></li>
+        <li><p>Make your way to the top of the Tower, stopping to pick up the Watcher Knight's <a class="more_info" href="https://hollowknight.fandom.com/wiki/Hallownest_Seal">Seal</a> and Geo, and you take out <a class="more_info" href="https://hollowknight.fandom.com/wiki/Lurien">the Watcher</a> in his Spire overlooking the City</p></li>
+
+      <h5 id="Lemm">Lemm and Geo</h5>
+        <li><p>Before leaving the City of Tears, it is advisable to sell some relics to Lemm. You should aim to have at least 2100 Geo, 1800 for the Lumafly Lantern, 250 for the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Deepnest#Sub-area:_Distant_Village">Distant Village</a> Stag at the end of Deepnest.</p></li>
+        <li><p>Some locations to find relics include:</p>
+        <ul>
+          <p style="font-weight:bold;">Wanderer's <a class="more_info" href="https://hollowknight.fandom.com/wiki/Wanderer%2527s_Journal">Journal</a> (200)</p>
+          <li>Breakable Wall outside Greenpath Stag Station</li>
+          <li>Near <a class="more_info" href="https://hollowknight.fandom.com/wiki/Whispering_Root">Whispering Root</a> above Mantis Village</li>
+          <li>Above the King's Station Room</li>
+          <li>Room outside <a class="more_info" href="https://hollowknight.fandom.com/wiki/City_of_Tears#City_Storerooms">City Storerooms</a> Stag Station</li>
+          <li>In <a class="more_info" href="https://hollowknight.fandom.com/wiki/Kingdom's_Edge">Kingdom's Edge</a> Northeast of <a class="more_info" href="https://hollowknight.fandom.com/wiki/City_of_Tears#Sub-area:_King.27s_Station">King's Station</a></li><br>
+          <p style="font-weight:bold;">Hallownest Seal (450)</p>
+          <li>Secret wall above the well</li>
+          <li>East of Queen's Station; where the Sporgs are located</li>
+          <li>Above King's Station Stag</li>
+          <li>To the Northwest of Relic Seeker Lemm</li>
+          <li>In the Watcher's Spire, after beating Watcher Knights</li>
+        </ul></li><br>
+
+
+      <h5 id="So_Many_Choices">Royal Waterways? Crystal Peaks? Fungal Wastes?</h5>
+        <li><p>Here, we have a major decision to make which would affect the rest of the run, being one of the following two routes:</p>
+
+        <p style="text-decoration:underline;">City of Tears &#8594; <a class="more_info" href="https://hollowknight.fandom.com/wiki/Crystal_Peak">Crystal Peaks</a> &#8594; Royal Waterways &#8594; Fog Canyon &#8594; <a class="more_info" href="https://hollowknight.fandom.com/wiki/Queen's_Gardens">Queen's Gardens</a> &#8594; Deepnest</p>
+
+        <li><p>Usually, speedrunners use Crystal Dash to make a pixel-perfect skip into Fog Canyon and Queen's Gardens. However, this is difficult even for seasoned players. The easier alternative would be to go to the Royal Waterways, and getting <a class="more_info" href="https://hollowknight.fandom.com/wiki/Isma's_Tear">Isma's Tear</a> to repel the acidic waters.</p></li>
+
+        <li><p>To get Crystal Dash, either Lumafly Lantern (to open the gate in the dark room) or Desolate Dive is needed. However, at 10 times the market price, <!--This is an inside joke; there's a lot of them.-->Lumafly Lantern is the better choice, as it is also needed for Deepnest.</p></li>
+
+        <li><p>Go through the dark room into Crystal Peaks, reach the Crystal Dash room, and proceed to get Crystal Dash. Tip: if you are unable to do the platforming, specifically the Crystallised platforms, use the power of Gun hovering.</p></li>
+
+        <li><p>If you are unable to make the Crystal Dash skip, there is a <a class="more_info" href="https://hollowknight.fandom.com/wiki/Simple_Key">Simple Key</a> for Royal Waterways in the room below City Storerooms Stag Station,. Use it, and after beating up <a class="more_info" href="https://hollowknight.fandom.com/wiki/Dung_Defender">Dung Defender</a>, you can Crystal Dash your way into the East side of Royal Waterways and locate <a class="more_info" href="https://hollowknight.fandom.com/wiki/Royal_Waterways#Sub-area:_Isma.27s_Grove">Isma's Grove</a>. You can also find a shortcut there leading to <a class="more_info" href="https://hollowknight.fandom.com/wiki/Emilitia">Eternal Emilitia's</a> house, which brings you back up to the City of Tears.</p>
+
+        <p style="text-decoration:underline;">City of Tears &#8594; Fog Canyon &#8594; Fungal Wastes &#8594; Deepnest</p></li>
+
+        <li><p>While the Gun can be used to enter Fog Canyon, it is not possible to do that with Queen's Gardens due to the thorns (as opposed to solid wall/ceiling blocking the entrance). That means that one needs to get into Deepnest another way without Crystal Dash skip or Isma's Tear.</p></li>
+
+        <li><p>There is a collapsible floor into Deepnest from the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Moss_Prophet">Moss Chapel</a> (Fungal Wastes Side). It is located behind a breakable wall near a <a class="more_info" href="https://hollowknight.fandom.com/wiki/Grub">Grub</a>, West of where one can find <a class="more_info" href="https://hollowknight.fandom.com/wiki/Spore_Shroom">Spore Shroom</a>. This also allows entrance into Deepnest without fighting the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Mantis_Lords">Mantis Lords</a>.</p></li>
+
+      <h5 id="Fog_Canyon">How my Parents went to school: Fog Canyon & Uumuu</h5>
+        <li><p>Regardless of route, Fog Canyon is still required for the run. After getting pass the acid pool, continue downwards to the Teacher's Archives.</p></li>
+
+        <li><p>Uumuu Time! Wait for Quirrel to cripple Uumuu, then blast them. Now you know how speedrunners feel when they one-cycle Uumuu. (Oh and if you are bad, how disappointed they feel when they have to go through an extra cycle because they missed one hit.)</p></li><!--This is an inside joke; there's a lot of them.-->
+
+        <li><p>After beating Uumuu, reach the center of the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Fog_Canyon#Sub-area:_Teacher.27s_Archives">Teacher's Archives</a>, gun-propelling across the acid, and you remove <a class="more_info" href="https://hollowknight.fandom.com/wiki/Monomon">the Teacher's</a> Seal from the Black Egg.</p></li>
+
+      <h5 id="Gardens">Queen's Gardens & Deepnest?</h5>
+        <li><p>If you went to Crystal Peaks and Royal Waterways, this is the route you will probably take. It's the classic Any% route that speedrunners take, by going through Fog Canyon into Queen's Gardens, to get to Mask Maker's room in Deepnest. However, you may find the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Mantis_Petra">Mantis Petras</a> much easier to take out, despite their range (mostly because of Gun)</p></li>
+
+        <li><p>By reaching Deepnest in this way, you skip almost two-thirds of Deepnest's winding passages, with only one and a half rooms worth of obstacles to get through in order to reach the Distant Village.</p></li>
+
+      <h5 id="Fungal_Wastes">Fungal Wastes & Deepnest?</h5>
+        <li><p>By falling down the hole into Deepnest from Fungal Wastes, we will need to move a further distance (to compensate for Crystal Peaks and Royal Waterways). Move downwards, following the dark twisting cavers, until you fall into the pit that leads to the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Hot_Spring">Hot Spring</a></p></li><!--Bet you didn't expect a hot spring at the bottom of a deep dark pit-->
+
+        <li><p>Moving Northwest, you get to the Dark part of Deepnest. Navigate more caverns, do some good platforming, make sure not to take a wrong turn and end up at the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Deepnest#Sub-area:_Failed_Tramway">Failed Tramway</a>, and reach the Distant Village on the other end of the Deepnest.</p></li>
+
+      <h5 id="Distant_Village">Distant Village</h5>
+        <li><p>Now, when you reach the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Deepnest#Sub-area:_Beast.27s_Den">Beast's Den</a>, you are tired. Take a sit on the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Bench_(Hollow_Knight)">bench</a> and rest. That's right, like all the creepy <a class="more_info" href="https://hollowknight.fandom.com/wiki/Distant_Villagers">villagers</a> surrounding the bench are telling you to.</p></li><!--This is an inside joke; there's a lot of them.-->
+
+        <li><p>Just kidding, propel yourself into the center of the ceiling, and skip the cutscene (No one likes them anyways). From there, the only major enemy is a <a class="more_info" href="https://hollowknight.fandom.com/wiki/Stalking_Devout">Stalking Devout</a>. Note that Stalking Devouts cannot be hurt unless they open up their masks, even by Gun. Stand next to them, run the moment they open up to slash, and gun only when out of range.</p></li>
+
+        <li><p>Alternatively, damage-tank and try not to die. Contact damage does 1 mask of damage, while the slash does 2 masks. Anyways, reach the soon-to-be shrine bedchamber, and slay <a class="more_info" href="https://hollowknight.fandom.com/wiki/Herrah">the Beast</a> amidst the deep darkness beyond <a class="more_info" href="https://hollowknight.fandom.com/wiki/Hallownest">the Kingdom</a>.</p></li>
+
+      <h5 id="THK">The Hollow Knight</h5>
+        <li><p>Now, going all the way back to Forgotten Crossroads from the Distant Village is going to take forever, so that's what the Distant Village stag is for. If you somehow lose your Geo from dying, farm the enemies in the area, and you should have 250 Geo for the Distant Village Stag.</p></li>
+
+        <li><p>The Dirtmouth Stag should already be unlocked, so that's where you will be going to. Head down the well, and to the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Forgotten_Crossroads#Sub-Area:_Temple_Of_The_Black_Egg">Black Egg</a>, to face the Hollow Knight.</p></li>
+
+        <li><p>Usually, when you face The Hollow Knight, you would probably have a lot of upgrades already. Without <a class="more_info" href="https://hollowknight.fandom.com/wiki/Shade_Cloak">Shade Cloak</a>, you may find it difficult to dodge THK's infection blobs, even if you have fought <a class="more_info" href="https://hollowknight.fandom.com/wiki/Pure_Vessel">Pure Vessel</a>, due to the difference in speed of the projectiles.</p></li>
+
+        <li><p>Another issue is that the Gun doesn't cause THK to <a class="more_info" href="https://hollowknight.fandom.com/wiki/Category:Combat_(Hollow_Knight)#Boss_Staggers">stagger</a> (not usually a problem as the other bosses get taken out quick), and due to some bugs (It's a bug game, there's bound to be bugs), he is unable to be hit during some of his moves. You may be better off using the nail.</p></li>
+
+        <li><p>But... it may be the only challenging bit of combat in the game, so go for it! If you can bully the Hollow Knight using all upgrades, at least have the decency to lower yourself to their level!</p></li>
+
+        <p>(I would make a "If you can beat Pure Vessel with a nail, you can beat THK with a gun" joke, except that it took me <a class="more_info" href="https://hollowknight.fandom.com/wiki/Pantheon_of_the_Knight">2 weeks</a>.)</p><!--This is an inside joke; there's a lot of them.-->
+    </ol>
+
+    <br><h4 id="Variations">Variations</h4><hr>
+    <h5 id="True_Ending">True Ending (Some Luck may be Required)</h5>
+    <ul>
+      <li><p>Bosses to add to the roster:<!--Good luck!-->
+      <ul>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Gorb">Gorb</a> (100 essence)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Elder_Hu">Elder Hu</a> (100 essence)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Xero">Xero</a> (100 essence)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Marmu">Marmu</a> (150 essence)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Galien">Galien</a> (200 essence)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/No_Eyes">No Eyes</a> (200 essence)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Markoth">Markoth</a> (250 essence)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Failed_Champion">Failed Champion</a> (300 essence)</li>
+        <li>Broken Vessel (for Monarch Wings)</li>
+        <li>Lost Kin (400 essence)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Soul_Warrior">Soul Warrior</a> (for Soul Master)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Soul_Master">Soul Master</a> (for Soul Tyrant)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Soul_Tyrant">Soul Tyrant</a> (300 essence)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/White_Defender">White Defender</a> (300 essence)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Grey_Prince_Zote">Grey Prince Zote</a> (300 essence)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Hornet_Sentinel">Hornet (Sentinel)</a> (for Shade Cloak)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Traitor_Lord">Traitor Lord</a> (for <a class="more_info" href="https://hollowknight.fandom.com/wiki/Kingsoul">White Fragment</a>)</li>
+        <li><a class="more_info" href="https://hollowknight.fandom.com/wiki/Radiance">Radiance</a> (for Game Completion)</li>
+      </ul></p></li>
+      <li><p>In order to collect <a class="more_info" href="https://hollowknight.fandom.com/wiki/Dream_Nail#Awoken_Dream_Nail">Awoken Dream Nail</a>, at least 1800 <a class="more_info" href="https://hollowknight.fandom.com/wiki/Dream_Nail#Essence">essence</a> must be acquired.</p></li>
+      <li><p><a class="more_info" href="https://hollowknight.fandom.com/wiki/White_Palace">White Palace</a> has the other half of the White Fragment, meaning it has to be done. Though, with the gun's propulsion ability, it should be easier to avoid spike/thorn floors, and possibly navigate around items.</p></li>
+    </ul>
+
+    <h5 id="Godhome">Godhome Ending (Massive Luck Required)</h5>
+    <ul>
+      <li><p>In order to achieve <a class="more_info" href="https://hollowknight.fandom.com/wiki/Godhome">Godhome</a> ending, every single boss has to fought and defeated once, and again in Godhome, with the exception of <a class="more_info" href="https://hollowknight.fandom.com/wiki/God_Tamer">God Tamer</a>, Grey Prince Zote and <a class="more_info" href="https://hollowknight.fandom.com/wiki/Nightmare_King_Grimm">Nightmare King Grimm</a>.</p></li>
+      <li><p>Vengefly King and Gruz Mother can also be avoided, as they appear in the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Trial_of_the_Warrior">Trial of the Warrior</a>.</p></li>
+      <li><p><a class="more_info" href="https://hollowknight.fandom.com/wiki/Void_Heart">Void Heart</a> must also be acquired to unlock the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Pantheon_of_Hallownest">Pantheon of Hallownest</a></p></li>
+      <li><p>Even for seasoned players of the POH, it may still be difficult to defeat <a class="more_info" href="https://hollowknight.fandom.com/wiki/Absolute_Radiance">Absolute Radiance</a> with the gun, and may take a few attempts.</p></li>
+    </ul>
+
+    <h5 id="112">112% (Starting to Suffer)</h5>
+    <ul>
+      <li><p>Unlike Godhome ending, the Pantheon of Hallownest does not have to be challenged, but collectibles must be collected, and some bosses fought.</p></li>
+      <li><p>This includes:</p>
+      <ul>
+        <li>All <a class="more_info" href="https://hollowknight.fandom.com/wiki/Mask_Shard">Mask Shards</a></li>
+        <li>All <a class="more_info" href="https://hollowknight.fandom.com/wiki/Vessel_Fragment">Vessel Fragments</a></li>
+        <li>All Nail/Gun <a class="more_info" href="https://hollowknight.fandom.com/wiki/Nailsmith">Upgrades</a></li>
+        <li>All <a class="more_info" href="https://hollowknight.fandom.com/wiki/Category:Spells_and_Abilities_(Hollow_Knight)">Spells and Upgrades</a></li>
+        <li>All <a class="more_info" href="https://hollowknight.fandom.com/wiki/Category:Charms#Spells">Charms</a></li>
+        <li>All 3 <a class="more_info" href="hollowknight.fandom.com/wiki/Category:Spells_and_Abilities_(Hollow_Knight)#Nail_Arts">Nail Arts</a></li>
+        <li>All 3 <a class="more_info" href="https://hollowknight.fandom.com/wiki/Colosseum_of_Fools">Trials</a></li>
+        <li>The first 4 <a class="more_info" href="https://hollowknight.fandom.com/wiki/Pantheons">Pantheons</a></li>
+        <li>The 3 Dreamers</li>
+        <li>All <a class="more_info" href="https://hollowknight.fandom.com/wiki/Category:Spells_and_Abilities_(Hollow_Knight)#Abilities">abilities</a></li>
+        <li>Seer's Final words (2400 essence) and Awoken Dream Nail</li>
+        <li>All <a class="more_info" href="hollowknight.fandom.com/wiki/Category:Bosses_(Hollow_Knight)#Warrior_Dreams">Warrior Dreams</a></li>
+        <li>The <a class="more_info" href="https://hollowknight.fandom.com/wiki/Grimm_Troupe_(Quest)">Grimm Troupe</a> (Either ending)</li>
+        <li>The <a class="more_info" href="https://hollowknight.fandom.com/wiki/Godtuner">Godtuner</a></li>
+        <li>Broken Vessel, <a class="more_info" href="https://hollowknight.fandom.com/wiki/Brooding_Mawlek">Brooding Mawlek</a>, <a class="more_info" href="https://hollowknight.fandom.com/wiki/Collector">Collector</a>, Dung Defender, False Knight, Gruz Mother, <a class="more_info" href="https://hollowknight.fandom.com/wiki/Hive_Knight">Hive Knight</a>, Hornet (Both fights), Mantis Lords, <a class="more_info" href="https://hollowknight.fandom.com/wiki/Nosk">Nosk</a>, Soul Master, Traitor Lord, Uumuu and the Watcher Knights.</li><br>
+      </ul></li>
+      <li><p>However, there is no need to complete any endings. The <a class="more_info" href="https://hollowknight.fandom.com/wiki/World_Sense">World Sense</a> ability allows the Knight to check what <a class="more_info" href="https://hollowknight.fandom.com/wiki/Completion_(Hollow_Knight)">completion percentage</a> they are on, and is acquired when inspecting the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Lore_Tablets_(Hollow_Knight)">lore tablet</a> within the Black Egg.</p></li>
+    </ul>
+
+    <h5 id="PoP">Path of Pain (Starting to Suffer)</h5>
+    <ul>
+      <li><p>Gun propulsion can once again, help you with some of the timings. If you run out soul to shoot, a good solution is to pogo on the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Wingmould">Wingmoulds</a>, then <a class="more_info" href="https://hollowknight.fandom.com/wiki/Monarch_Wings">double jump</a>, as they are able to reform within that time period to be hit once more.</p></li>
+      <li><p>However, the <a class="more_info" href="https://hollowknight.fandom.com/wiki/White_Palace#Sub-area:_Path_of_Pain">Path of Pain</a> is way harder than the other parts of the White Palace, so even with the Gun's help, it may still take a while. Better take <a class="more_info" href="https://hollowknight.fandom.com/wiki/Grubsong">Grubsong</a> and <a class="more_info" href="https://hollowknight.fandom.com/wiki/Hiveblood">Hiveblood</a> to regerate soul, just in case.</p></li>
+      <li><p>Of course, if you have beaten the Path of Pain without the gun, you should be able to do so with the gun (Emphasis on 'if'). Be careful of the <a class="more_info" href="https://hollowknight.fandom.com/wiki/Kingsmould">Kingsmoulds</a> at the very end.</p></li>
+    </ul>
+    <h5 id="Rando">Room/Enemy/Item Randomisation Mod (Some Luck may be Required)</h5>
+    <ul>
+      <li><p>While it may seem difficult to reach parts of the map without the appropriate mobility equipment (especially with Room/Item <a class="more_info" href="https://github.com/homothetyhk/HollowKnight.RandomizerMod">randomisation</a>), pogoing on enemies/getting hit by enemy projectiles allows extra height to be gained. This means, with the power of gun propulsio, it is a lot easier to get to places.</p></li>
+      <li><p>Unfortunately, it is difficult to discuss specific strategies, due to the randomness of the gameplay.</p></li>
+    </ul>
+
+    <br><h4 id="Gallery">Gallery</h4><hr>
+    <div class="Gallery_Content">
+    <table>
+      <tr>
+        <td><img src="https://i.ytimg.com/vi/HnjUmugKQuk/hq720.jpg" alt="By Scott Falco"></td>
+
+        <td><img src="https://i.ytimg.com/vi/8gslxuOAkyI/hq720.jpg" alt="By fireb0rn"></td>
+
+        <td><img src="https://i.ytimg.com/vi/zKXKpA9qqEI/hq720.jpg" alt="By Rusty."></td>
+
+      </tr>
+      <tr>
+        <td><p><a href="https://youtu.be/HnjUmugKQuk" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Poetic iteration of Gun% by Scott Falco</a></p></td>
+        <td><p><a href="https://youtu.be/8gslxuOAkyI" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> fireb0rn making a Gun% Speedrun</a></p></td>
+        <td><p><a href="https://youtu.be/zKXKpA9qqEI" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Rusty showing us how to use the Gun Propellor<br>(Ignore innacurate thumbnail)</a></p></td><!--Space bar for extra distance between text and button-->
+      </tr>
+      <tr>
+        <td colspan="3"><img src="https://i.ytimg.com/vi/L7ZCuWwc5xs/hq720.jpg" alt="By fireb0rn"></td>
+      </tr>
+      <tr>
+        <td colspan="3"><p><a href="https://youtu.be/L7ZCuWwc5xs" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> fireb0rn showing how to use the Gun in combat<br>(Pantheon of Hallownest)</a></p></td>
+      </tr>
+    </table>
+    </div>
+    <table id="Before_After">
+      <tr><td><p>Previous</p></td>  <td><p>Index</p></td>  <td><p>Next</p></td> </tr>
+      <tr><td><p>Start</p></td>  <td><p><a href="">Hollow Knight</a></p></td>  <td><p><a href="">PvZ:<br>Adventure Mode, No Sunflowers</a></p></td></tr>
+    </table>
+    </div>
+    <footer>
+      <h2 id="icon"><img src="../../Multimedia/Controller_Icon.png"> Gamer's Gauntlet</h2>
+      <!--Icon found here: https://commons.wikimedia.org/wiki/File:Video-Game-Controller-Icon-D-Edit.svg-->
+      <table id="More_Choices_Back_Again">
+        <tr>  <td><a href="../../Others/Suggestions.html">Suggestion Box</a></td>  <td><a href="../../Others/About-Us.html">About</a></td>  <td><a href="" onclick="Very_Random()">Random</a></td>  </tr>
+      </table>
+      <p class="Official_info">This is a personal project and is not intended for business.</p>
+      <p class="Official_info">All Multimedia rights are reserved to their respective owners.</p>
+      <p class="Official_info">More info is available in the HTML code.</p>
+    </footer>
+    </body>
+    </html>

@@ -1,0 +1,634 @@
+ol>
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../Styles/Styles.css">
+    <script type="text/javascript" src="../../../Styles/Script.js" defer></script>
+    <link rel="icon" href="../../Multimedia/Controller_Icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><!--Bootstrap Time People! (Proceeds to not use it)-->
+    <title>Gamer's Gauntlet</title>
+  </head>
+  <body style="background-color:#FFF5BA;">
+  <img src="../../Multimedia/Background.gif" id="BG"><!--https://wallpapersafari.com/w/QWU0wS-->
+  <div>
+  <header id="header">
+    <a href="../../index.html" id="logo"><img src="../../Multimedia/Logo_Negative_Transparent.png" alt="Main Page"></a>
+    <div id="Choices">
+
+      <p id="choose">Choose your challenge of liking:</p>
+
+      <div class="game_choices">
+        <a href="../Games.html" class="games_button">By Games</a>
+        <div class="games_content">
+          <p><a href="../Games.html#Silksong" style="border-top-left-radius:8px;border-top-right-radius:8px;">Hollow Knight</a></p>
+          <p><a href="../Games.html#Creeper">Minecraft</a></p>
+          <p><a href="../Games.html#Sunflower">Plants vs Zombies</a></p>
+          <p><a href="../Games.html#Pkmn">Pokemon</a></p>
+          <p><a href="../Games.html#Minecraft" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Terraria</a></p>
+        </div>
+      </div>
+
+      <div class="difficulty_choices">
+        <a href="../Difficulty.html" class="difficulty_button">By Difficulty</a>
+        <div class="difficulty_content">
+          <p><a href="../Difficulty.html#Easy" style="border-top-left-radius:8px;border-top-right-radius:8px;">Easy</a></p>
+          <p><a href="../Difficulty.html#CbWorse">Could be Worse</a></p>
+          <p><a href="../Difficulty.html#SoS">Starting to Suffer</a></p>
+          <p><a href="../Difficulty.html#RnG">Massive Luck Required</a></p>
+          <p><a href="../Difficulty.html#Impossibru" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Help.</a></p>
+        </div>
+      </div>
+
+      <p id="featured_button" class="choices"><a href="../Featured.html">Featured</a></p>
+
+    </div>
+    <div id="More_Choices">
+      <a href="../../Others/Suggestions.html" class="More_Choices">Suggestion Box</a>
+      <a href="../../Others/About-Us.html" class="More_Choices">About</a>
+      <a href="javascript:void(0)" class="More_Choices" onclick="Very_Random()">Random</a>
+    </div>
+
+    <div class="Search">
+      <form name="Search_Bar" target="" method="post" class="More_Choices" autocomplete="off">
+        <img src="../../Multimedia/Search.ico" alt="" id="Search">
+        <input name="Search" type="text" id="Enter_Search" placeholder="Search Here..." onkeyup="List_Filter()" autocomplete="off">
+      </form>
+
+      <div id="Challenge_List">
+        <p><a href="../Pokemon/Platinum_Lv100_Magikarp.html">[Pokemon Platinum] <br>Lv100 Magikarp</a></p>
+        <p><a href="../Terraria/No_WASD.html">[Terraria] <br>No WASD</a></p>
+        <p><a href="../Terraria/Terra_Toilet.html">[Terraria] <br>Terra Toilet%</a></p>
+        <p><a href="../Hollow_Knight/Gun.html">[Hollow Knight] <br>Gun%</a></p>
+      </div>
+    </div>
+
+    </header>
+  </div>
+
+  <h3 id="Menu"><span onclick="openNav()">&#9776;</span></h3><!--https://www.toptal.com/designers/htmlarrows/symbols/
+  The sidenav-->
+  <div id="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h1>&times;</h1></a>
+    <a href="../../Others/Suggestions.html" class="Choices2" style="margin-left:0px">Suggestion Box</a>
+    <a href="../../Others/About-Us.html" class="Choices2">About</a>
+    <a href="javascript:void(0)" class="Choices2" onclick="Very_Random()">Random</a>
+    <p id="choices_2" class="More_Choices2">Make a choice:</p>
+    <a href="../Games.html" class="More_Choices2">By Game</a>
+    <a href="../Difficulty.html" class="More_Choices2">By Difficulty</a>
+    <a href="../Featured.html" class="More_Choices2">Featured</a>
+  </div>
+
+    <!--Here begins the Wall of Text:-->
+    <hr id="Header_Solver">
+    <div id="Wiki_WallOfText" style="padding-top:0.5em;">
+    <br><h2 style="margin-top:0;">Minecraft Manhunt: Hunter</h2><hr>
+    <div id="Info">
+      <p class="Subtitle">Minecraft Manhunt: Hunter</p>
+      <img style="width:75%;" class="Profile_Pic" src="../../Multimedia/Challenges/Hunting_Mode.png" alt="By maledrawsarts (Tumblr)">
+      <table>
+        <tr><td class='key'>Difficulty</td><td class='value'>Could be Worse</td></tr>
+        <tr><td class='key'>Rating</td><td class='value'>
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt=""></td></tr>
+          <!--4 out of 5 stars-->
+        <tr><td class="key">Type</td><td class="value">Challenge</td></tr>
+      </table>
+      <p class="Subtitle">Objective</p>
+      <p class="Subtitle_Text">Kill the Hunter.<br>Under no circumstance do you fail.</p>
+      <p class="Subtitle">Rules</p>
+      <p class="Subtitle_Text">All's fair in love and war.<br>(Except Cheating.)<br>Git gud, player!</p>
+    </div>
+
+    <p class="quote">"Ohh Dream!!"</p>
+
+    <p>Welcome to a special two-parter, where I will be giving a guide on how to play Minecraft Manhunt, as a Hunter. Why not? It's a great way to destroy friendships forever!</p>
+
+    <p>Now, obviously I will be pulling out all the tricks that were showcased in Dream's Minecraft Manhunt series. I will also offer some alternatives to these methods, and because I am a very fair person, disclose which methods can be countered, because I am basically doing that for the Speedrunner's perspective as well.</p>
+
+    <p>Guide for Speedrunners: <a href="Minecraft_Manhunt(Speedrunner).html" class="more_info">Part 2</a></p>
+
+    <p>(#NotADreamStanIPromise)</p>
+
+    <div class="Table_Of_Contents">
+    <ol>
+      <p>Contents</p>
+      <li><a href="#Ttk">Things to know</a></li>
+
+      <li><a href="#Guide" class="">Guide</a>
+      <ol>
+        <li><a href="#Start">Starting Out</a></li>
+        <ol>
+          <li><a href="#Rush_Early">Rush Down</a></li>
+          <li><a href="#Lucky">Passing a Village/Ruined Portal</a></li>
+        </ol>
+        <li><a href="#Nether_Prep">Preparing for the Nether</a></li>
+        <ol>
+          <li><a href="#Rush_Equipped">Rush the Speedrunner</a></li>
+          <li><a href="#Ambush_Equipped">Ambush the Speedrunner</a></li>
+          <li><a href="#Overkill_1">Full Enchanted Diamond Sets</a></li>
+        </ol>
+        <li><a href="#Nether">In the Nether</a></li>
+        <ol>
+          <li><a href="#Ambush_Nether">Nether Ambush</a></li>
+          <li><a href="#Soul_Speed">Soul Speed</a></li>
+          <li><a href="#Exterminate_Blaze">Eliminate Blaze Population</a></li>
+        </ol>
+        <li><a href="#Overworld_Return">Return to the Overworld</a></li>
+        <ol>
+          <li><a href="#TNT_Trap">TNT Tripwire</a></li>
+          <li><a href="#Lava_Floor">Overworld Lava Floor</a></li>
+          <li><a href="#Fake_Fortress">Fortress Building 101</a></li>
+          <li><a href="#Actual_Illegal_1">Obsidian Cage</a></li>
+          <li><a href="#Gravity_Falls_Moment">Portal Destruction</a></li>
+        </ol>
+        <li><a href="#Stronghold_Hunt">The Hunt for the Stronghold</a></li>
+        <ol>
+          <li><a href="#Rush_Stronghold">Rush Them!</a></li>
+          <li><a href="#Alchemy">Potions of Harming and Poison</a></li>
+        </ol>
+        <li><a href="#Activation_Attempt">The End Portal</a></li>
+        <ol>
+          <li><a href="#Barricade">Barricade the Portal</a></li>
+          <li><a href="#Ambush_Final">Underground Ambush, Part 2</a></li>
+          <li><a href="#Camper">Trapping the End Spawn</a></li>
+          <li><a href="#Officer_I_Drop_Kicked_That_Child_In_Self_Defence">"The Art of War" by Sun Tzu</a></li>
+        </ol>
+        <li><a href="#The_End">Will they conquer in the End?</a></li>
+        <ol>
+          <li><a href="#Anti_Vaxxers_Be_Like">Magic Healing Crystals!</a></li>
+          <li><a href="#MOAB">Literal Tower Defence</a></li>
+          <li><a href="#Actual_Illegal_2">Respawning the Dragon</a></li>
+          <li><a href="#Overkill_2">Elytra Chase</a></li>
+          <li><a href="#Very_Punny">A "Bedder" Plan</a></li>
+        </ol>
+      </ol></li>
+
+      <li><a href="#Variations" class="">Variations</a>
+      <ol>
+        <li><a href="#SvA">Speedrunner vs Assassin</a></li>
+        <li><a href="#Save">Minecraft Mansave</a></li>
+        <li><a href="#Manhunt_But_Technoblade">Minecraft Manhunt: Wither Edition</a></li>
+      </ol></li>
+
+      <li><a href="#Gallery" class="">Gallery</a></li>
+    </ol>
+    </div>
+
+    <h4 id="Ttk">Things to know</h4><hr>
+    <ul>
+
+      <li><p>Minecraft Manhunt is a game popularised by Twitch Streamer and YouTuber Dream, where he tries to defeat the Ender Dragon while a group of Hunters try to stop him. These Hunters are, in order of appearance, currently:
+        <table>
+          <tr>  <td>1st Hunter:&nbsp;</td>  <td>&nbsp;GeorgeNotFound</td>  </tr>
+          <tr>  <td>2nd Hunter:&nbsp;</td>  <td>&nbsp;Sapnap</td>          </tr>
+          <tr>  <td>3rd Hunter:&nbsp;</td>  <td>&nbsp;BadBoyHalo</td>      </tr>
+          <tr>  <td>4th Hunter:&nbsp;</td>  <td>&nbsp;Antfrost</td>        </tr>
+          <tr>  <td>5th Hunter:&nbsp;</td>  <td>&nbsp;Awesamdude</td>      </tr>
+        </table></p></li>
+      <li><p>Much of the tricks used will be grouped into different sections, being different points in time throughout the speedrunner's playthrough, where they will have different objectives.</p></li>
+      <li><p>In each section, the best times to attack, and the best methods to attack, will be talked about.</p></li>
+
+    </ul>
+
+    <br><h4 id="Guide">Guide to Hunting</h4><hr>
+    <ol>
+
+      <h5 id="Start">Starting Out</h5>
+      <p><b>Speedrunner Objectives:</b> Get as much distance as possible, and prepare.</p>
+        <li><h6 id="Rush_Early">Plan A: Rush Down</h6></li>
+        <ul>
+          <li><p>The Speedrunner is currently very weak as they have no equipment. If there is more than 1 Hunter, it is a good idea for the group of Hunters to rush down the Speedrunner, smacking them with your bare fists until he is dead.</p></li>
+          <li><p>The Speedrunner will know that they do not have a fair fight, and thus will lose, thus will try to get away as far as possible. If you let them get away, the game will immediately become much harder.</p></li>
+          <li><p>You may worry about your Hunger running out, but so long as you do not attempt to boost using Trees, you should have more Hunger than the Speedrunner in the end.</p></li>
+          <li><p>However, if the Speedrunner boosts with trees, he may have time to collect equipment/weapons, and this plan will fall apart. Make sure to keep a balance between the two!</p></li>
+        </ul>
+        <p><b>Can be countered by:</b>
+        <ul>
+          <li>Tree Boosting</li>
+          <li>Village Pillaging</li>
+          <li>Lucky Ravine</li>
+          <li>Under The Sea</li>
+          <li>MLG Boat/Water/Hay Bale Clutch</li>
+        </ul></p>
+
+        <li><h6 id="Lucky">Plan B: Passing a Village/Ruined Portal</h6></li>
+        <ul>
+          <li><p>Unlike other structures such as Desert and Jungle Temples, Villages and Ruined Portals are usually more open than any other loot-containing structure. The Speedrunner might try to grab some loot as they pass by, if they run directly through it.</p></li>
+          <li><p>Hunters have 2 options here: To grab the loot/Iron Golem, or to split up, with one continue chasing, hoping the Speedrunner does not enter a Blacksmith's to get a weapon upon realising there are lesser Hunters chasing them.</p></li>
+          <li><p>A good practice is to only agree on splitting up after passing the Village; the Speedrunner will not be able to turn back to try to grab any loot to even the odds, as they would run into the Speedrunner still chasing them.</p></li>
+          <li><p>In the event of a Ruined Portal, the Speedrunner might try to get at the chests even if you are quite close; the chests are out in the open, after all. Stop them as quickly as possible, and leave a Hunter behind again, to collect the remainder of the loot left behind.</p></li>
+          <li><p>If the Speedrunner gets their hands on a Golden Sword, have the Hunter left behind craft Wooden Swords, or Stone Swords if they have time. Unless they acquire a Golden Sword with Sharpness, it is still possible to take out the Speedrunner. The Hunter(s) chasing should still continue to keep the pressure on, albeit from a further distance.</p></li>
+          <li><p>If they get Armour and/or an Iron Sword, you will have no choice but to back off, or risk getting killed. Retreat, and if you have beds from a Village, hide them nearby and set your spawn.</p></li>
+        </ul>
+        <p><b>Can be countered by:</b>
+        <ul>
+          <li>Breaking and Entering</li>
+          <li>Getting Lucky (Armour and Iron)</li>
+        </ul></p>
+
+
+
+      <h6 style="margin-bottom:1rem;border:black 2px solid;padding:3px;">If the plan fails and the Speedrunner gets away, prepare for the next phase of the plan. Craft a set of Iron Arnour and weapons/tools, because the Speedrunner will too. Keep an eye out for if the Speedrunner (for whatever reason) tries to engage you, especially if you know them to be in the area.</h6>
+
+
+
+      <h5 id="Nether_Prep">Preparing for the Nether</h5>
+      <p><b>Speedrunner Objective:</b> Find a lava pool, and using a Bucket, make a Nether Portal and get to the Nether.</p>
+      <li><h6 id="Rush_Equipped">Plan A: Rush the Speedrunner</h6></li>
+      <ul>
+        <li><p>Math dictates that a Hunter would need to craft one set of iron armour and tools, while the Speedrunner needs to craft that and a Bucket, for crafting a Nether Portal. This means that you, in theory, should finish gearing up before the Speedrunner, and might be able to rush them down before they have prepared sufficiently.</p></li>
+        <li><p>If the Speedrunner previously killed you, however, they might have more resources and be able to finish preparations quicker. Smelting time might also be an issue, so craft as many Furnaces as you can possibly afford; just make sure the Speedrunner doesn't manage to steal iron from you!</p></li>
+        <li><p>If you are far away, crouch when you approach the area, and hope the Speedrunner doesn't notice you. Break the first rule of Minecraft and hope you don't fall into a Lava Pit, and simultaneously drop onto the Speedrunner in a circle around them, corner them and stab them to death. Simple.</p></li>
+        <li><p>While most Hunters opt to dig through walls, digging through the floor is much more efficient, breaking only 1 block instead of 3. Make sure to drop down in at least 2 locations (North, South, East or West of the Speedrunner) to corner the Speedrunner more easily, before they dig into the walls and get to the surface.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Wall Mining</li>
+      </ul></p>
+
+      <li><h6 id="Ambush_Equipped">Plan B: Ambush the Speedrunner</h6></li>
+      <ul>
+        <li><p>As seen from most of Dream's Manhunt videos, whenever the Hunters attempt to rush him down underground, he always manages to mine into the wall, relocate and/or get back to the surface. While being underground means there is a lack of space to move, this also means Dream can run away easily, as mining speed is the same for all characters, and the only way to get the Haste potion effect is through a Beacon.</p></li>
+        <li><p>This means that hiding in a 2-block deep hole while crouching on the Surface, is possibly a much better idea. For convenience however, it is a good idea to dig the hole only when you are sure the Speedrunner is coming up, and to then tower up by one block to reveal yourselves before ambushing the Speedrunner.</p></li>
+        <li><p>Sure, it may be easier for them to run, but at least they can't hide or do anything! Remember, the only way for them to progress is if they managed to delay you long enough, or if they managed to take out everyone!</p></li>
+        <li><p>There is one possibe issue, however. There may be lava underground, which means the Speedrunner might just build a Portal there, instead of hunting for surface lava. In this case, the Speedrunner may be able to avoid the Hunters entirely.</p></li>
+        <li><p>Alternatively, the Speedrunner could just mine around to look for lava lakes. However, the Hunters can easily notice this if the Speedrunner starts moving underground in a single general direction.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Underground Lava Lake</li>
+      </ul></p>
+
+      <li><h6 id="Overkill_1">Plan C: Full Enchanted Diamond Sets</h6></li>
+      <ul>
+        <li><p>Have a couple hunters jeep the pressure on, while the rest mine for upgrades. If you are using this plan, you will probably give the Speedrunner sufficient time to complete all their tasks in the Nether.</p></li>
+        <li><p>That said, to a Speedrunner with Iron Armour, you will be basically unstoppable. Of course, if you somehow died and the Speedrunner got ahold of your equipment, you are basically screwed.</p></li>
+        <li><p>(Doesn't stop Dream from countering this plan though, he's too powerful to be kept alive; interpret that how you want, stans and haters)</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>That one Nether Roof technique</li><!--This is an inside joke; there's a lot of them.-->
+        <li>Minecart Entity Cramming (only Gogy could have fell for that)</li><!--This is an inside joke; there's a lot of them.-->
+      </ul></p>
+
+
+
+      <h6 style="margin-bottom:1rem;border:black 2px solid;padding:3px;">The "Hot Stuff" Achievement appears, followed by "We Need to Go Deeper", signaling that the Speedrunner has built a Nether Portal (possibly after demolishing all of you), and has entered the Nether. This is the hardest bit for the Speedrunner, with the terrain working against them. Find the constructed Portal (or build your own), set up a bed, and enter the Nether.
+      <br><br>(Also, you had ONE job!)</h6>
+
+
+
+      <h5 id="Nether">In the Nether</h5>
+      <p><b>Speedrunner Objective 1:</b> Find a Nether Fortress for Blaze Rods <br>
+      <b>Speedrunner Objective 2:</b> Trade Gold Ingots with Piglins for Ender Pearls</p>
+
+      <li><h6 id="Ambush_Nether">Plan A: Nether Ambush</h6></li>
+      <ul>
+        <li><p>The Speedrunner is in the Nether, which is full of uneven terrain, Soul Sand and lava lakes. With the terrain working against them, it's the most treacherous part of the journey, and the best time to take them out</p></li>
+        <li><p>If you rush them down, there is a high chance to corner them at the edge of a lava ravine/lake, or a ravine/mountain, especially if they are distracted trading for Pearls, or running through a Fortress looking for Blaze Spawners.</p></li>
+        <li><p>There, they will be forced to wall-climb/jump using blocks, and every step is a possibility for them to mess up and die in lava. You, on the other hand, just have to follow the path they created.</p></li>
+        <li><p>If they choose to tower however, they might be able to escape into the ceiling, which is a concern, as you cannot distinguish the Speedrunner's path in the Nether (there isn't a Cobblestone variant of Netherrack). Bring Bows and your own blocks, making sure not to get knocked off!</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Fire Resistance (Lava Lake)</li>
+        <li>Potion of Invisibility</li>
+        <li>Fisher on a Strider (Lava Lake)</li>
+        <li>Wall Mining (Towering)</li>
+        <li>Fishing and Fall Damage (Towering)</li>
+      </ul></p>
+
+
+      <li><h6 id="Soul_Speed">Plan B: Soul Speed</h6></li>
+      <ul>
+        <li><p>When tradin with Pigline, there is a ~1.74% chance to get Iron Soul Speed Boots, and a ~1.09% chance to get the Enchantment Book. If you do get it, it may be a good method for chasing down the Speedrunner across the Soul Sand biomes; you will always eventually catch up (those boots be zooming).</p></li>
+        <li><p>It's a good method to use if you are planning to get Ender Pearls to trap the other side of the End Portal (but more on that later), and possibly ambushing the Speedrunner in the Nether, considering it might take a while to find a Nether Fortress.</p></li>
+        <li><p>Of course, this may force the Speedrunner to turn around and face you, and if you are alone, well, good luck getting those Boots back if you die.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Fire Resistance (Lava Lake)</li>
+        <li>Potion of Invisibility</li>
+        <li>Fisher on a Strider (Lava Lake)</li>
+        <li>Wall Mining (Towering)</li>
+        <li>Fishing and Fall Damage</li>
+        <li>Also Soul Speed Boots</li>
+        <li>Avoiding Soul Sand Biomes</li>
+      </ul></p>
+
+      <li><h6 id="Exterminate_Blaze">Plan C: Eliminate Blaze Population (May be illegal)</h6></li>
+      <ul>
+        <li><p>The sole purpose of the Speedrunner going to a Nether Fortress, is to find Blaze Spawners to kill for Blaze Rods. That means, if you get to the fortress first, you can destroy all the spawners, kill the remaining Blazes, and toss all the Blaze Rods into the lava. (Or keep them if using to trap the other side of the End Portal)</p></li>
+        <li><p>this will force the Speedrunner to have to find a new Nether Fortress, giving you more time to take them out. Remember, if you are holding Blaze Rods and are about to get killed, it is better to burn in lava with your items, than to let the Speedrunner get ahold of your Blaze Rods</p></li>
+        <li><p>This is a good strategy to use if you are trying for the Enchanted Diamond Armour; you can leave one Hunter to get more time to prepare.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Another Nether Fortress</li>
+        <li>Fast Nether Fortress</li>
+      </ul></p>
+
+
+
+      <h6 style="margin-bottom:1rem;border:black 2px solid;padding:3px;">Well, if you are reading this, you somehow failed once more, and the Speedrunner gets ever closer to their goal. *Sigh* Return to the Portal. Time to booby trap the thing.</h6>
+
+
+
+      <h5 id="Overworld_Return">Return to the Overworld</h5>
+      <p><b>Speedrunner Objective:</b> Return to the Nether Portal</p>
+
+      <li><h6 id="TNT_Trap">Plan A: TNT Tripwire</h6></li>
+      <ul>
+        <li><p>If passing a Desert Temple, it may be worth it to drop down and get the TNT; setting up an explosive trap at the Nether Portal is a great way to blow up the Speedrunner; after all, they need a couple seconds to pass through the portal.</p></li>
+        <li><p>It might take a while to terraform the terrain and hide everything, however. To make it seem less obvious, have at least 1 hunter chase the Speedrunner, though perhaps at a distance, while 'waiting for the rest to catch up'.</p></li>
+        <li><p>Exploding Beds might also be useful, if you are a fan of Kamikaze.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Long Preparation Time</li>
+        <li>New Nether Portal</li>
+        <li>Bad Terraforming</li>
+        <li>Speedrunner Trap Intuition</li>
+      </ul></p>
+
+      <li><h6 id="Lava_Floor">Plan B: Overworld Lava Floor</h6></li>
+      <ul>
+        <li><p>When the Speedrunner appears on the other side of the Portal, Hunters can push them into lava; if they don't have a Water Bucket, they are very likely to burn to death. Even then, you can still do good damage in the time it takes for the Speedr to get away.</p></li>
+        <li><p>This works best if the Portal is placed in cramped locations, such as underground, or at the edge of a Lava Pool; however, tht doesn't mean it wouldn't work on the surface, where one side of the Portal is likely to be facing a Lava Pool (which is needed for the Portal, of course).</p></li>
+        <li><p>As per most traps, it's a good idea to have at least 1 hunter chase the Speedrunner, making the plan seem less obvious.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>New Nether Portal</li>
+        <li>Speedrunner Trap Intuition</li>
+        <li>Potion of Invisibility</li>
+      </ul></p>
+
+      <li><h6 id="Fake_Fortress">Plan C: Fortress Building 101</h6></li>
+      <ul>
+        <li><p>Building a base around the Nether Portal (in a manner similar to Bedwars), with strong fortifications, could prevent the Speedrunner from getting to the Nether Portal, unless they attempt to do so and end up getting slaughtered.</p></li>
+        <li><p>However, this could easily force the Speedrunner to just build another Nether Portal to the Overworld; there is now way of knowing whether this is the case, as there is no achievement that appears when the Speedrunner returns to the Overworld.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>New Nether Portal</li>
+        <li>Potion of Invisibility</li>
+      </ul></p>
+
+      <li><h6 id="Actual_Illegal_1">Plan D: Obsidian Cage (May be illegal)</h6></li>
+      <ul>
+        <li><p>This last exploit is so overpowered it should probably be banned.</p></li>
+        <li><p>By placing blocks to surround the Nether Portal (preferably Obsidian) in the Overworld, the Speedrunner will be stuck and unable to exit the portal, nor return to the Nether. This means that if you leave 1 block open, you can attack the Speedrunner's knees without retaliation, and win.</p></li>
+        <li><p>The Speedrunner may want to agree on whether to use this method, with the Hunters, as it does seem pretty cheap.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>New Nether Portal</li>
+        <li>Potion of Invisibility</li>
+      </ul></p>
+
+      <li><h6 id="Gravity_Falls_Moment">Plan E: Portal Destruction</h6></li>
+      <ul>
+        <li><p>If one Hunter sacrifices themselves to blow up the Portal, or mine an Obsidian Block to break the Portal, before dying to return to the Overworld, the Speedrunner will be forced to hunt around for more Obsidian Blocks, and possibly a Flint and Steel.</p></li>
+        <li><p>This is another good strategy to use if you are trying for the Enchanted Diamond Armour; you can leave one Hunter to get more time to prepare.</p></li>
+        <li><p>Alternatively, this can work if you plan to get to the Stronghold and trap the other side of the Ender Portal.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>New Nether Portal</li>
+      </ul></p>
+
+
+
+      <h6 style="margin-bottom:1rem;border:black 2px solid;padding:3px;">Congratulations! The Speedrunner managed to get past every single Hunter, and get through to the Overworld! How?
+      <br><br>Well. It seems you will have to follow them to the Ends of the World. Obstruct their hunt for the Stronghold, and take them out!</h6>
+
+
+      <h5 id="Stronghold_Hunt">The Hunt for the Stronghold</h5>
+      <p><b>Speedrunner Objective:</b> Find the Stronghold</p>
+
+      <li><h6 id="Rush_Stronghold">Plan A: Rush them!</h6></li>
+      <ul>
+        <li><p>Back to the main plan: Just rush them down! This is the best thing to do if you trapped the other side of the Portal, or was defending the Portal, and are now trying to chase them down.</p></li>
+        <li><p>If the Speedrunner tries to use their Eyes of Enders to figure out the general location of the Portal, do your best to get the Eye of Ender. It is a good idea to have only 1 Hunter try to get the Eye of Ender, while the others cover them from the Speedrunner. The moment you can, destroy or toss away the Eye, in case you die.</p></li>
+        <li><p>Stick close, and prevent further Eyes of Ender from being thrown.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Wall Mining (if underground)</li>
+        <li>Fake Tunnelling + Ender Pearl</li>
+        <li>Potion of Invisibility</li>
+      </ul></p>
+
+      <li><h6 id="Alchemy">Plan B: Potions of Harming and Poison</h6></li>
+      <ul>
+        <li><p>Did you know that Potions of Harming ignore Armour? This means that, using Harming I and Harming II Potions, 6 and 12 points of damage can be dealth to the Speedrunner respectively.</p></li>
+        <li><p>Splash Potions of Poison can also eventually drop the Speedrunner to 1 Health; which would make them extremely fragile, as they might 'Hit the Ground Too Hard' and die. The poison damage also slows them down a bit whenever they take damage, which will work in your favour to take out the Speedrunner.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Wall Mining (if underground)</li>
+        <li>Potion of Invisibility</li>
+        <li>Milk</li>
+      </ul></p>
+
+
+
+      <h6 style="margin-bottom:1rem;border:black 2px solid;padding:3px;">The only way for the Speedrunner to have sufficient tie to get to the Stronghold, wouold be to take out every single one of you Hunters. Isn't that like the the 3rd or 4th time this has happened already?
+      <br><br>Anyways, with the "Eye Spy" Achievement appearing, it seems you will have to chase the Speedrunner there. But make haste, before he manages to locate the Portal to the End. Hide your beds there, and get ready for a confrontation<sup>(unless you are slow and miss them)</sup></h6>
+
+
+
+      <h5 id="Activation_Attempt">The End Portal</h5>
+      <p><b>Speedrunner Objective:</b> Activate the End Portal</p>
+
+      <li><h6 id="Barricade">Plan A: Barricade the Portal</h6></li>
+      <ul>
+        <li><p>Seeing as the Speedrunner's objective is to get to the End, you can barricade yourselves in to prevent them from getting to the Portal.</p></li>
+        <li><p>However, there is an issue with this; the Speedrunner will be able to prepare themselves, and will most likely succeed or die trying.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Firework Rockets</li>
+        <li>Floor Mining</li>
+        <li>Full Diamond Armour</li>
+        <li>Potion of Invisibility</li>
+      </ul></p>
+
+      <li><h6 id="Ambush_Final">Plan B: Underground Ambush: Part 2</h6></li>
+      <ul>
+        <li><p>Alternatively, to prevent the Speedrunner from getting anymore powerful, block up the End Portal as fast as you can, then give chase! Usually, the Speedrunner will assume you to be just defending the room, and thus will not expect it.</p></li>
+        <li><p>However, be careful that the speedrunner might end up back in the Portal Room, and manage to activate the End Portal before you can stop them. Whenever you lose sight of the Speedrunner, and realise they are moving in the Portal's direction, get back to the Portal Room as soon as you can; it is simply not worth it to continue the chase.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>The U-Turn</li>
+        <li>Wall Mining</li>
+        <li>Potion of Invisibility</li>
+      </ul></p>
+
+      <li><h6 id="Camper">Plan C: Trap the End Spawn</h6></li>
+      <ul>
+        <li><p>If you manage to get your hands on Blaze Rods and Ender Pearls, you can set off for the Stronghold to activate the Portal first, before the Speedrunner. This gives you an opportunity to trap the spawn area, and thus finish off the Speedrunner when he enters.</p></li>
+        <li><p>This can include leaving only room to attack the Speedrunner's knees, while ensuring he can't hit you, or to flood the area with Lava.</p></li>
+        <li><p>However, this does give the Speedrunner time to prepare. Be on your guard!</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Dropping in TNT</li>
+        <li>Pushing in a Wither (via Piston)</li>
+        <li>Potion of Invisibility, if not using Lava</li>
+      </ul></p>
+
+      <li><h6 id="Officer_I_Drop_Kicked_That_Child_In_Self_Defence">Plan D: "The Art of War" by Sun Tzu</h6></li>
+      <ul>
+        <li><p>As Sun Tzu once said, "Withers go brrrr – also subscribe to Technoblade"<!--This is an inside joke; there's a lot of them.-->, the Hunters can sarcifice themselves in a big fiery explosion to blow up the Speedrunner and everyone in a 10-block radius.</p></li>
+        <li><p>Alternatively, they can activate the End Portal themselves, and push the Wither in with a piston, before it finishes spawning and explodes. That's a problem for the Speedrunner to deal with. If underground, the Speedrunner can't hide, and if on a floating platform, the Speedrunner shall fall.</p></li>
+        <li><p>Alternate alternatively, they can summon the Wither and escape to the other side of the portal, setting up a trap for the Speedrunner (as per Plan B).</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Dropping in TNT</li>
+        <li>Pushing in another Wither<sup>which may or may not work</sup></li>
+      </ul></p>
+
+
+
+      <h6 style="margin-bottom:1rem;border:black 2px solid;padding:3px;">Well, if you are reading this, there's at least the possibility that the Speedrunner was just fast, or managed to sneak in, as opposed to actually getting slaughtered.<br><br>Your last chance, folks! Don't ruin it! Take out the Speedrunner before they take out the Ender Dragon!</h6>
+
+
+
+      <h5 id="The_End">Will they conquer in the End?</h5>
+      <p><b>Speedrunner Objective:</b> Defeat the Ender Dragon</p>
+
+      <li><h6 id="Anti_Vaxxers_Be_Like">Plan A: Magic Healing Crystals!</h6></li>
+      <ul>
+        <li><p>If you have the neccessary materials, it is possible to craft new End Crystals that can heal the Ender dragon! If you place them and cover them with Obsidian/End Stone, the Speedrunner will have a much harder time taking down the Ender Dragon.</p></li>
+        <li><p>Make sure to build the defence first, as the Speedrunner might destroy you and it while you are trying to do so. They will be forced to attack your fortified position, which is also protected by the Ender Dragon (assuming it was placed on the Central Platform).</p></li>
+        <li><p>That will give you more time to take out the Speedrunner!</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Quick Scope Sniper Shot</li>
+        <li>Potion of Invisibility</li>
+        <li>TNT</li>
+        <li>Post Dragon Equipment</li>
+      </ul></p>
+
+      <li><h6 id="MOAB">Plan B: Literal Tower Defence</h6></li>
+      <ul>
+        <li><p>Alternatively, you can climb up a tower and protect an already existing End Crystal. Just make sure the Speedrunner doesn't notice and destroy the Crystal before you even get to it. this can be done if you climb from the side of the Pillars facing the Void.</p></li>
+        <li><p>The Speedrunner will have no choice but to attack from close range, which may allow you to blow them up together with everyone else.</p></li>
+        <li><p>It s a good idea to pick a taller tower so that the Speedrunner will have a harder time getting up to the top. Note however that this might be a bit dangerous, as Fall Damage might be fatal.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Quick Scope Sniper Shot</li>
+        <li>Potion of Invisibility (It's more obvious; be on guard!)</li>
+        <li>TNT</li>
+        <li>Post Dragon Equipment</li>
+      </ul></p>
+
+      <li><h6 id="Actual_Illegal_2">Plan C: Respawn the Dragon and say it doesn't count (May be illegal)</h6></li>
+      <ul>
+        <li><p>By placing 4 End Crystals on the central platform, it is possible to respawn the Ender Dragon, even as it is being killed.</p></li>
+        <li><p>In a very technical sense, that would mean that the Ender Dragon was not killed, and the Speedrunner will have to beat the Ender Dragon once more, with all the End Crystals again.</p></li>
+        <li><p>If the Speedrunner doesn't argue, you get another opportunity to take out the Speedrunner!</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>A Good Argument<sup>like really</sup></li>
+        <li>Post Dragon Equipment</li>
+      </ul></p>
+
+
+      <li><h6 id="Overkill_2">Plan D: Elytra Chase</h6></li>
+      <ul>
+        <li><p>Though the Outer End Islands are really far away, Flying Machines can get you the Speedrunner there easily, which would mean you may have to give chase, as the Overpowered Weapons found there are no match for anything you will have found throughout the whole game.</p></li>
+        <li><p>This means, if the Speedrunner chooses to travel to the Outer End Islands, you will have little choice but to follow using your own Flying Machine from as high a position as possible; the Elytra is too powerful.</p></li>
+        <li><p>However, there is a chance that the Speedrunner will trick you if everyone, or almost everyone decides to give chase. Ender Pearls can get the Speedrunner back to the Main Island; if you aren't carrying any, you will have to fall into the Void and die and lose everything in order to get back, which is a huge disadvantage.</p></li>
+        <li><p>Alternatively, you could shoot the Speedrunner down as they are travelling, so long as you don't get shot down yourself.</p></li>
+      </ul>
+      <p><b>Can be countered by:</b>
+      <ul>
+        <li>Getting Shot Off</li>
+        <li>Ender Pearl U-Turn</li>
+      </ul></p>
+
+      <li><h6 id="Very_Punny">Plan E: A "Bedder" Plan</h6></li>
+      <ul>
+        <li><p>Continuing off our theme of Kamikaze, running at the Speedrunner with a Bed can easily blow them up, especially when they are trying to take out the Ender Dragon and are in the central platform.</p></li>
+        <li><p>This could easily backfire, however, if the Ender Dragon is at low health and gets (somehow) blown up before the Speedrunner did, which can be seen from the text messages informing you of that.</p></li>
+      </ul>
+
+    </ol>
+
+    <br><h4 id="Variations">Variations</h4><hr>
+    <h5 id="SvA">Speedrunner vs Assassin: Assassin (Could be Worse)</h5>
+    <ul>
+      <li><p>In this gamemode, the Assassin(s) can take out the Speedrunner in 1 hit, but the Assasin(s) cannot move while the Speedrunner looks at them.</p></li>
+      <li><p>That means the Assassin will need to hide/sneak up on the Speedrunner, in order to take out the Speedrunner.</p></li>
+    </ul>
+
+    <h5 id="Save">Minecraft Mansave: Saviour (Starting to Suffer)</h5>
+    <ul>
+      <li><p>In this gamemode, a Noob will try to get themselves killed in a set amount of time, optionally using a specific method, while the Saviour(s) will need to prevent them from doing so.</p></li>
+      <li><p>The Saviour(s) will be given items they can use to prevent the Noob from achieving this goal, as well as Creative Mode.</p></li>
+      <li><p>A good tactic is to trap the Noob to prevent them from being able to do anything.</p></li>
+    </ul>
+
+    <h5 id="Manhunt_But_Technoblade">Minecraft Manhunt: Wither Edition (Could be Worse)</h5>
+    <ul>
+      <li><p>In this gamemode, the Speedrunner will try to defeat the Wither instead of the Ender Dragon, while the Hunters try to hunt them down.</p></li>
+      <li><p>This may be more time-consuming, given the rarity of Wither Skeleton Skulls.</p></li>
+      <li><p>The Wither will also actively attempt to target players (usually impartially), as opposed to the Ender Dragon who... just flies around? Either way, the fight will be a lot harder without proper gear, unless underground.</p></li>
+    </ul>
+
+    <br><h4 id="Gallery">Gallery</h4><hr>
+    <p><b><sup>Disclaimer: Only the latest version of Minecraft Manhunt will be shown, to prevent the Gallery from being clogged up. You know where to find his videos, anyways.</sup></b></p>
+    <div class="Gallery_Content">
+    <table>
+      <tr>
+        <td><img src="https://i.ytimg.com/vi/qqOxkuO3ip0/hq720.jpg" alt="By Dream"></td>
+
+        <td><img src="https://i.ytimg.com/vi/ZfeNh8E3O4c/hq720.jpg" alt="By Dream"></td>
+
+        <td><img src="https://i.ytimg.com/vi/tPCTAcOBX68/hq720.jpg" alt="By Dream"></td>
+
+      </tr>
+      <tr>
+        <td><p><a href="" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Dream's latest Manhunt, with 5 Hunters</a></p></td>
+        <td><p><a href="" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Speedrunner vs Assassin by Dream, part 1</a></p></td>
+        <td><p><a href="" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Speedrunner vs Assassin by Dream, part 2</a></p></td>
+        <!--Space bar for extra distance between text and button-->
+      </tr>
+      <tr>
+        <td colspan="3"><img src="https://i.ytimg.com/vi/JrXR_m7ElTU/hq720.jpg" alt="By McBirken"></td>
+      </tr>
+      <tr>
+        <td colspan="3"><p><a href="" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> McBirken's First Minecraft Mansave</a></p></td>
+      </tr>
+    </table>
+    </div>
+    <table id="Before_After">
+      <tr><td><p>Previous</p></td>  <td><p>Index</p></td>  <td><p>Next</p></td> </tr>
+      <tr><td><p>Start</p></td>  <td><p><a href="">Hollow Knight</a></p></td>  <td><p><a href="">PvZ:<br>Adventure Mode, No Sunflowers</a></p></td></tr>
+    </table>
+    </div>
+    <footer>
+      <h2 id="icon"><img src="../../Multimedia/Controller_Icon.png"> Gamer's Gauntlet</h2>
+      <!--Icon found here: https://commons.wikimedia.org/wiki/File:Video-Game-Controller-Icon-D-Edit.svg-->
+      <table id="More_Choices_Back_Again">
+        <tr>  <td><a href="../../Others/Suggestions.html">Suggestion Box</a></td>  <td><a href="../../Others/About-Us.html">About</a></td>  <td><a href="" onclick="Very_Random()">Random</a></td>  </tr>
+      </table>
+      <p class="Official_info">This is a personal project and is not intended for business.</p>
+      <p class="Official_info">All Multimedia rights are reserved to their respective owners.</p>
+      <p class="Official_info">More info is available in the HTML code.</p>
+    </footer>
+    </body>
+    </html>

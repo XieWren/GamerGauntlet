@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../../Styles/Styles.css">
+  <script type="text/javascript" src="../../Styles/Script.js" defer></script>
+  <link rel="icon" href="../Multimedia/Controller_Icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><!--Bootstrap Time People!-->
+  <title>Gamer's Gauntlet</title>
+</head>
+<body>
+<img src="../Multimedia/Background.gif" id="BG"><!--https://wallpapersafari.com/w/QWU0wS-->
+<div>
+<header id="header">
+  <a href="../index.html" id="logo"><img src="../Multimedia/Logo_Negative_Transparent.png" alt="Main Page"></a>
+  <div id="Choices">
+
+    <p id="choose">Choose your challenge of liking:</p>
+
+    <div class="game_choices">
+      <a href="#" class="games_button">By Games</a>
+      <div class="games_content">
+        <p><a href="#Silksong" style="border-top-left-radius:8px;border-top-right-radius:8px;">Hollow Knight</a></p>
+        <p><a href="#Creeper">Minecraft</a></p>
+        <p><a href="#Sunflower">Plants vs Zombies</a></p>
+        <p><a href="#Pkmn">Pokemon</a></p>
+        <p><a href="#Minecraft" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Terraria</a></p>
+      </div>
+    </div>
+
+    <div class="difficulty_choices">
+      <a href="Difficulty.html" class="difficulty_button">By Difficulty</a>
+      <div class="difficulty_content">
+        <p><a href="Difficulty.html#Easy" style="border-top-left-radius:8px;border-top-right-radius:8px;">Easy</a></p>
+        <p><a href="Difficulty.html#CbWorse">Could be Worse</a></p>
+        <p><a href="Difficulty.html#SoS">Starting to Suffer</a></p>
+        <p><a href="Difficulty.html#RnG">Massive Luck Required</a></p>
+        <p><a href="Difficulty.html#Impossibru" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Help.</a></p>
+      </div>
+    </div>
+
+    <p id="featured_button" class="choices"><a href="Featured.html">Featured</a></p>
+
+  </div>
+  <div id="More_Choices">
+    <a href="../Others/Suggestions.html" class="More_Choices">Suggestion Box</a>
+    <a href="../Others/About-Us.html" class="More_Choices">About</a>
+    <a href="javascript:void(0)" class="More_Choices" onclick="Very_Random()">Random</a>
+  </div>
+
+  <div class="Search">
+    <form name="Search_Bar" target="" method="post" class="More_Choices" autocomplete="off">
+      <img src="../Multimedia/Search.ico" alt="" id="Search">
+      <input name="Search" type="text" id="Enter_Search" placeholder="Search Here..." onkeyup="List_Filter()" autocomplete="off">
+    </form>
+
+    <div id="Challenge_List">
+      <p><a href="Hollow_Knight/Gun.html">[Hollow Knight] <br>Gun%</a></p>
+      <p><a href="Pokemon/Platinum_Lv100_Magikarp.html">[Pokemon Platinum] <br>Lv100 Magikarp</a></p>
+      <p><a href="Terraria/No_WASD.html">[Terraria] <br>No WASD</a></p>
+      <p><a href="Terraria/Terra_Toilet.html">[Terraria] <br>Terra Toilet%</a></p>
+    </div>
+  </div>
+
+  </header>
+</div>
+
+<h3 id="Menu"><span onclick="openNav()">&#9776;</span></h3><!--https://www.toptal.com/designers/htmlarrows/symbols/
+The sidenav-->
+<div id="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h1>&times;</h1></a>
+  <a href="../Others/Suggestions.html" class="Choices2" style="margin-left:0px">Suggestion Box</a>
+  <a href="../Others/About-Us.html" class="Choices2">About</a>
+  <a href="javascript:void(0)" class="Choices2" onclick="Very_Random()">Random</a>
+  <p id="choices_2" class="More_Choices2">Make a choice:</p>
+  <a href="#" class="More_Choices2">By Game</a>
+  <a href="Difficulty.html" class="More_Choices2">By Difficulty</a>
+  <a href="Featured.html" class="More_Choices2">Featured</a>
+</div>
+
+<!--Here begins the Wall of Text:-->
+<hr id="Header_Solver">
+<div id="Wiki_WallOfText" style="padding-top:0.5em;">
+<br><h2 style="margin-top:0;">Games</h2><hr>
+<p>So, you are looking for games, eh? There's quite a selection at the moment.</p>
+<p>(That was meant to be sarcastic, there's not much going on at the moment. If you have any suggestions, drop them in the suggestion box.)</p>
+
+<div class="Table_Of_Contents">
+<ol>
+  <p>Contents</p><!--Title-->
+  <li><a href="#Silksong">Hollow Knight</a></li>
+  <li><a href="#Creeper">Minecraft</a></li>
+  <li><a href="#Sunflower">Plants vs Zombies</a></li>
+  <li><a href="#Pkmn">Pokemon</a></li>
+  <li><a href="#Minecraft">Terraria</a></li>
+</ol>
+</div>
+
+<h4 id="Silksong">Hollow Knight</h4><hr>
+<p>Silksong was announced in 2019 and the game hasn't came out yet.<!--This is an inside joke; there's a lot of them.--> So, what did the commmunity do? They made mods for the most masochistic members of the community.</p>
+<p>(Don't act like you aren't a masochist. By focusing on this list of challenges first, you are openly admitting to being a masochist.)</p>
+<p>Unfortunately, because none of us are God Gamers and can't play like we are using a TAS<!--This is an inside joke; there's a lot of them.-->, the community changed their plans and made fan DLC instead. Sadly, none of them exist, because, just like Silksong, they never did in the first place. </p>
+<p>So, what do we do? Well, we find dumb stuff to do in Hollow Knight to cheer ourselves up over the fact that we will never see Team Cherry again<!--This is an inside joke; there's a lot of them.-->.</p>
+<p>(This was a joke, Team Cherry should take their time to make Silksong as good as possible.)</p>
+<ul>
+  <li><a href="Hollow_Knight/Gun.html" class="links">Gun%</a></li>
+</ul>
+
+<br><h4 id="Creeper">Minecraft</h4><hr>
+<p>Remember the good old days? When Minecraft dominated the YouTube algorithm? Now, most of the old YouTubers have departed the scene, and we have new blood. (One question though, where are all the mods??? Vanilla Minecraft is boring!)</p>
+<p>That said, we can still have fun with the ideas that get churned out. Get ready to have fun, and possibly lose a few friends by being overly competitive! (Yay!)</p>
+<p>(Also, personal opinion, but <b>Minceraft</b><!--This is an inside joke; there's a lot of them.-->is actually how you spell the name, if you say it's wrong you are either a liar, or the creator(s?) of the Minecraft and also a liar.)</p>
+<ul>
+  <li><a href="" class="links">Minecraft Manhunt (Speedrunner Edition)</a> &nbsp;(Because what else </li>
+  <li><a href="" class="links">Minecraft Manhunt (Hunter Edition)</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;are you gonna do?)</li>
+</ul>
+
+<br><h4 id="Sunflower">Plants vs Zombies</h4><hr>
+<p>Ahh, PvZ. The game that changed Tower Defence forever. Then along came EA with PvZ 2 to destroy all hopes of the game ever being good ever again, unless you payed money for plants more expensive than even some games.<!--This is an ACCURATE inside joke; there is only this one, being the most IMPORTANT one.--></p>
+<p>(Unless you are like me, a Pro Gamer that actually completed every level without doing so.)</p>
+<p>With PvZ 3 coming out last year and getting pulled back into production after everyone complained, its kinda obvious that life is very sad for the community. However, my split personality always told me to look on the bright side of things, so that's what we are gonna do.</p>
+<ul>
+  <li><a href="#" class="links">Adventure Mode: No Sunflower</a></li>
+  <li><a href="#" class="links">Perpetually Seeing Stars</a></li>
+</ul>
+
+<br><h4 id="Pkmn">Pokemon</h4><hr>
+<p>Kids, middle-aged kids, elderly kids, gather round. Remember when you picked up your first Pokemon Game? How fun it was? And how everyone nowadays are compaining that everything is too easy? </p>
+<p>(Though honestly, I heard Ultra Necrozma is a pain.)</p><!--This is an inside joke; there's a lot of them.-->
+<p>Wanna do dumb stuff with the game again, such as actually waitng for the Researcher in Oldale Town to finish looking at 'rare Pokemon footprints' for an hour straight because you wanted to avoid fighting your rival? Get ready to relive your childhood once more!</p><!--This is an inside joke; there's a lot of them.-->
+<p>(Strictly speaking though, that definitely did not happen to me.)</p>
+<ul>
+  <li><a href="Pokemon/Platinum_Lv100_Magikarp.html" class="links">[Platinum] Level 100 Magikarp Catch</a></li>
+</ul>
+
+<!--
+<br><h4 id="Cake">Portal</h4><hr>
+<p>Recently, Portal 2 celebrated its 10th anniversary, which was really nice because of all the cake. Howver, it also marks 10 years since the last Portal game was released. (Why Valve why?)</p>
+<p>Given Valve's obvious lack of ability to count to 3 however, there is a silver lining to the existence of Portal 2 without a Portal 3, being the famous lemon rant: </p>
+<p class="quote">"I know things look bleak, but that crazy man down there was right. Let's not take these lemons!"</p>
+<p>So instead, we are gonna be doing some fun challenges that make us feel all warm and fuzzy inside about seeing GlaDOS again. That's right, enter your Steam account, wipe the dust off of Portal, and get back in! It's gonna be a fun one.</p>
+<ul>
+  <li><a href="#" class="links">No Hurting Turrets</a></li>
+</ul>
+-->
+
+<br><h4 id="Minecraft">Terraria</h4><hr>
+<p>Sigh... Journey's End. The final Terraria update. That's it guys, wrap it up, there's no more Terraria to be had.</p>
+<p>(Just kidding you are here for a reason.)</p>
+<p>Let's hope Re-Logic decides to come back to Terraria one of these days, cause its a masterpiece of a game. Until then, Terraria enthusiasts, let's boot up this wonderful game and enjoy it once more!</p>
+<ul>
+  <li><a href="Terraria/No_WASD.html" class="links">No Movement Keys</a></li>
+  <li><a href="Terraria/Terra_Toilet.html" class="links">Terra Toilet%</a></li>
+</ul>
+</div>
+<footer>
+  <h2 id="icon"><img src="../Multimedia/Controller_Icon.png"> Gamer's Gauntlet</h2>
+  <!--Icon found here: https://commons.wikimedia.org/wiki/File:Video-Game-Controller-Icon-D-Edit.svg-->
+  <table id="More_Choices_Back_Again">
+    <tr>  <td><a href="../Others/Suggestions.html">Suggestion Box</a></td>  <td><a href="../Others/About-Us.html">About</a></td>  <td><a href="" onclick="Very_Random()">Random</a></td>  </tr>
+  </table>
+  <p class="Official_info">This is a personal project and is not intended for business.</p>
+  <p class="Official_info">All Multimedia rights are reserved to their respective owners.</p>
+  <p class="Official_info">More info is available in the HTML code.</p>
+</footer>
+</body>
+</html>

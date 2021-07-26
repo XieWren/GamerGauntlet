@@ -1,0 +1,359 @@
+
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../Styles/Styles.css">
+    <script type="text/javascript" src="../../../Styles/Script.js" defer></script>
+    <link rel="icon" href="../../Multimedia/Controller_Icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><!--Bootstrap Time People! (Proceeds to not use it)-->
+    <title>Gamer's Gauntlet</title>
+  </head>
+  <body style="background-color:#FFF5BA;">
+  <img src="../../Multimedia/Background.gif" id="BG"><!--https://wallpapersafari.com/w/QWU0wS-->
+  <div>
+  <header id="header">
+    <a href="../../index.html" id="logo"><img src="../../Multimedia/Logo_Negative_Transparent.png" alt="Main Page"></a>
+    <div id="Choices">
+
+      <p id="choose">Choose your challenge of liking:</p>
+
+      <div class="game_choices">
+        <a href="../Games.html" class="games_button">By Games</a>
+        <div class="games_content">
+          <p><a href="../Games.html#Silksong" style="border-top-left-radius:8px;border-top-right-radius:8px;">Hollow Knight</a></p>
+          <p><a href="../Games.html#Creeper">Minecraft</a></p>
+          <p><a href="../Games.html#Sunflower">Plants vs Zombies</a></p>
+          <p><a href="../Games.html#Pkmn">Pokemon</a></p>
+          <p><a href="../Games.html#Minecraft" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Terraria</a></p>
+        </div>
+      </div>
+
+      <div class="difficulty_choices">
+        <a href="../Difficulty.html" class="difficulty_button">By Difficulty</a>
+        <div class="difficulty_content">
+          <p><a href="../Difficulty.html#Easy" style="border-top-left-radius:8px;border-top-right-radius:8px;">Easy</a></p>
+          <p><a href="../Difficulty.html#CbWorse">Could be Worse</a></p>
+          <p><a href="../Difficulty.html#SoS">Starting to Suffer</a></p>
+          <p><a href="../Difficulty.html#RnG">Massive Luck Required</a></p>
+          <p><a href="../Difficulty.html#Impossibru" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Help.</a></p>
+        </div>
+      </div>
+
+      <p id="featured_button" class="choices"><a href="../Featured.html">Featured</a></p>
+
+    </div>
+    <div id="More_Choices">
+      <a href="../../Others/Suggestions.html" class="More_Choices">Suggestion Box</a>
+      <a href="../../Others/About-Us.html" class="More_Choices">About</a>
+      <a href="javascript:void(0)" class="More_Choices" onclick="Very_Random()">Random</a>
+    </div>
+
+    <div class="Search">
+      <form name="Search_Bar" target="" method="post" class="More_Choices" autocomplete="off">
+        <img src="../../Multimedia/Search.ico" alt="" id="Search">
+        <input name="Search" type="text" id="Enter_Search" placeholder="Search Here..." onkeyup="List_Filter()" autocomplete="off">
+      </form>
+
+      <div id="Challenge_List">
+        <p><a href="../Pokemon/Platinum_Lv100_Magikarp.html">[Pokemon Platinum] <br>Lv100 Magikarp</a></p>
+        <p><a href="../Terraria/No_WASD.html">[Terraria] <br>No WASD</a></p>
+        <p><a href="../Terraria/Terra_Toilet.html">[Terraria] <br>Terra Toilet%</a></p>
+        <p><a href="../Hollow_Knight/Gun.html">[Hollow Knight] <br>Gun%</a></p>
+      </div>
+    </div>
+
+    </header>
+  </div>
+
+  <h3 id="Menu"><span onclick="openNav()">&#9776;</span></h3><!--https://www.toptal.com/designers/htmlarrows/symbols/
+  The sidenav-->
+  <div id="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h1>&times;</h1></a>
+    <a href="../../Others/Suggestions.html" class="Choices2" style="margin-left:0px">Suggestion Box</a>
+    <a href="../../Others/About-Us.html" class="Choices2">About</a>
+    <a href="javascript:void(0)" class="Choices2" onclick="Very_Random()">Random</a>
+    <p id="choices_2" class="More_Choices2">Make a choice:</p>
+    <a href="../Games.html" class="More_Choices2">By Game</a>
+    <a href="../Difficulty.html" class="More_Choices2">By Difficulty</a>
+    <a href="../Featured.html" class="More_Choices2">Featured</a>
+  </div>
+
+    <!--Here begins the Wall of Text:-->
+    <hr id="Header_Solver">
+    <div id="Wiki_WallOfText" style="padding-top:0.5em;">
+    <br><h2 style="margin-top:0;">Adventure Mode: No Sunflower</h2><hr>
+    <div id="Info">
+      <p class="Subtitle">Adventure Mode: No Sunflower</p>
+      <img style="width:75%;" class="Profile_Pic" src="../../Multimedia/Challenges/Sunflower_No.png" alt="By Popcap & EA">
+      <table>
+        <tr><td class='key'>Difficulty</td><td class='value'>Some Luck may be Required</td></tr>
+        <tr><td class='key'>Rating</td><td class='value'>
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt="">
+          <img src="../../Multimedia/Shiny_Star.webp" alt=""></td></tr>
+          <!--5 out of 5 stars-->
+        <tr><td class="key">Type</td><td class="value">Playthrough</td></tr>
+      </table>
+      <p class="Subtitle">Objective</p>
+      <p class="Subtitle_Text">Complete Adventure Mode without using Sunflowers or Sun-Shrooms</p>
+      <p class="Subtitle">Rules</p>
+      <p class="Subtitle_Text">Generally no cheating<br>(though some RNG is needed)</p>
+    </div>
+
+    <p class="quote">"Now that it's nighttime, you need Sunflowers more than ever. Are you sure you want to play the level without them?"</p>
+
+    <p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Sunflower_(PvZ)">Sunflowers</a> are key to everyone's playthrough of <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Plants_vs._Zombies">PvZ</a>. They produce <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Sun">sun</a>, which allows us to grow <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Plants_(PvZ)">Plants</a> on the <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Lawn">lawn</a> to defend against <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Zombies_(PvZ)">Zombies</a>.</p>
+
+    <p>What happens if you are deprived of it? Do the Zombies win? Why can't every level be a <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Conveyor-belt_levels">conveyor belt level</a>? I am sure there's a solution isn't there?</p>
+
+    <p>Let's find out!</p>
+
+    <p>(Oh, and to answer the conveyor belt question. That would be Easy Mode, and we are epic gamers of the epic variety, which means we are going to get good at a game, or become a games journalist.)</p>
+
+    <div class="Table_Of_Contents">
+    <ol>
+      <p>Contents</p>
+      <li><a href="#Ttk">Things to know</a></li>
+
+      <li><a href="#Guide" class="">Guide</a>
+      <ol>
+        <li><a href="#Day">Stage 1: Day</a></li>
+        <li><a href="#Night">Stage 2: Night</a></li>
+        <li><a href="#Pool">Stage 3: Pool</a></li>
+        <li><a href="#Fog">Stage 4: Fog</a></li>
+        <li><a href="#Roof">Stage 5: Roof</a></li>
+      </ol></li>
+
+      <li><a href="#Variations" class="">Variations</a>
+      <ol>
+        <li><a href="#Mini">Mini-Games</a></li>
+        <li><a href="#Survival">Survival Mode</a></li>
+        <li><a href="#Electric_Boogaloo">PvZ 2</a></li>
+      </ol></li>
+
+      <li><a href="#Gallery" class="">Gallery</a></li>
+    </ol>
+    </div>
+
+    <h4 id="Ttk">Things to know</h4><hr>
+    <ul>
+
+      <li><p>By no Sunflowers, this also extends to not using <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Sun-shroom_(PvZ)">Sun-Shroom</a>. This means the only method of acquiring sun is the ones that fall from the sky.</p></li>
+      <li><p>It is recommended that you have completed the game at least once, to have a better idea of each plant and zombie's ability.</p></li>
+      <li><p>To clarify: This challenge is specifically for the first time playing <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Adventure_Mode">Adventure Mode</a>, not the second, as the levels are very much harder the second time.</p></li>
+      <li><p>Conveyor belt levels are not counted – and honestly should not be a problem without sun – because, well, they don't require sun. Special Delivery!</p></li>
+
+    </ul>
+
+    <br><h4 id="Guide">Guide</h4><hr>
+    <ol>
+
+      <h5 id="Day">Stage 1: Day</h5>
+      <li><p>Your challenge begins here. I wish you the best of luck.</p></li>
+      <h6>Level 1-1: The most normal entry, really.</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Zombie_(PvZ)">Normal Zombies</a> are easy; a <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Peashooter_(PvZ)">Peashooter</a> can easily take care of them.</p></li>
+      <h6>Level 1-3: Construction in Progress</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Conehead_Zombie_(PvZ)">Conehead Zombies</a> start appearing, but they are just about beaten by a Peashooter planted in the first column (the moment it appears)</p></li>
+      <h6>Level 1-5: Wall-Nut Bowling</h6>
+      <h6>Level 1-6: The Olympic Sport</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Pole_Vaulting_Zombie">Pole Vaulting Zombie</a> appears, and is a problem for Peashooters to take out. Stall by putting a cheap plant in front of it to slow it down.</p></li>
+        <li><p>Alternatively, you get the <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Snow_Pea_(PvZ)">Snow Pea</a> after beating this level, so use that to your advantage. Note: Placing more than 1 Snow Pea in the same lane does absolutely nothing but waste 75 sun, thank me later</p></li>
+      <h6>Level 1-8: Iron Defence</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Buckethead_Zombie_(PvZ)">Buckethead Zombies</a> appear, and are the strongest Zombies for a long while. Use insta-kill plants like <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Potato_Mine_(PvZ)">Potato Mine</a> – make sure to stall! – and <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Chomper_(PvZ)">Chomper</a>, preferably protected by a <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Wall-nut_(PvZ)">Wall Nut</a></p></li>
+      <h6>Level 1-10: Conveyer Belt Level</h6>
+
+
+
+      <!--Just like a regular ol' paragraph!-->
+      <h5 style="margin-top:1rem;" id="Night">Stage 2: Night</h5>
+      <li><p>The <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Night">Night</a> stages feature two new Zombies that have a lot of health. Between that and a lack of Sun, <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Lawn_Mower">Lawn Mowers</a> are essential here to ensure a victory.</p></li>
+      <li><p>Seeing that the only plant you can possibly use is <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Puff-shroom_(PvZ)">Puff-Shroom</a>, do exactly that. Puff-Shroom spam is great because its free, and is a great source of cannon fodder. Not that you have anything else you can do.</p></li>
+
+      <h6>Level 2-1: Fresh Off the Press!</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Puff-shroom_(PvZ)">Newspaper Zombie</a> comes for a stroll. By having ~4-5 Puff-Shrooms in one row before the Newspaper Zombie appears and the Newspaper breaks, Newspaper Zombie can be taken out before it can finish off all the Puff-Shrooms.</p></li>
+
+      <h6>Level 2-3: Does no one use wood now?</h6>
+        <li><p>Enter the <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Screen_Door_Zombie_(PvZ)">Screen Door Zombie</a>. This is not a Zombie you can take out simply by Puff-Shroom spam. No, you will have to sacrifice the row of Puff-Shrooms.</p></li>
+        <li><p>What you do want to do, however, is to stall for as long as possible to take out as many Zombies with the singular Lawn Mower.</p></li>
+
+      <h6>Level 2-5: Whack a Zombie</h6>
+
+      <h6>Level 2-6: Rugby(?)</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Screen_Door_Zombie_(PvZ)">Football Zombie</a> steps in, basicaly being a faster version of Buckethead Zombie with more health. Yay.</p></li>
+        <li><p>This is another Zombie that will have to be killed by Lawn Mower. What you do want though, is to follow protocol for Lawn Mower clearance.</p></li>
+        <li><p>Like the Screen Door Zombie, stall for as long as it is possible for you to without losing other rows, and then the Lawn Mower will do the rest.</p></li>
+
+      <h6>Level 2-8: We have Neon Mixtape Tour at home</h6><!--This is an inside joke; there's a lot of them.-->
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Dancing_Zombie">Dancing Zombie</a> and his <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Backup_Dancer_(PvZ)">Backup Dancers</a> are summoned. They are hardly a threat, but a warning: If a Lawn Mower activates and take out all Zombies on a row, Backup Dancers may be spawned on those rows with no protection.</p></li>
+        <li><p>This means that Dancing Zombie is one of the only Zombies that you do not want near your Lawn Mowers; take him out at a distance as far away from the Lawn Mower as possible.</p></li>
+
+      <h6>Level 2-10: Another Conveyor Belt Level</h6>
+
+
+
+      <!--Just like a regular ol' paragraph!-->
+      <h5 style="margin-top:1rem;" id="Pool">Stage 3: Pool</h5>
+      <li><p>Pool Cleaners are a good upgrade to have as soon as possible, as Lawn Mowers only take care of Zombies in the first column, while <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Pool_Cleaner">Pool Cleaners</a> cover the entire lane.</p></li>
+      <li><p>If you haven't realised, Snow Peas are one of the best plants to use as they can easily slow Zombies down. Add to that the new Puff-Shrooms you acquired, and you are golden.</p></li>
+      <li><p></p></li>
+      <h6>Level 3-3: That's not fair!</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Snorkel_Zombie_(PvZ)">Snorkel Zombie</a> sneaks into the lawn, and manages to avoid all of the Plants.</p></li>
+        <li><p>Though anyone who played the game before will know to put Wall-Nuts on <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Lily_Pad_(PvZ)">Lily Pads</a> to flush it out, ha!</p></li>
+
+      <h6>Level 3-6: The... Wait, Space Ogre?!</h6><!--This is an inside joke; there's a lot of them.-->
+        <li><p>Following the <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Suburban_Almanac">Subarban Almanac's</a> desription, <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Zomboni">Zomboni</a> revs his engine and spreads snow onto the lawn.</p></li>
+        <li><p>Seeing he is immune to Snow Peas' slowing peas, the best option is to take him out fast with an insta-kill, such as <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Squash_(PvZ)">Squash</a>, and later <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Jalapeno_(PvZ)">Jalapeno</a></p></li>
+
+      <h6>Level 3-5: Big trouble Little Zombie</h6>
+
+      <h6>Level 3-8: The Not-Olympic Sport</h6>
+        <li><p>With a &#60;Insert Dolphin Sound Here&#62;, <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Dolphin_Rider_Zombie">Dolphin Rider Zombie</a> does the 3m platform dive (the only part that's Olympic-related), and leaps onto a Dolphin with the max level of grace, and proceeds to take out the whole row in like 3 seconds. (Think Fast!)</p></li>  <!-- 60: <  and   62: > -->
+        <li><p>Planting a Lily Pad will cause Dolphin Rider to jump over and lose its Dolphin and speed, and makes it a lot more manageable to take care of.</p></li>
+
+      <h6>Level 3-10: Conveyor Belt Level, Again</h6>
+
+
+
+      <!--Just like a regular ol' paragraph!-->
+      <h5 style="margin-top:1rem;" id="Fog">Stage 4: Fog</h5>
+        <li><p>Between it being nighttime again, and there being a giant wall of <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Fog">Fog</a>, it's pretty easy to see why this stage is the hardest of the bunch (barring <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Gargantuar_(PvZ)">Gargantuars</a> later on).</p></li>
+        <li><p>Since there's a lack of sun, you will rely on Puff-Shrooms and <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Sea-shroom">Sea-Shrooms</a> more than ever.</p></li>
+        <li><p>While the pool usually has less dangerous Zombies, Sea-Shrooms have a rather slow recharge time. Additional protection can be granted to one lane of the pool if one picks <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Scaredy-shroom_(PvZ)">Scaredy-Shroom</a> and Lily Pad (50 sun total), as Scaredy Shroom has a whole lawn's range.</p></li>
+        <li><p>Weirdly enough, Snorkel Zombie don't appear here, so that's good.</p></li>
+        <li><p>Keep your Lawn Mowers alive for as long as possible. There's a reason why.</p></li>
+
+      <h6>Level 4-1: Ticking Time Bomb</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Jack-in-the-Box_Zombie">Jack-in-the-Box Zombie</a> appears, and will blow up at exactly around the time your Puff shrooms get in range. Yay!</p></li>
+        <li><p>Either plant Puff-Shrooms near the front to take him out (Good luck figuring out which row), or plant them at the back so he destroys himself before getting to the Puff-Shrooms</p></li>
+
+      <h6>Level 4-3: The Problem with Inflation</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Balloon_Zombie_(PvZ)">Balloon Zombie</a>, as opposed to Snorkel Zombie, is too high to be hit by anything that isn't <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Cactus_(PvZ)">Cactus</a>, and guess what? No Cactus (and certainly not <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Blover_(PvZ)">Blover</a>)!</p></li>
+        <li><p>That means you will have to rely on Balloon Zombie appearing on rows with Lawn Mowers/Pool Cleaners (and not on the same row twice). This may seem impossible, but there are fewer Balloon Zombie than you think. If you get lucky, the levels are still doable, just with a bit of patience.</p></li>
+
+      <h6>Level 4-6: That's not fair! (Part 2)</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Digger_Zombie_(PvZ)">Digger Zombie</a> decides Minecraft can be played in real-life, and proceeds to dig all the way to the back of the lawn to eat your valuable plants.</p></li>
+        <li><p>Jokes on you, I ain't got valuable plants! Simply replace the eaten Puff-Shrooms, and you are good to go.</p></li>
+
+      <h6>Level 4-5: Vasebreaker</h6>
+
+      <h6>Level 4-8: Where can I get one of those?</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Pogo_Zombie">Pogo Zombie</a>, with a spring in his step – literally, forgive the pun – enters to bounce over all your plants, and reach the end.</p></li>
+        <li><p>Imagine thinking it can jump past 5-6 columns of Puff-Shrooms! The unactivated Puff-Shrooms at the back are more than ready to take it out. If not, make sure you saved Lawn Mowers!</p></li>
+
+      <h6>Level 4-10: Conveyor Belt Level (and Storm!)</h6>
+
+
+
+      <!--Just like a regular ol' paragraph!-->
+      <h5 style="margin-top:1rem;" id="Roof">Stage 5: Roof</h5>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Roof_Cleaner">Roof Cleaners</a>. Do I even have to explain why they are needed? Without purchasing them, the <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Roof">Roof</a> will not have a last line of protection as it would on the Lawn or in the <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Pool">Pool</a></p></li>
+        <li><p>Because of the slope on the roof, a lot of plants do not work well here. Stick to <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Cabbage-pult_(PvZ)">Cabbage-pult</a> and <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Kernel-pult_(PvZ)">Kernel-pult</a> for your main attackers. They are cheap and consistent.</p></li>
+        <li><p>Also, now that you can actually plant Plants now, it's a great idea to carry in as many insta-kill plants you can carry, because a lot of the harder Zombies can only be stopped in this way without losing Roof Cleaners.</p></li>
+        <li><p>If you want, you can continue to use Puff-Shrooms to stall, but <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Flower_Pot">Flower Pots</a> may be eaten as well.</p></li>
+
+      <h6>Level 5-1: Plants"R"Us</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Bungee_Zombie">Bungee Zombies</a> love stealing your Plants. Not much you can do about that, at least not until you get <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Umbrella_Leaf">Umbrella Leaf</a> at Level 5-6.</p></li>
+        <li><p>If it's a valuable plant he's taking (not that anything you have at the moment is particularly powerful), insta-kills can be deployed.</p></li>
+
+      <h6>Level 5-3: Why didn't you break this out sooner?</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Ladder_Zombie">Ladder Zombies</a>, for some reason, are like 3 times faster when carrying a ladder the size of their body after climbing up a roof, but slow down to a crawl when they lose it. Is this some sort of universal paradox I don't get?</p></li>
+        <li><p>Regardless, if you have the sun, spending money on <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Magnet-shroom_(PvZ)">Magnet-Shroom</a> and <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Coffee_Bean_(PvZ)">Coffee Bean</a> is a great way to slow them down. If you don't have the sun however, or have not gotten Coffee Bean (you get it this level), an insta-kill might be more worth it.</p></li>
+
+      <h6>Level 5-5: Bungee Blitz</h6>
+
+      <h6>Level 5-6: Portable Not-Trebuchet</h6>
+        <li><p><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Catapult_Zombie">Catapult Zombie</a> drives in, and starts lobbing <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Basketball">Baskets</a> at you. What do you do? You use Umbrella Leaf! Except you won't have them until completing the level, so just insta-kill them if other Zombies are in the way.</p></li>
+
+      <h6>Level 5-8: Why Do You Exist?!</h6>
+        <li><p>The mutant terror of the horde appears: The <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Gargantuar_(PvZ)">Gargantuar</a>. There are two choices here. You let the Gargantuar take down a line and sacrifice Plants and a Lawn Mower, or use 1-2 Insta-Kill Plants.</p></li>
+        <li><p>Generally, when <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Imp_(PvZ)">Zombie Imp</a> is thrown, it's a good warning that 1 Insta Kill can take out the Gargantuar.</p></li>
+
+      <h6>Level 5-10: Conveyor Belt Level (feat. Dr. Zomboss)</h6>
+
+    </ol>
+
+    <br><h4 id="Variations">Variations</h4><hr>
+    <h5 id="Mini">Mini-Games (Could be Worse)</h5>
+    <ul>
+      <li><p>The <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Mini-games">Mini-Game levels</a> that use the sun mechanic include:
+      <ul>
+        <li><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/ZomBotany">ZomBotany</a></li>
+        <li><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Slot_Machine">Slot Machine</a></li>
+        <li><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Seeing_Stars">Seeing Stars</a></li>
+        <li><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Bobsled_Bonanza">Bobsled Bonanza</a></li>
+        <li><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Zombie_Nimble_Zombie_Quick">Zombie Nimble Zombie Quick</a></li>
+        <li><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/ZomBotany_2">ZomBotany 2</a></li>
+        <li><a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Pogo_Party">Pogo Party</a></li>
+      </ul>
+      </p></li>
+      <li><p>Slot Machine may take a few tries, but if you get lucky (literally) and get a lot of sun, you should be able to win before the Zombies overwhelm you.</p></li>
+      <li><p>Seeing Stars is doable so long as you commit Starfruit Spam as quickly as possible. Puff-Shroom stall remains viable.</p></li>
+      <li><p>Bobsled Bonanza is another good level for Starfruit, due to the large numbers of weak Zombies appearing (barring Zomboni).</p></li>
+      <li><p>In Zombotany 2, the Zombies attacking the Pool rows are much weaker, so you will want to plant most of your attacking plants in the pool. This also applies to Bobsled Bonanza.</p></li>
+      <li><p>In Pogo Party, you either take Pogo Zombies out quick, or you take away their Pogo Sticks to slow them down.</p></li>
+      <li><p>ShyGuyMask has a great video on completing Pogo Party using a very specific strategy of <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Gloom-shroom_(PvZ)">Glooom-Shrooms</a>, Magnet-Shrooms and <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Garlic_(PvZ)">Garlic</a>. More info in the <a class="more_info" href="#Gallery">Gallery</a>.</p></li>
+    </ul>
+
+    <h5 id="Survival">Survival Mode (Help.)</h5>
+    <ul>
+      <li><p>While the <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Survival:_Day">Survival: Day</a>, <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Survival:_Pool">Survival: Pool</a> and <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Survival:_Roof">Survival: Roof</a> levels can be done easily through the use of Starfruit Spam, <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Cob_Cannon_(PvZ)">Cob Cannons</a> and the Pogo Party Strategy</p></li>
+      <li><p>However, at <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Survival:_Night">Night</a> and in the <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Survival:_Fog">Fog</a>, it is impossible to win by relying solely on Puff-Shrooms, especially when Zombies such as Gargantuar can appear.</p></li>
+      <li><p>This means that this challenge (and Hard Mode) is unfortunately impossible, unless you were to get legendary RNG (and even then it might still be impossible).</p></li>
+    </ul>
+
+    <h5 id="Electric_Boogaloo">PvZ 2, Electric Boogaloo (Massive Luck Required)</h5>
+    <ul>
+      <li><p>In theory, this is impossible as your strongest resource, <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Magnifying_Grass_(PvZ2)">Magnifying Grass</a> (Yes, no one insult Magnifying Grass), is lost. In practice, <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Plants_vs._Zombies_2">PvZ 2 </a>is a Free-To-Play Game.</p></li>
+      <li><p>If you <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Plant_upgrade_system">upgraded</a> every cheap Plant to their Max Level, and used <a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Plant_Food">Plant Food</a>/<a class="more_info" href="https://plantsvszombies.fandom.com/wiki/Power_Ups">Power-Up</a> whenever you can, this challenge is technically possible. That is, if you want to get bankrupt.</p></li>
+      <li><p>Note: This does not include levels where there is an objective that requires the production of a minimum amount of sun.</p></li>
+    </ul>
+
+    <br><h4 id="Gallery">Gallery</h4><hr>
+    <div class="Gallery_Content">
+    <table>
+      <tr>
+        <td colspan="2"><img src="https://i.ytimg.com/vi/45lPyzs8suc/hq720.jpg" alt="By ShyGuyMask"></td>
+        <td colspan="2"><img src="https://i.ytimg.com/vi/jhxcIJOaxcM/hq720.jpg" alt="By ShyGuyMask"></td>
+        <td colspan="2"><img src="https://i.ytimg.com/vi/pCeY9sA0wAg/hq720.jpg" alt="By Detara"></td>
+      </tr>
+
+      <tr>
+        <td colspan="2"><p><a href="https://youtu.be/45lPyzs8suc" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> ShyGuyMask attempting to complete Adventure Mode without Sunflowers</a></p></td>
+        <td colspan="2"><p><a href="https://youtu.be/jhxcIJOaxcM" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> ShyGuyMask attempting to complete Mini-Games and Survival without Sunflowers</a></p></td>
+        <td colspan="2"><p><a href="https://youtu.be/pCeY9sA0wAg" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Detara completes all the Day Levels in Adventure mode a 2nd time without Sunflowers (with greater analysis)</a></p></td>
+        <!--Space bar for extra distance between text and button-->
+      </tr>
+      <tr>
+        <td colspan="3"><img src="https://i.ytimg.com/vi/HTDMKmEo4RY/hq720.jpg" alt="By Detara"></td>
+        <td colspan="3"><img src="https://i.ytimg.com/vi/AINIoyoRN00/hq720.jpg" alt="By Detara"></td>
+      </tr>
+
+      <tr>
+        <td colspan="3"><p><a href="https://youtu.be/HTDMKmEo4RY" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Detara completes all the Night Levels in Adventure mode a 2nd time without Sunflowers<br>(with greater analysis)</a></p></td>
+        <td colspan="3"><p><a href="https://youtu.be/AINIoyoRN00" target="_blank"><img src="../../Multimedia/Play_Button.png" class="Play_Button"> Detara completes all the Pool Levels in Adventure mode a 2nd time without Sunflowers<br>(with greater analysis)</a></p></td>
+        <!--Space bar for extra distance between text and button-->
+      </tr>
+    </table>
+    </div>
+    <table id="Before_After">
+      <tr><td><p>Previous</p></td>  <td><p>Index</p></td>  <td><p>Next</p></td> </tr>
+      <tr><td><p>Start</p></td>  <td><p><a href="">Hollow Knight</a></p></td>  <td><p><a href="">PvZ:<br>Adventure Mode, No Sunflowers</a></p></td></tr>
+    </table>
+    </div>
+    <footer>
+      <h2 id="icon"><img src="../../Multimedia/Controller_Icon.png"> Gamer's Gauntlet</h2>
+      <!--Icon found here: https://commons.wikimedia.org/wiki/File:Video-Game-Controller-Icon-D-Edit.svg-->
+      <table id="More_Choices_Back_Again">
+        <tr>  <td><a href="../../Others/Suggestions.html">Suggestion Box</a></td>  <td><a href="../../Others/About-Us.html">About</a></td>  <td><a href="" onclick="Very_Random()">Random</a></td>  </tr>
+      </table>
+      <p class="Official_info">This is a personal project and is not intended for business.</p>
+      <p class="Official_info">All Multimedia rights are reserved to their respective owners.</p>
+      <p class="Official_info">More info is available in the HTML code.</p>
+    </footer>
+    </body>
+    </html>
