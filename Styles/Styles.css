@@ -4,230 +4,234 @@
   box-sizing:border-box;/*The CSS box-sizing property allows us to include the padding and border in an element's total width and height.*/
 }
 
-/** {/*Check for ghost elements*/
-  background: #000 !important;
-  color: #0f0 !important;
-  outline: solid #f00 1px !important;
+/** {/*Check for ghost elements; very contrasting colours*/
+  background: #000 !important;/**/
+  color: #0f0 !important;/**/
+  outline: solid #f00 1px !important;/**/
 }*/
 html {/*or document*/
-  width:100%;/*Makes website not freak out when dimensions change (as much)*/
+  width:100%;/*Makes website not freak out when dimensions change (as much), confining to normal view*/
 }
 body{
-  overflow-x: hidden;
+  overflow-x: hidden;/*Reduce horizontal scrolling possibility; does not work on phone*/
 }
 
 #BG {
-  position:fixed;
-  right:0;
-  top:0;
-  width:100%;
-  height:100%;
-  z-index:-1;
+  position:fixed;/*Background stays as screen scrolls*/
+  right:0;/*Positioning*/
+  top:0;/*Positioning*/
+  width:100%;/*Covers the whole window*/
+  height:100%;/*Covers the whole window*/
+  z-index:-1;/*Always below everything*/
 }
 
 /*Header Start!!!*/
 header{
-  background-color:#151515;
-  height:100px;
-  min-width:100%;
-  top:0px;
-  left:0px;
-  position:absolute;
-  z-index:1;
+  background-color:#151515;/*Design*/
+  height:100px;/*Height does not change with contents, so must be changed*/
+  min-width:100%;/*Must always go across the entire screen*/
+  top:0px;/*Positioning*/
+  left:0px;/*Positioning*/
+  position:absolute;/*Does not interfere with content; invisible 'hr' acts as height*/
+  z-index:1;/*Dropdown menu does not go behind content*/
 }
 
 #logo img{
-  height:75px;
-  width:auto;
-  cursor:pointer;
-  position:absolute;
-  margin-top:15px;
-  margin-left:10px;
+  height:75px;/*Design*/
+  width:auto;/*Design*/
+  cursor:pointer;/*Shows there is anchor attached*/
+  position:absolute;/*Positioning*/
+  margin-top:15px;/*Positioning*/
+  margin-left:10px;/*Positioning*/
 }
 
 #choose {
   font-family:Perpetua,Garamond,'Brush Script MT';/*Perpetua is not web-safe*/
-  font-size:1.5em;
-  font-style: italic;
-  margin:0;
+  font-size:1.5em;/*Formatting*/
+  font-style: italic;/*Formatiing*/
+  margin:0;/*Positioning*/
 }
 
 header p, .games_button, .difficulty_button{
-  color:white;
-  font-size:0.9em;
+  color:white;/*Formatting*/
+  font-size:0.9em;/*Formatting*/
 }
 
 /*For when hovering on links*/
 /*Header*/#Choices a:hover, #featured_button a:hover, .More_Choices:hover, .Choices2:hover, a.More_Choices2:hover, #very_random:hover, .Table_Of_Contents a:hover, .Gallery_Content a:hover, .more_info:hover, #Before_After a:hover, #Elaborate_Choices a:hover, #Elaborate_Choice_2:hover span{
-  color:#729aca;
-  transition-duration:0.3s;
+  color:#729aca;/*Formatting*/
+  transition-duration:0.3s;/*Smooth instead of instantaneous*/
 }
 
 #Choices{
-  margin-right:35vw;
-  margin-top:15px;
-  text-align: center;
+  margin-right:35vw;/*Positioning*/
+  margin-top:15px;/*Positioning*/
+  text-align: center;/*Positioning; wihthout it the div is on the left*/
 }
 
 #Choices a {
-  text-decoration: none;
-  color: white;
+  text-decoration: none;/*Formatting*/
+  color: white;/*Formatting*/
 }
 
 /*Sorting challenge by games*/
 .games_content{
-  display:none;
+  display:none;/*Content does not display; only when hovering*/
   position:absolute;/*Will not affect other elements upon appearing*/
-  border-radius:8px;
-  text-align:left;
-  background-color:#2a2a2a;
+  border-radius:8px;/*Formatting*/
+  text-align:left;/*Formatting*/
+  background-color:#2a2a2a;/*Formatting*/
+  z-index:2;/*Above Search Bar that appears*/
 }
 .games_content p {
-  margin:0;
+  margin:0;/*Positioning*/
 }
 .games_content a {
-  padding:7.5px;
-  margin-bottom:0px;
-  display: block;
+  padding:7.5px;/*Positioning*/
+  margin-bottom:0px;/*Positioning*/
+  display: block;/*Displays one row at a time*/
 }
 .games_content a:hover{
-  background-color:#2f2f2f
+  background-color:#2f2f2f/*Indicate it is interactable*/
 }
 .game_choices{
-  display:inline-block;
+  display:inline-block;/*Formatting*/
 }
 .game_choices:hover .games_content {
-  display:block;
-  position: absolute;
+  display:block;/*Content displays upon hovering, see ".games_content"*/
+  position: absolute;/*Will not affect other elements upon appearing*/
 }
 .games_button {
-  font-weight: bold;
-  margin:0 1vw;
+  font-weight: bold;/*Formatting*/
+  margin:0 1vw;/*Positioning*/
 }
 
 /*Sorting challenge by difficulty*/
 .difficulty_content {
-  display:none;
+  display:none;/*Content does not display; only when hovering*/
   position:absolute;/*Will not affect other elements upon appearing*/
-  border-radius:8px;
-  text-align:left;
-  background-color:#2a2a2a;
+  border-radius:8px;/*Formatting*/
+  text-align:left;/*Formatting*/
+  background-color:#2a2a2a;/*Formatting*/
+  z-index:2;/*Above Search Bar that appears*/
 }
 .difficulty_content p {
-  margin:0;
+  margin:0;/*Positioning*/
 }
 .difficulty_content a {
-  padding:7.5px;
-  margin-bottom:0px;
-  display: block;
+  padding:7.5px;/*Positioning*/
+  margin-bottom:0px;/*Positioning*/
+  display: block;/*Displays one row at a time*/
 }
 .difficulty_content a:hover{
-  background-color:#2f2f2f
+  background-color:#2f2f2f;/*Indicate it is interactable*/
 }
 .difficulty_choices{
-  display:inline-block;
+  display:inline-block;/*Formatting*/
+  z-index:2;
 }
 .difficulty_choices:hover .difficulty_content {
-  display:block;
-  position: absolute;
+  display:block;/*Content displays upon hovering, see ".difficulty_content"*/
+  position: absolute;/*Will not affect other elements upon appearing*/
 }
 .difficulty_button {
-  font-weight: bold;
-  margin:0 1vw;
+  font-weight: bold;/*Formatting*/
+  margin:0 1vw;/*Positioning*/
 }
 
 /*Featured Challenges*/
 #featured_button {
-  display:inline-block;
-  font-weight:bold;
-  margin:0 1vw;
+  display:inline-block;/*Positioning*/
+  font-weight:bold;/*Formatting*/
+  margin:0 1vw;/*Positioning*/
 }
 
 #More_Choices {
-  position:absolute;
-  bottom:35px;
-  margin-left:49vw;
-  float:right;
+  position:absolute;/*Positioning; does not affect other elements*/
+  bottom:35px;/*Positioning*/
+  margin-left:49vw;/*Positioning*/
+  float:right;/*Positioning*/
 }
 
 .More_Choices{
-  text-decoration: none;
-  color: white;
-  display:inline-block;
-  margin:0 1.5vw;
+  text-decoration: none;/*Formatting*/
+  color: white;/*Formatting*/
+  display:inline-block;/*Positioning*/
+  margin:0 1.5vw;/*Positioning*/
 }
-/*Search Button*/
+/*Search Icon*/
 #Search {
-  width:auto;
-  height:15px;
-  bottom:2.5px;
-  position:relative;
-  z-index:2;
+  width:auto;/*Formatting*/
+  height:15px;/*Formatting*/
+  bottom:2.5px;/*Positioning*/
+  position:relative;/*Positioning; activate z-index*/
+  z-index:2;/*Appear above Search Bar*/
 }
 
 #Enter_Search {
-  border-radius:17.5px;
-  right:25px;
-  height:30px;
-  padding:5px 5px 5px 25px;
-  margin-right:0px;
+  border-radius:17.5px;/*Formatting*/
+  right:25px;/*Positioning*/
+  height:30px;/*Formatting*/
+  padding:5px 5px 5px 25px;/*Formatting*/
+  margin-right:0px;/*Formatting*/
   outline-style:none;/*No outlines*/
   border-style:none;/*No borders*/
-  position: relative;
-  z-index:1;
+  position: relative;/*Positioning; activate z-index*/
+  z-index:1;/*Appears below Search Icon*/
 }
 
 .Search {
-  position:relative;
-  float:right;
-  bottom:39.5px;
+  position:relative;/*Positioning*/
+  float:right;/*Positioning*/
+  bottom:39.5px;/*Positioning*/
 }
 
 #Challenge_List {
-  position:absolute;
-  background-color:white;
+  position:absolute;/*Will not affect other elements upon appearing*/
+  background-color:white;/*Formatting*/
   display:none;/*Starts with not seeable*/
   /*left:calc(10.5vw + 245px);/*Horrible value to find*/
-  left: calc(2vw + 10px);/*Another horrible value*/
-  border:1px solid black;
-  min-width:160px;
+  left: calc(2vw + 10px);/*Another horrible value; ensures list of options sticks to top of search bar when resolution changes*/
+  border:1px solid black;/*Formatting*/
+  min-width:160px;/*Formatting*/
 }
 
 #Challenge_List a{
-  color:black;
-  text-decoration:none;
-  width:100%;
+  color:black;/*Formatting*/
+  text-decoration:none;/*Formatting*/
+  width:100%;/*Formatting*/
 }
 #Challenge_List p {
-  padding:5px;
-  width:100%;
-  margin:0px;
+  padding:5px;/*Formatting*/
+  width:100%;/*Formatting*/
+  margin:0px;/*Formatting*/
+  font-size:12px;/*Formatting*/
 }
 #Challenge_List p:hover a {
-  color:white;
+  color:white;/*Indicate that it is interactable*/
 }
 #Challenge_List p:hover {
-  background-color:#2f2f2f;
+  background-color:#2f2f2f;/*Indicate that it is interactable*/
 }
 
 #Menu{
   float:right;/*Stick to the right*/
-  position:relative;
-  margin-right:30px;
-  top:16.5px;
-  width:auto;
-  display:none;
-  color:white;
+  position:relative;/*Allows positioning*/
+  margin-right:30px;/*Positioning*/
+  top:16.5px;/*Positioning*/
+  width:auto;/*Formatting*/
+  display:none;/*Appears only when supposed to; not when screen is full*/
+  color:white;/*Formatting*/
   cursor:pointer;/*Cursor becomes hand*/
-  z-index:1;
+  z-index:1;/*Appears on top of header*/
 }
 
 @media only screen and (max-width: 1225px) {/*Header change, based on window width*/
   #More_Choices{
-    display:none;
+    display:none;/*Disappears to indicate it appears in sidenav*/
   }
   #Menu{
-    display:block;
+    display:block;/*Menu appears to indicate clickable to open menu*/
   }
   #Choices{/*Center what's left*/
     margin-left:10vw;
@@ -240,567 +244,616 @@ header p, .games_button, .difficulty_button{
   .More_Choices {
     margin:0px;/*Affects only search bar, as the other elements are not disaplayed*/
   }
-  .Search {
-    display:block;
-    position:absolute;
-    bottom:-5px;
-    margin:0 7.5vw 20px;
+  .Search {/*Positioning Changes*/
+    display:block;/**/
+    position:absolute;/**/
+    bottom:-5px;/**/
+    margin:0 7.5vw 20px;/**/
   }
   #Enter_Search {
-    min-width:85vw;
-    right:0px;
-    border-radius:0px;
-    background-color:inherit;
-    border-bottom: 1px solid white;
-    color:white;
+    min-width:85vw;/*Search Bar moves to bottom*/
+    right:0px;/*Formatting Change*/
+    border-radius:0px;/*Formatting aChange*/
+    background-color:inherit;/*Formatting Change*/
+    border-bottom: 1px solid white;/*Formatting Change*/
+    color:white;/*Formatting Change*/
   }
-  #Search {
-    top:25px;
-    left:7.5px;
-    background-color:white;
-    padding:2.5px;
-    border-radius:100px;
+  #Search {/*Positioning, formatting changes*/
+    top:25px;/**/
+    left:7.5px;/**/
+    background-color:white;/**/
+    padding:2.5px;/**/
+    border-radius:100px;/**/
   }
-  #Challenge_List {
-    min-width:85vw;
-    left:0px;
-    border-top:none;
+  #Challenge_List {/*Formatting, positioning changes*/
+    min-width:85vw;/**/
+    left:0px;/**/
+    border-top:none;/**/
   }
   #Challenge_List br {
-    display:none;
+    display:none;/*Everything goes on one line because it's long enough to support*/
   }
+
   /*Changes to support change in elements within header*/
   header {
-    height:145px;
+    height:145px;/*Increase to support search bar*/
   }
-  #Content {
-    margin-top:calc(8em + 25px) !important; /*Not possible to make more specific to overwrite normal margin domensions*/
-  }
+  #Wiki_WallOfText, #Content {
+    margin-top:calc(8em + 42.5px) !important; /*Not possible to make more specific to overwrite normal margin domensions*/
+  }/*Moves content down to support header height increase; 8em is previous*/
 }
 
 @media only screen and (max-width: 680px) {
   #Choices{
-    display: none;
+    display: none;/*Even more choices disappear into the menu*/
   }
   /*Sidenav time!*/
   #sidenav #Enter_Search, #sidenav a:not(.closebtn) {
-    margin:0px auto auto auto;
+    margin:0px auto auto auto;/*Centers elements*/
   }
   .More_Choices2{
-    display:block;
+    display:block;/*Positioning*/
   }
 }
 
 @media only screen and (min-width: 680px) {/*Extra choices come out only when they are supposed to*/
   .More_Choices2{
-    display: none;
+    display: none;/*Disappears when window increases again*/
   }
 }
 
 @media only screen and (min-width: 1225px) {
   #sidenav a, #sidenav p{
-    display: none;
+    display: none;/*More choices disappear*/
   }
 }
 
 /* The side navigation menu */
 #sidenav {
   height: 100%; /* Top-Bottom all the way */
-  width: 0; /*To be manipulated by JavaScript */
+  width: 0; /*To be increased/decreased by JavaScript */
   position: fixed; /*No move (usually)*/
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
-  right:0;
-  background-color: #E6E6E6;
+  right:0;/*Stay at right; to come out at right*/
+  background-color: #E6E6E6;/*Formatting*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px;
+  padding-top: 20px;/*Starts not all the way at the top*/
   transition-duration: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 .Choices2 {
-  margin-top:30px;
+  margin-top:30px;/*Distance between blocks*/
 }
 
 .Choices2,.More_Choices2{
-  text-decoration: none;
-  text-align: center;
-  color:black;
+  text-decoration: none;/*Formatting*/
+  text-align: center;/*Center of sidenav*/
+  color:black;/*Formatting*/
 }
 
 a.More_Choices2:last-of-type {
-  padding-bottom:25px;
-}
-
-#sidenav #Enter_Search {
-  display:flex;/*seperate rows*/
-  text-align: center;
-  margin:50px auto auto auto;
-  padding-left:5px;
-}
-
-#sidenav #Search {
-  display:none;
+  padding-bottom:25px;/*To differentiate between 2 groups of choices*/
 }
 
 .closebtn{
-  text-align: right;
-  text-decoration: none;
-  color: black;
+  text-align: right;/*Button in top right corner*/
+  text-decoration: none;/*Formatting*/
+  color: black;/*Formatting*/
 }
 
 #choices_2{
-  text-align: center;
+  text-align: center;/*Center of sidenav*/
   font-family:Perpetua,Garamond,'Brush Script MT';/*Perpetua is not web-safe*/
-  font-style: italic;
-  font-size: 1.5em;
-  margin-top:1.5em;
+  font-style: italic;/*Formatting*/
+  font-size: 1.5em;/*Formatting*/
+  margin-top:1.5em;/*More distance between 2 groups of choices*/
 }
 
 /*For non-wiki Walls Of Text*/
 #Content{
-  min-height:100vh;/*Ar least 1 window height of content*/
-  background-color:rgba(242, 238, 225, 0.9);
-  margin: 8em 3.5em 1.5em;
-  border-radius:20px;
-  padding-bottom:1.5em;
+  min-height:100vh;/*At least 1 window height of content*/
+  background-color:rgba(242, 238, 225, 0.9);/*Same colour, but in rgba*/
+  margin: 8em 3.5em 1.5em;/*Positioning*/
+  border-radius:20px;/*Formatting*/
+  padding-bottom:1.5em;/*Formatting*/
 }
 #Announce_WallOfText{
-  text-align:center;
-  padding: 10px 17.5vw;
+  text-align:center;/*Announcements like to be in the middle*/
+  padding: 10px 17.5vw;/*Formatting*/
   /*background-color: none;(Why did no one tell me this worked*/
 }
 #Announce_WallOfText p{
-  font-size: 1.25em;
+  font-size: 1.25em;/*Announcement text needs to be larger*/
 }
 #Announce_WallOfText h2,#Wiki_WallOfText h2{
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 10px;/*Formatting*/
+  margin-bottom: 20px;/*Formatting*/
 }
 
 /*For wiki Walls of Text*/
 #Wiki_WallOfText{
-  min-height:100vh;/*Ar least 1 window height of content*/
-  background-color: #F2EEE1;
-  margin: 8em 3.5em 1.5em 3.5em;
-  padding: 2em 2.5em;
-  font-size: 15px;
-  border-radius:20px;
+  min-height:100vh;/*At least 1 window height of content*/
+  background-color: #F2EEE1;/*Formatting*/
+  margin: 8em 3.5em 1.5em 3.5em;/*Formatting*/
+  padding: 2em 2.5em;/*Formatting*/
+  font-size: 15px;/*Wikis have smaller, more paragraph-readable text*/
+  border-radius:20px;/*Formatting*/
   opacity:0.9;/*Makes transparentness*/
-  overflow-x: hidden;
+  overflow-x: hidden;/*No moving to the left/right; bad for mobile (but we take no chances)*/
 }
 
-@media only screen and (max-width: 875px) {/*Background disappears due to warping*/
-  #Wiki_WallOfText {
-    margin:0;
-    border-radius:0px;
-    width:100%;
-    opacity:0.95;
+@media only screen and (max-width: 875px) {/*Background disappears due to it warping at this point*/
+  #Wiki_WallOfText {/*Everything fills the screen, warped background is covered*/
+    margin:0 !important;/**/
+    border-radius:0px;/**/
+    width:100%;/**/
+    opacity:0.95;/*Harder to see*/
   }
-  #Content {
+  #Content {/*Everything fills the screen, warped background is covered*/
     margin:0 !important; /*Target inline CSS in suggestions*/
-    border-radius:0px;
-    width:100%;
-    background-color:rgba(242, 238, 225, 0.95);
+    border-radius:0px;/**/
+    width:100%;/**/
+    background-color:rgba(242, 238, 225, 0.95);/*Harder to see*/
   }
   #Header_Solver {
-    height:112.5px;
+    height:112.5px;/*Content moves up because margin lost; hr moves it back down*/
   }
   #Content #Elaborate_Choices {/*More specific than outside of media query*/
-    height:auto;
+    height:auto;/*Formatting; heights can be different as they are on different rows*/
   }
   #Elaborate_Choices .break_time {/*More specific than outside of media query*/
-    display:block;
+    display:block;/*<br> appears to push each div to a new row*/
   }
   #Content #Elaborate_Choices div {/*More specific than outside of media query*/
-    width:75vw;
-    max-width:320px;
+    width:75vw;/*Is held back by 75% of view width*/
+    max-width:320px;/*Maximum width of each div*/
   }
   #Content #Elaborate_Choices div img {/*More specific than outside of media query*/
-    width:75vw;
-    height:75vw;
-    max-width:320px;
-    max-height:320px;
-    padding:1.25vw;
+    width:75vw;/*Formatting; keeping with the div*/
+    height:75vw;/*Square image*/
+    max-width:320px;/*Formatting;keeping wiht the div*/
+    max-height:320px;/*Square image*/
+    padding:1.25vw;/*Everyone likes a border that's not a border*/
   }
 }
 
 #Header_Solver {
-  visibility:hidden;
+  visibility:hidden;/*Occupies space, because header and contents are absolute; their contents mess up the flow in relative*/
 }
 .Table_Of_Contents {/*For the Table of Contents*/
-  margin:50px auto 45px auto;
-  display:table;
-  z-index: 1;
-  border:1px solid black;
-  background-color:#faf8f3;;
-  list-style-position: inside;
-  padding:5px 40px 5px 5px;
-  width:;
+  margin:50px auto 45px auto;/*Formatting*/
+  display:table;/*Doesn't cover the whole screen. ALso 'table' of contents.*/
+  z-index: 1;/*Formatting*/
+  border:1px solid black;/**/
+  background-color:#faf8f3;/*Formatting*/
+  padding:5px 40px 5px 5px;/*Formatting*/
 }
 .Table_Of_Contents p{
-  font-weight: bold;
-  text-decoration: underline;
-  margin-top:5px;
-  margin-bottom:5px;
+  font-weight: bold;/*Formatting; top line*/
+  text-decoration: underline;/*Formatting*/
+  margin-top:5px;/*Formatting*/
+  margin-bottom:5px;/*Formatting*/
 }
 .Table_Of_Contents a {
-  color:black;
-  text-decoration: none;
+  color:black;/*Formatting*/
+  text-decoration: none;/*Formatting*/
 }
 .Table_Of_Contents ol ol{
-  list-style-type: lower-roman;
+  list-style-type: lower-roman;/*Formatting bullets to i, ii, iii, iv, v,...*/
 }
 .Table_Of_Contents ol ol ol{
-  list-style-type: lower-alpha;
+  list-style-type: lower-alpha;/*Formattting bullets to a, b, c, d, e,...*/
 }
 
 #very_random{/*For the random buttons that appear where you don't expect them*/
-  padding:3px 5px;
-  text-decoration: none;
-  color: inherit;
-  border:2px solid black;
-  font-size: 1em;
-  transition-duration:0.3s;
+  padding:3px 5px;/*Formatting*/
+  text-decoration: none;/*Formatting*/
+  color: inherit;/*Formatting*/
+  border:2px solid black;/*Formatting*/
+  font-size: 1em;/*Formatting*/
+  transition-duration:0.3s;/*Transition timing; not in the main transition css*/
 }
 #very_random:hover{
-  border:3px solid #729aca;
+  border:3px solid #729aca;/*Border increses and turns blue*/
 }
 
 .links{/*For the links in the Wall of Text*/
-  text-decoration:none;
-  color:#3a679c;
-  transition-duration:0.3s;
+  text-decoration:none;/*Formatting*/
+  color:#3a679c;/*Colors are less jarring, but still quite jarring*/
+  transition-duration:0.3s;/*Transition timing; not in the main transition css*/
 }
 .links:hover{
-  color:#729aca;
+  color:#729aca;/*Turns blue, QOL*/
 }
 
 .quote{
-  font-style: italic;
-  font-size: 1.5em;
-  font-weight: bold;
-  font-family:Perpetua,Garamond,'Brush Script MT';
-  color:
+  font-style: italic;/*Formatting*/
+  font-size: 1.5em;/*Formatting*/
+  font-weight: bold;/*Formatting*/
+  font-family:Perpetua,Garamond,'Brush Script MT';/**/
 }
 
 #Info {/*Short Summary Write-up*/
-  width:20em;
-  border:1px solid grey;
-  float:right;
-  display;
-  border-radius: 8px;
-  margin-left:3em;
-  background-color:#faf8f3;
+  width:20em;/*Formatting*/
+  border:1px solid grey;/*Formatting*/
+  float:right;/*Stick to right*/
+  border-radius: 8px;/*Formatting*/
+  margin-left:3em;/*Distance between text on left and the block*/
+  background-color:#faf8f3;/*Formatting*/
 }
 #Info h5{
-  text-align: center;
+  text-align: center;/*Formatting*/
 }
 @media only screen and (max-width:500px) {
   #Info {
-    display:block;
+    display:block;/*Content on left moves down; is not one word per line*/
   }
 }
 
 @media only screen and (max-width: 365px) {/*Smallest device is 320px width*/
   #Info {
-    width:275px;
-    margin-right:-1.75em;
+    width:275px;/*Becomes smaller to fit*/
+    margin-right:-1.75em;/*Moves to fit*/
   }
 }
 
 .key{
-  font-weight: bold;
-  padding:5px 10px;
+  font-weight: bold;/*Formatting*/
+  padding:5px 10px;/*Formatting*/
 }
 .value{
-  padding: 5px 10px;
+  padding: 5px 10px;/*Formatting*/
 }
-.value img,.key img{
-  height:auto;
-  width:25px;
-  display:inline-block;
+.value img,.key img{/*The Stars*/
+  height:auto;/*Formatting*/
+  width:25px;/*Formatting*/
+  display:inline-block;/*Acts inline instead of row by row*/
 }
 .Profile_Pic{
-  margin: auto;
-  padding: 5px 0px;
-  height:auto;
-  display: block;
+  margin: auto;/*Formatiing*/
+  padding: 5px 0px;/*Formatiing*/
+  height:auto;/*Formatiing*/
+  display: block;/*Only image in row, everything below*/
 }
 .Subtitle{
-  font-weight: normal;
-  font-size: 1.15em;
-  text-align: center;
-  margin: 2px;
+  font-weight: normal;/*Formatting*/
+  font-size: 1.15em;/*Formatting*/
+  text-align: center;/*Formatting*/
+  margin: 2px;/*Formatting*/
   /*background-color:#ACE7FF;*/
-  background-color:#FFF5BA;
+  background-color:#FFF5BA;/*Formatting*/
 }
 .Subtitle_Text{
-  text-align: center;
-  padding:0 1.5em;
+  text-align: center;/*Formatting*/
+  padding:0 1.5em;/**Formatting/
 }
 .Gallery_Content{
   /*overflow-x:auto;*/
-  margin-bottom: 1em;
+  margin-bottom: 1em;/*Formatting*/
 }
 .Gallery_Content tr:first-of-type td img{
-  margin-top:1.5em;
+  margin-top:1.5em;/*Distance between hr and gallery; affects whole 1st row*/
 }
 @media only screen and (max-width: 875px) {
   .Gallery_Content{
-    overflow-x:auto;
-    overflow-y:hidden;
+    overflow-x:auto;/*Images are hard to control width, so making it scrollable*/
+    overflow-y:hidden;/*But not vertically*/
   }
 }
 .Gallery_Content table{/*Specially for the gallery (that fails to do its job right)*/
-  width:100%;
-  height:15em;
+  width:100%;/*Covers the entire div width*/
+  height:15em;/*Minimally*/
 }
 .Gallery_Content td,.Gallery_Content img{
-  padding: 0;
-  margin: 0;
+  padding: 0;/*Formatting*/
+  margin: 0;/*Formatting*/
 }
-.Gallery_Content img:not(.Play_Button){
-  height:auto;
-  width:15em;
-  margin: auto;
-  display: block;
-  padding-top:3px;
-  padding:0 0.75em;
+.Gallery_Content img:not(.Play_Button){/*Play button is an image, but we don't want to use that*/
+  height:auto;/*Formatting*/
+  width:15em;/*Formatting*/
+  margin: auto;/*Formatting*/
+  display: block;/*Formatting*/
+  padding-top:3px;/*Formatting*/
+  padding:0 0.75em;/*Formatting*/
 }
 .Gallery_Content p{
-  text-align: center;
-  margin:1.5em auto 2em auto;
-  width:15em;
-  padding: 0;
+  text-align: center;/*Stars in center*/
+  margin:1.5em auto 2em auto;/*Formatting*/
+  width:15em;/*Formatting*/
+  padding: 0;/*Formatting*/
 }
 .Gallery_Content a{
-  text-decoration: none;
-  color: black;
+  text-decoration: none;/*Formatting*/
+  color: black;/*Formatting*/
 }
 .Play_Button{
-  display:inline-block;
-  vertical-align:super;
-  width:auto;
-  height:15px;
-  position: relative;
-  top:7.5px;
+  display:inline-block;/*Together with text linking to video; iframes feel unprofessional, with the buffering and janky YouTube logo; if its on YouTube, people feel more comfortable watching, at least that's how I feel*/
+  vertical-align:super;/*Moves up to stay somewhat vertically aligned*/
+  width:auto;/*Formatting*/
+  height:15px;/*Formatting*/
+  position: relative;/*Formatting*/
+  top:7.5px;/*Formatting*/
 }
 a.more_info{
-  text-decoration: none;
+  text-decoration: none;/*Formatting*/
 }
 .Value_Table:nth-child(2n+1){
-  text-align: right;
+  text-align: right;/*Odd values align to right*/
 }
 .Value_Table:nth-child(2n){
-  padding-left: 15px;
+  padding-left: 15px;/*Even values align left, but start a distance away*/
 }
 .Table_Of_Values{
-  width:75vw;
-  max-width:600px;
+  width:75vw;/*Minimal width, unless*/
+  max-width:600px;/*Width becomes 600px, where it stays as 600px*/
 }
 .Table_Of_Values td{
-  padding:5px;
-  padding-right:1em;
+  padding:5px;/*Formatting*/
+  padding-right:1em;/*Formatting*/
 }
 .Table_Of_Values td:nth-of-type(3n) {/*3rd column: 3, 6, 9, 12, ...*/
-  padding-right:1.5em;
+  padding-right:1.5em;/*Formatting*/
 }
 .Table_Of_Values td:nth-of-type(3n-2) {/*1st column: 1, 4, 7, 10, ...*/
-  width:100px;
+  width:100px;/*Formatting*/
 }
 .Table_Of_Values td:nth-of-type(3n-1) {/*2nd column: 2, 5, 8, 11, ...*/
-  width:125px;
+  width:125px;/*Formatting*/
 }
 @media only screen and (max-width: 370px) {
   .Table_Of_Values td{
-    padding-right:5px;
-    font-size:12px;
+    padding-right:5px;/*Padding decreases to accommodate*/
+    font-size:12px;/*Size decreases to accommodate*/
   }
 }
 .Table_Of_Values{
-  background-color:#faf8f3;
+  background-color:#faf8f3;/*Formatting*/
 }
 .Table_Of_Values a {
-  color:#4f96fe;
+  color:#4f96fe;/*Formatting*/
 }
 footer {
-  height:275px;
-  color:white;
-  background-color:#151515;
-  left:0;
-  bottom:0;
+  height:275px;/*Formatting*/
+  color:white;/*Formatting*/
+  background-color:#151515;/*Formatting*/
+  left:0;/*No natural border/margin/padding*/
+  bottom:0;/*No natural border/margin/padding*/
 }
 #icon {
-  text-align: center;
-  padding:40px 30px 15px;
-  margin:0;
+  text-align: center;/*Everything in center*/
+  padding:40px 30px 15px;/*Formatting*/
+  margin:0;/*Formatting*/
 }
 footer img {
-  width:auto;
-  height:40px;
-  display:inline-block;
+  width:auto;/*Formatting*/
+  height:40px;/*Formatting*/
+  display:inline-block;/*In line with the logo name*/
 }
 #More_Choices_Back_Again {
-  margin:0px auto 50px;
+  margin:0px auto 50px;/*Formatting*/
 }
 #More_Choices_Back_Again a {
-  text-decoration:none;
-  color:white;
-  padding:10px 15px;
+  text-decoration:none;/*Formatting*/
+  color:white;/*Formatting*/
+  padding:10px 15px;/*Formatting*/
 }
 #More_Choices_Back_Again a:hover{
-  color:#bfd1e7;
-  background-color:black;
-  transition-duration:0.3s;
+  color:#bfd1e7;/*Formatting*/
+  background-color:black;/*Formatting*/
+  transition-duration:0.3s;/*Not in main transition css*/
 }
 @media only screen and (max-width:380px) {
   #More_Choices_Back_Again a{
-    padding:5px 7.5px;
+    padding:5px 7.5px;/*Padding moves to accommodate*/
   }
 }
 .Official_info {
-  font-size:12px;
-  text-align: center;
-  line-height:12px;
+  font-size:12px;/*Disclaimers love to be small for some reason*/
+  text-align: center;/*Centers elements*/
+  line-height:12px;/*Line has minimal height, for easier reading*/
 }
 #Before_After {
-  border-radius:8px;
-  margin-top:4.5em;
-  min-width:75vw;
-  background-color:#faf8f3;
-  margin: 0 auto;
+  border-radius:8px;/*Formatting*/
+  margin-top:4.5em;/*Formatting*/
+  min-width:75vw;/*Always 75% of screen width*/
+  background-color:#faf8f3;/*Formatting*/
+  margin: 0 auto;/*Centers element*/
 }
 #Before_After p{
-  padding:1em;
-  border-style:none;
-  text-align: center;
-  min-width:25vw;
-  max-height:;
-  margin:0;
+  padding:1em;/*Formatting*/
+  border-style:none;/*Formatting*/
+  text-align: center;/*Formatting*/
+  min-width:25vw;/*3 sections, each taking 25% to fit the 75%*/
+  margin:0;/*Formatting*/
+}
+#Before_After span {
+  text-decoration:underline;/*Formatting; signifies game change*/
 }
 @media only screen and (max-width: 430px){
   #Before_After p{
-    font-size: 14px;
-    padding:10px;
+    font-size: 14px;/*Font size decreases to accommodate*/
+    padding:10px;/*Padding decreases to accommodate*/
   }
 }
 #Before_After a {
-  color:black;
-  text-decoration: none;
+  color:black;/*Formatting*/
+  text-decoration: none;/*Formatting*/
 }
 #Before_After tr:first-child{/*First 3 only; 3-n does not work*/
-  font-weight: bold;
-  background-color:#FFF5BA;
+  font-weight: bold;/*Formatting*/
+  background-color:#FFF5BA;/*Formatting*/
 }
 #Before_After td:nth-of-type(1) {
-  border-top-left-radius:8px;
+  border-top-left-radius:8px;/*td is on top of table, so has to be changed to show the rounded borders*/
 }
 #Before_After td:nth-of-type(3) {
-  border-top-right-radius:8px;
+  border-top-right-radius:8px;/*td is on top of table, so has to be changed to show the rounded borders*/
 }
 
 /*Form in suggestion box*/
 #Form_body table {
-  border-collapse:collapse;
-  border: 1px black solid;
-  background-color:#E6E6E6;
+  border-collapse:collapse;/*Formatting*/
+  border: 1px black solid;/*Formatting*/
+  background-color:#E6E6E6;/*Formatting*/
 }
 #Form_body label {
-  padding-left:2.5vw;
+  padding-left:2.5vw;/*Positioning*/
 }
 #Form_body textarea {
-  min-width:30vw;
+  min-width:30vw;/*At least 30% of screen; always*/
   width:calc(100% + 5px);/*Gives the maximum width allowed that doesn't cause destruction of the site (and then add 5px)*/
   resize:none;/*Prevents form height from being changed*/
-  padding:5px;
-  outline:0px none;
-  border-style:none;
+  padding:5px;/*Formatting*/
+  outline:0px none;/*Formatting*/
+  border-style:none;/*Formatting*/
 }
 #Form_body textarea:focus {
-  border:1.5px solid rgba(128,128,128,0.8);
+  border:1.5px solid rgba(128,128,128,0.8);/*Shows which one you are clicking on, and also QOL*/
 }
 #Form_body td {
-  padding:20px 15px;
+  padding:20px 15px;/*Formatting*/
 }
 #Form_body p {
   margin-top:1rem;/*Similar to margin-bottom for paragraphs, to vertically align*/
 }
 #Form_body td:nth-last-of-type(2n) {/*Elements on left side of form*/
-  text-align:left;
-  height:100%;
+  text-align:left;/*Aligns to left*/
+  height:100%;/*Covers the entirety of what height is given, so height is the same both left and right*/
 }
 #Form_body tr {
-  max-width:75vw;
+  max-width:75vw;/*Row is at most only 75% of window in width*/
 }
 @media only screen and (max-width:480px) {
   #Form_body p {
-    font-size:1em;
+    font-size:1em;/*Font size decreases to accommodate*/
   }
-  #Form_body td:nth-of-type(2n) {
-    padding-right:auto;
-    padding-left:0px;
+  #Form_body td:nth-of-type(2n) {/*Right side*/
+    padding-right:auto;/*Formatting*/
+    padding-left:0px;/*Formatting*/
   }
 }
 #Submit {
-  border:0px solid black;
-  background-color:white;
-  padding:3px 5px;
-  transition-duration:0.1s;
-  color:black;
-  text-decoration:none;
+  border:0px solid black;/*Formatting*/
+  background-color:white;/*Formatting*/
+  padding:3px 5px;/*Formatting*/
+  transition-duration:0.1s;/*Transition is faster than most*/
+  color:black;/*Formatting*/
+  text-decoration:none;/*Formatting*/
 }
 #Submit:hover {
-  border:2px solid black;
-  font-size: 1em;
-  transition-duration:0.3s;
+  border:2px solid black;/*Border appears*/
 }
 #Form_body td:nth-of-type(2n) {/*Elements on right side of form*/
-  padding-right:15px;
+  padding-right:15px;/*Formatting*/
 }
 
 #Elaborate_Choices {
-  position:relative;
-  margin:auto;
-  height:calc(27.5vw + 1.15em + 20px);
+  position:relative;/*Formatting*/
+  margin:auto;/*Centers element*/
+  height:calc(27.5vw + 1.15em + 20px);/*Height of Image + Top-Bottom Padding of Image + Top-Bottom Padding of text + A bit more height, to reduce impact of margin-bottom; disappears when the 3 are in different rows, so margin-bottom works*/
   text-align: center;/*Centers the 3 elements (even though they aren't text, but I suppose they are inline)*/
 }
 #Elaborate_Choices div {
-  display:inline-block;
-  width:25vw;
-  margin:0px auto 40px;
-  background-color:white;
+  display:inline-block;/*divs are inline, thus are side by side*/
+  width:25vw;/*Each occupies 25vw, to form 75vw*/
+  margin:0px auto 40px;/*Some space before footer*/
+  background-color:white;/*Formatting*/
 }
 #Elaborate_Choices div img {
-  width:25vw;
-  height:25vw;
-  padding:1.25vw;
+  width:25vw;/*Images keep with div; 25vw in width*/
+  height:25vw;/*Images are square*/
+  padding:1.25vw;/*Padding acts as a frame*/
 }
 #Elaborate_Choices div p {
-  display: block;
-  padding:10px;
-  margin:0;
-  font-family:Tahoma,"Trebuchet MS",Trebuchet,"Segoe UI",Arial;
-  background-color:#212529;
+  display: block;/*Formatting*/
+  padding:10px;/*Formatting*/
+  margin:0;/*No distance between each other; a little by anchors*/
+  font-family:Tahoma,"Trebuchet MS",Trebuchet,"Segoe UI",Arial;/*text Formatting*/
+  background-color:#212529;/*Formatting*/
   color:inherit;/*Text white when not hovering, and blue when hovering*/
 }
 #Elaborate_Choices a {
-  text-decoration: none;
-  color:white;
+  text-decoration: none;/*Formatting*/
+  color:white;/*Formatting*/
 }
 #Elaborate_Choices span {
-  color:yellow;
-}
-#Elaborate_Choice_1 {
-
-}
-#Elaborate_Choice_2{
-
-}
-#Elaborate_Choice_3 {
-
+  color:yellow;/*Formatting*/
 }
 .break_time {
+  display:none;/*Normally, <br> does not appear, to ensure all elements stay on the same row*/
+}
+
+.On_Fire {
+  background-image:linear-gradient(to bottom right,#A10100,#DA1F05,#F33C04,#FE650D,#FFC11F);/*Gradient, fiery red*/
+  -webkit-background-clip: text;/*Colour affects text, not an actual background*/
+  -webkit-text-fill-color: transparent;/*Normal colour disappears, revealing the gradient colour below*/
+  font-size:20px;/*Formatting*/
+  text-align:center;/*Positioning*/
+}
+a.On_Fire:hover {
+  background-image:linear-gradient(to top left,#A10100,#DA1F05,#F33C04,#FE650D,#FFC11F);/*Gradient flips around direction-wise*/
+}
+#Leaderboards {
+  text-align: center;/*Positioning*/
+  margin-top:25px;/*Positioning*/
+}
+#Leaderboards div{
+  display: inline-block;/*Formatting*/
+  width:75px;/*Formatting*/
+  position: relative;/*Formatting*/
+  bottom:0px;/*Stick more at the bottom*/
+  transition:0.3s;/*Formatting*/
+  cursor:pointer;
+}
+#Leaderboards div:nth-of-type(1){
+  background-color:#ff4e5c;
+  height:125px;
+  top:75px;
+}
+#Leaderboards div:nth-of-type(2){
+  background-color:#ff8d42;
+  height:200px;
+}
+#Leaderboards div:nth-of-type(3){
+  background-color:#ffcc28;
+  height:150px;
+  top:50px;
+}
+#Leaderboards div:hover {
+  width:80px;
+}
+#Leaderboards div:nth-of-type(1):hover{
+  height:130px;
+  top:70px;
+}
+#Leaderboards div:nth-of-type(2):hover{
+  height:205px;
+  bottom:5px;
+}
+#Leaderboards div:nth-of-type(3):hover{
+  height:155px;
+  top:45px;
+}
+#Leaderboards div p {
+  font-size:25px;
+  color:white;
+  font-weight: bold;
+  margin:0px auto;
+  display: inline-block;
+}
+#First, #Second, #Third {
   display:none;
+}
+#Detailed_Leaderboards img{
+  width:25vw;
+  height:auto;
+  display:block;
+  margin: auto;
+}
+#Detailed_Leaderboards .Subtitle_Text {
+  max-width:30vw;
+  margin:5px auto;
 }
 /*Much needed help:
 Position:https://www.freecodecamp.org/news/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26/
@@ -812,4 +865,6 @@ nth-child: https://css-tricks.com/useful-nth-child-recipies/
 nth-tester: https://css-tricks.com/examples/nth-child-tester/
 Min, Max, Clamp: https://css-tricks.com/min-max-and-clamp-are-css-magic/
 Centering in CSS: https://css-tricks.com/centering-css-complete-guide/
+Gradient Text: https://cssgradient.io/blog/css-gradient-text/
+Gradient Backgrounds: https://css-tricks.com/css3-gradients/
 */

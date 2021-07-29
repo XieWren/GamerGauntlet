@@ -13,15 +13,17 @@ function widthCheck(condition) {
   }
 }
 
-var condition = window.matchMedia("(min-width: 1225px)");
+var condition = window.matchMedia("(min-width: 1225px)");//Condition: Width of window reaches >=1225px
 widthCheck(condition); // Call function when running
 condition.addListener(widthCheck); // When to repeat function check (while using the same value)
 
 /*Pseudo-Search*/
 function List_Filter() {
   var search = document.getElementById("Enter_Search").value;//Get value being searched
+
+  //Get all p in #Challenge_List
   var range = document.querySelector("#Challenge_List")
-  var items = range.querySelectorAll("p");//Get all p in #Challenge_List
+  var items = range.querySelectorAll("p");
 
   if (search == "") {
     range.style.display = "none";//Nothing appears if nothing triggered
@@ -37,14 +39,14 @@ function List_Filter() {
 
       check = item.toUpperCase();//Make non case-sensitive
       if (check.indexOf(search) == -1) {//Value is -1 when no index is available; which also means text is not found
-        items[counter].style.display = "none";
+        items[counter].style.display = "none";//Text is not displayed
       }
       else {
-        items[counter].style.display = "block";
+        items[counter].style.display = "block";//Text is displayed, row by row
         appear += 1;
       }
 
-      if (appear > 0) {/*Suggestions appear if there's actually stuff to show*/
+      if (appear > 0) {/*Suggestions appear if there's actually stuff to show; helps to ensure a blank rectange is not shown*/
         range.style.display = "block";
       }
       else {
@@ -56,7 +58,7 @@ function List_Filter() {
 
 /*Random Challenge*/
 function Very_Random() {
-  var challenges = document.getElementById("Challenge_List");
+  var challenges = document.getElementById("Challenge_List");//Get challenges in the challenge list (Reuse Reduce Recycle, as they say)
   challenges = challenges.querySelectorAll("a")//Gets the list of links in Challenge_List div
 
   var rand_value = Math.random();
@@ -64,11 +66,46 @@ function Very_Random() {
   //Counts number of 'a' in challenges, and thus number of options
 
   rand_value = Math.floor(rand_value);
-  //Makes all numbers a whole number
+  //Makes the possible range of values be the first and last choice + make all numbers a whole number
 
   chosen_one = challenges[rand_value].getAttribute("href");
   //Gets the chosen url from the anchor
 
   window.location.href = chosen_one;
-  //Redirects webpage to chosen url: https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
+  //Redirects webpage to chosen url, as seen here: https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
+}
+
+function FormProcessor() {
+
+}
+
+function TopThree(chosen) {
+  var possibilities =
+    [document.getElementById("First"),
+    document.getElementById("Second"),
+    document.getElementById("Third")];
+
+  for (let counter = 0; counter<3; counter++) {
+    if (chosen == possibilities[counter]) {
+      possibilities[counter].style.display = "inline";
+    }
+    else if (possibilities[counter].style.display == "inline") {
+      possibilities[counter].style.display = "none";
+    }
+  }
+}
+
+function One() {
+  var chosen = document.getElementById("First");
+  TopThree(chosen);
+}
+
+function Two() {
+  var chosen = document.getElementById("Second");
+  TopThree(chosen);
+}
+
+function Three() {
+  var chosen = document.getElementById("Third");
+  TopThree(chosen);
 }

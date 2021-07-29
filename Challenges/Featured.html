@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../Styles/Styles.css">
+  <script type="text/javascript" src="../Styles/Script.js" defer></script>
+  <link rel="icon" href="../Multimedia/Controller_Icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><!--Bootstrap Time People!-->
+  <title>Gamer's Gauntlet</title>
+</head>
+<body>
+<img src="https://static.wikia.nocookie.net/hollowknight/images/5/5c/HK_Wiki_Bg-Godmaster.webp" id="BG"><!--Hollow Knight Godhome BG-->
+<div>
+<header id="header">
+  <a href="../index.html" id="logo"><img src="../Multimedia/Logo_Negative_Transparent.png" alt="Main Page"></a>
+  <div id="Choices">
+
+    <p id="choose">Choose your challenge of liking:</p>
+
+    <div class="game_choices">
+      <a href="#" class="games_button">By Games</a>
+      <div class="games_content">
+        <p><a href="#Silksong" style="border-top-left-radius:8px;border-top-right-radius:8px;">Hollow Knight</a></p>
+        <p><a href="#Creeper">Minecraft</a></p>
+        <p><a href="#Sunflower">Plants vs Zombies</a></p>
+        <p><a href="#Pkmn">Pokemon</a></p>
+        <p><a href="#Minecraft" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Terraria</a></p>
+      </div>
+    </div>
+
+    <div class="difficulty_choices">
+      <a href="Difficulty.html" class="difficulty_button">By Difficulty</a>
+      <div class="difficulty_content">
+        <p><a href="Difficulty.html#Easy" style="border-top-left-radius:8px;border-top-right-radius:8px;">Easy</a></p>
+        <p><a href="Difficulty.html#CbWorse">Could be Worse</a></p>
+        <p><a href="Difficulty.html#SoS">Starting to Suffer</a></p>
+        <p><a href="Difficulty.html#RnG">Massive Luck Required</a></p>
+        <p><a href="Difficulty.html#Impossibru" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Help.</a></p>
+      </div>
+    </div>
+
+    <p id="featured_button" class="choices"><a href="Featured.html">Featured</a></p>
+
+  </div>
+  <div id="More_Choices">
+    <a href="../Others/Suggestions.html" class="More_Choices">Suggestion Box</a>
+    <a href="../Others/About-Us.html" class="More_Choices">About</a>
+    <a href="javascript:void(0)" class="More_Choices" onclick="Very_Random()">Random</a>
+  </div>
+
+  <div class="Search">
+    <form name="Search_Bar" target="" method="post" class="More_Choices" autocomplete="off">
+      <img src="../Multimedia/Search.ico" alt="" id="Search">
+      <input name="Search" type="text" id="Enter_Search" placeholder="Search Here..." onkeyup="List_Filter()" autocomplete="off">
+    </form>
+
+    <div id="Challenge_List">
+      <p><a href="Hollow_Knight/Gun.html">[Hollow Knight] <br>Gun%</a></p>
+      <p><a href="Minceraft/Minecraft_Manhunt(Hunter).html">[Minecraft] <br>Minecraft Manhunt<br>Hunter</a></p>
+      <p><a href="Minceraft/Minecraft_Manhunt(Speedrunner).html">[Minecraft] <br>Minecraft Manhunt<br>Speedrunner</a></p>
+      <p><a href="Pokemon/Platinum_Lv100_Magikarp.html">[Pokemon Platinum] <br>Lv100 Magikarp</a></p>
+      <p><a href="PvZ/Adventure_No_Sunflora.html">[Plants Vs Zombies] <br>Adventure Mode<br>No Sunflowers</a></p>
+      <p><a href="PvZ/Perpetually_Seeing_Stars.html">[Plants Vs Zombies] <br>Perpetually Seeing Stars</a></p>
+      <p><a href="Terraria/No_WASD.html">[Terraria] <br>No WASD</a></p>
+      <p><a href="Terraria/Terra_Toilet.html">[Terraria] <br>Terra Toilet%</a></p>
+    </div>
+  </div>
+
+  </header>
+</div>
+
+<h3 id="Menu"><span onclick="openNav()">&#9776;</span></h3><!--https://www.toptal.com/designers/htmlarrows/symbols/
+The sidenav-->
+<div id="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h1>&times;</h1></a>
+  <a href="../Others/Suggestions.html" class="Choices2" style="margin-left:0px">Suggestion Box</a>
+  <a href="../Others/About-Us.html" class="Choices2">About</a>
+  <a href="javascript:void(0)" class="Choices2" onclick="Very_Random()">Random</a>
+  <p id="choices_2" class="More_Choices2">Make a choice:</p>
+  <a href="#" class="More_Choices2">By Game</a>
+  <a href="Difficulty.html" class="More_Choices2">By Difficulty</a>
+  <a href="Featured.html" class="More_Choices2">Featured</a>
+</div>
+
+<!--Here begins the Wall of Text:-->
+<hr id="Header_Solver">
+<div id="Wiki_WallOfText" style="padding-top:0.5em;">
+<br><h2 style="margin-top:0;">Featured</h2><hr>
+<p class="On_Fire" style="margin-top:50px">The best guides of the collection, each one better than the last.</p>
+
+<div id="Leaderboards">
+
+<div onclick="Three()">
+  <br><p>3</p>
+</div>
+
+<div onclick="One()">
+  <br><p>1</p>
+</div>
+
+<div onclick="Two()">
+  <br><p>2</p>
+</div>
+
+</div>
+
+<p class="On_Fire" style="margin-top:10px;">Click one:</p>
+<div id="Detailed_Leaderboards">
+<div id="First">
+<h3>1st: Gun% (Hollow Knight)</h3><hr>
+<img src="../Multimedia/Top_3/Gun_HK.jpg" alt="By u/Sir-Wow (Reddit)">
+<p class="Subtitle_Text">Enter the Pantheon, inspired by Enter the Gungeon and Hollow Point, by <a class="more_info" href="https://www.reddit.com/r/HollowKnight/comments/gymo2s/so_i_played_the_hollow_point_mod_and_it_made_me/">u/Sir-Wow</a> on Reddit</p>
+<br>
+<p>I will admit I am biased towards the memes of all the Hollow Knight characters holding guns, way before the mod even came out. But honestly, after spending tens of hours trying to defeat the stupid Pantheon of Hallownest, it's very satisfying to see all the bosses die before they can do a thing to you. There is a lesson in that, I think.</p>
+<p>Coupled with the Gun's ability to propel the Knight into the air, – one of those things so ridiculous it becomes funny – I really have no choice but to give this 1st place, despite my complaints about it making the game too easy.</p>
+<p>When you spend 45 minutes per try of the Pantheon of Hallownest, then die to Pure Vessel right before Abs Rad, you learn to enjoy the simpler things in life. Like hurling a gun around like an American, except Americans can't fly with their guns.</p>
+<br>
+<p style="text-align:center;"><a class="On_Fire" href="Hollow_Knight/Gun.html">Read Gun% Here!</a></p>
+</div>
+
+<div id="Second">
+<h3>2nd: No Movement Keys (Terraria)</h3><hr>
+<img src="../Multimedia/Top_3/No_WASD_Terraria.jpg" alt="By ShyGuyMask">
+<p class="Subtitle_Text">Video Thumbnail for the no WASD Challenge, by <a class="more_info" href="https://youtu.be/PeXuldH3lBU" target="_blank">ShyGuyMask</a></p>
+<br>
+<p>While 1st Place was done because it was funny, the video on playing Terraria without Movement Keys was what got me really interested in the idea of weird challenges in games.</p>
+<p>Terraria has always been a game that I found trouble in (found the mobile user), so it was really interesting to see people pulling off challenges like these. It made me think more about all the games I played, and how it would be great to compile these ideas for me and everyone to enjoy.</p>
+<p>Go watch ShyGuyMask's videos. They are all have the same style, and are great in their own way.</p>
+<p></p>
+<br>
+<p style="text-align:center;"><a class="On_Fire" href="Terraria/No_WASD.html">Read No WASD Here!</a></p>
+</div>
+
+<div id="Third">
+<h3>3rd: Manhunt as a Hunter (Minecraft)</h3><hr>
+<img src="../Multimedia/Top_3/Manhunt_Hunter.jpeg" alt="By @shyrilship (Twitter)">
+<p class="Subtitle_Text">Page on an old comic featuring GeorgeNotFound and Dream, by <a class="more_info" href="https://twitter.com/shyrilship/status/1323231179097608192" target="_blank">@shyrilship</a> on Twitter</p>
+<br>
+<p>I gotta be honest, I was really worried writing this, but I think it came out alright. Quite proud of this one, honestly. There was a lot of really in-depth ideas I got to write about, and I am glad I managed to put in some of my own ideas.</p>
+<p>Never found much interest in <b>Minceraft</b>, but there is something appealing in playing with friends.</p>
+<p>Also, no hate, but the Hunters seem to like rushing into situations without thinking. The number of situations where I found myself writing about choosing to conduct an ambush, and for the Speedrunner to use Explosives.</p>
+<br>
+<p style="text-align:center;"><a class="On_Fire" href="Minceraft/Minecraft_Manhunt(Hunter).html">Read Minecraft Manhunt (Hunter) Here!</a></p>
+</div>
+
+</div>
+</div>
+
+<footer>
+  <h2 id="icon"><img src="../Multimedia/Controller_Icon.png"> Gamer's Gauntlet</h2>
+  <!--Icon found here: https://commons.wikimedia.org/wiki/File:Video-Game-Controller-Icon-D-Edit.svg-->
+  <table id="More_Choices_Back_Again">
+    <tr>  <td><a href="../Others/Suggestions.html">Suggestion Box</a></td>  <td><a href="../Others/About-Us.html">About</a></td>  <td><a href="" onclick="Very_Random()">Random</a></td>  </tr>
+  </table>
+  <p class="Official_info">This is a personal project and is not intended for business.</p>
+  <p class="Official_info">All Multimedia rights are reserved to their respective owners.</p>
+  <p class="Official_info">More info is available in the HTML code.</p>
+</footer>
+</body>
+</html>
