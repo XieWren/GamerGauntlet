@@ -76,36 +76,46 @@ function Very_Random() {
 }
 
 function FormProcessor() {
-
+  var answers = document.querySelectorAll("textarea");//Get all the inputs
+  var success = "Yes";//Initialise for checking later
+  for (counter = 0;counter<answers.length;counter++) {
+    if (answers[counter].value == "") {//Check if individual textareas are filled in
+      document.getElementById("Error").style.display = "inline";//Error message pops up if not filled in
+      success = "No";//Prevents getting sent to response page
+    }
+  }
+  if (success == "Yes") {
+    window.location.href = "Response.html";//Gets sent to response page because everything is filled in
+  }
 }
 
 function TopThree(chosen) {
   var possibilities =
-    [document.getElementById("First"),
+    [document.getElementById("First"),//List of all the three possible chosen descriptions
     document.getElementById("Second"),
     document.getElementById("Third")];
 
   for (let counter = 0; counter<3; counter++) {
-    if (chosen == possibilities[counter]) {
-      possibilities[counter].style.display = "inline";
+    if (chosen == possibilities[counter]) {//Check for the bar chosen, to show the corresponding text
+      possibilities[counter].style.display = "inline";//The chosen one appears
     }
     else if (possibilities[counter].style.display == "inline") {
-      possibilities[counter].style.display = "none";
+      possibilities[counter].style.display = "none";//The previously chosen disappears
     }
   }
 }
 
 function One() {
-  var chosen = document.getElementById("First");
+  var chosen = document.getElementById("First");//The 1st bar is chosen
   TopThree(chosen);
 }
 
 function Two() {
-  var chosen = document.getElementById("Second");
+  var chosen = document.getElementById("Second");//The 2nd bar is chosen
   TopThree(chosen);
 }
 
 function Three() {
-  var chosen = document.getElementById("Third");
+  var chosen = document.getElementById("Third");//The 3rd bar is chosen
   TopThree(chosen);
 }

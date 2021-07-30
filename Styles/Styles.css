@@ -724,6 +724,9 @@ footer img {
 #Form_body tr {
   max-width:75vw;/*Row is at most only 75% of window in width*/
 }
+#Form_body input:hover {
+  border-width:2px;
+}
 @media only screen and (max-width:480px) {
   #Form_body p {
     font-size:1em;/*Font size decreases to accommodate*/
@@ -743,6 +746,12 @@ footer img {
 }
 #Submit:hover {
   border:2px solid black;/*Border appears*/
+}
+#Error {
+  display:none;/*Initially no error message shown*/
+  color:red;/*Formatting*/
+  text-align:center;/*Positioning*/
+  font-size:12px;/*Formatting*/
 }
 #Form_body td:nth-of-type(2n) {/*Elements on right side of form*/
   padding-right:15px;/*Formatting*/
@@ -807,53 +816,53 @@ a.On_Fire:hover {
   cursor:pointer;
 }
 #Leaderboards div:nth-of-type(1){
-  background-color:#ff4e5c;
-  height:125px;
-  top:75px;
+  background-color:#ff4e5c;/*Formatting*/
+  height:125px;/*3rd tallest*/
+  top:75px;/*Sticks at the bottom*/
 }
 #Leaderboards div:nth-of-type(2){
-  background-color:#ff8d42;
-  height:200px;
+  background-color:#ff8d42;/*Formatting*/
+  height:200px;/*Tallest*/
 }
 #Leaderboards div:nth-of-type(3){
-  background-color:#ffcc28;
-  height:150px;
-  top:50px;
+  background-color:#ffcc28;/*Formatting*/
+  height:150px;/*2nd tallest*/
+  top:50px;/*Sticks at the bottom*/
 }
 #Leaderboards div:hover {
-  width:80px;
+  width:80px;/*Width increases; QOL*/
 }
 #Leaderboards div:nth-of-type(1):hover{
-  height:130px;
-  top:70px;
+  height:130px;/*Height increases; QOL*/
+  top:70px;/*Ensures still sticks to bottom*/
 }
 #Leaderboards div:nth-of-type(2):hover{
-  height:205px;
-  bottom:5px;
+  height:205px;/*Height increases; QOL*/
+  bottom:5px;/*Ensures still sticks to bottom*/
 }
 #Leaderboards div:nth-of-type(3):hover{
-  height:155px;
-  top:45px;
+  height:155px;/*Height increases; QOL*/
+  top:45px;/*Ensures still sticks to bottom*/
 }
 #Leaderboards div p {
-  font-size:25px;
-  color:white;
-  font-weight: bold;
-  margin:0px auto;
-  display: inline-block;
+  font-size:25px;/*Formatting*/
+  color:white;/*Formatting*/
+  font-weight: bold;/*Formatting*/
+  margin:0px auto;/*In the middle*/
+  display: inline-block;/*Helps to stick in the middle*/
 }
 #First, #Second, #Third {
-  display:none;
+  display:none;/*Initially, no appearance*/
 }
 #Detailed_Leaderboards img{
-  width:25vw;
-  height:auto;
-  display:block;
-  margin: auto;
+  width:25vw;/*Formatting*/
+  height:auto;/*Formatting*/
+  display:block;/*On its own line*/
+  margin:auto;/*In the center*/
 }
 #Detailed_Leaderboards .Subtitle_Text {
-  max-width:30vw;
-  margin:5px auto;
+  max-width:30vw;/*Pseudo-Padding*/
+  margin:5px auto;/*In the center*/
 }
 /*Much needed help:
 Position:https://www.freecodecamp.org/news/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26/

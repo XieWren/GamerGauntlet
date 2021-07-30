@@ -91,7 +91,7 @@
 <div id="Announce_WallOfText" style="padding:10px 7.5vw;">
 <h3 style="margin:15px auto 30px;">Here, have a form! These things are nifty!</h3>
 <div id="Form_body">
-  <form action="#" method="post">
+  <form action="../Styles/Script.js" method="post">
     <table>
       <tr>
         <td><label for=""><p>A name or something? You can get credited!</p></label></td>
@@ -107,7 +107,8 @@
       </tr>
       <tr>
         <td colspan="2">
-          <a href="Response.html" id="Submit">Submit</a>
+          <input type="button" onclick="FormProcessor()" value="Submit" id="Submit">
+          <br><p id="Error">Sorry, but you need to fill in everything!</p>
         </td>
         <!--<input type="submit" value="Submit" id="Submit" onclick="Form_Processor()">-->
       </tr>
