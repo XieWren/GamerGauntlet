@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../Styles/Styles.css">
+  <script type="text/javascript" src="../Styles/Script.js" defer></script>
+  <link rel="icon" href="../Multimedia/Controller_Icon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"><!--Bootstrap Time People!-->
+  <title>Gamer's Gauntlet</title>
+</head>
+<body>
+  <img src="../Multimedia/Background_Calm.jpg" alt="By u/FMOptimist" id="BG">
+  <div>
+  <header id="header">
+    <a href="../index.html" id="logo"><img src="../Multimedia/Logo_Negative_Transparent.png" alt="Main Page"></a>
+    <div id="Choices">
+
+      <p id="choose">Choose your challenge of liking:</p>
+
+      <div class="game_choices">
+        <a href="../Challenges/Games.html" class="games_button">By Games</a>
+        <div class="games_content">
+          <p><a href="../Challenges/Games.html#Silksong" style="border-top-left-radius:8px;border-top-right-radius:8px;">Hollow Knight</a></p>
+          <p><a href="../Challenges/Games.html#Creeper">Minecraft</a></p>
+          <p><a href="../Challenges/Games.html#Sunflower">Plants vs Zombies</a></p>
+          <p><a href="../Challenges/Games.html#Pkmn">Pokemon</a></p>
+          <p><a href="../Challenges/Games.html#Minecraft" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Terraria</a></p>
+        </div>
+      </div>
+
+      <div class="difficulty_choices">
+        <a href="../Challenges/Difficulty.html" class="difficulty_button">By Difficulty</a>
+        <div class="difficulty_content">
+          <p><a href="../Challenges/Difficulty.html#Easy" style="border-top-left-radius:8px;border-top-right-radius:8px;">Easy</a></p>
+          <p><a href="../Challenges/Difficulty.html#CbWorse">Could be Worse</a></p>
+          <p><a href="../Challenges/Difficulty.html#SoS">Starting to Suffer</a></p>
+          <p><a href="../Challenges/Difficulty.html#RnG">Massive Luck Required</a></p>
+          <p><a href="../Challenges/Difficulty.html#Impossibru" style="border-bottom-left-radius:8px;border-bottom-right-radius:8px;">Help.</a></p>
+        </div>
+      </div>
+
+      <p id="featured_button" class="choices"><a href="../Challenges/Featured.html">Featured</a></p>
+
+    </div>
+    <div id="More_Choices">
+      <a href="../Others/Suggestions.html" class="More_Choices">Suggestion Box</a>
+      <a href="" class="More_Choices">About</a>
+      <a href="javascript:void(0)" class="More_Choices" onclick="Very_Random()">Random</a>
+    </div>
+
+    <div class="Search">
+      <form name="Search_Bar" target="" method="post" class="More_Choices" autocomplete="off">
+        <img src="../Multimedia/Search.ico" alt="" id="Search">
+        <input name="Search" type="text" id="Enter_Search" placeholder="Search Here..." onkeyup="List_Filter()" autocomplete="off">
+      </form>
+
+      <div id="Challenge_List">
+        <p><a href="../Challenges/Hollow_Knight/Gun.html">[Hollow Knight] <br>Gun%</a></p>
+        <p><a href="../Challenges/Minceraft/Minecraft_Manhunt(Hunter).html">[Minecraft] <br>Minecraft Manhunt<br>Hunter</a></p>
+        <p><a href="../Challenges/Minceraft/Minecraft_Manhunt(Speedrunner).html">[Minecraft] <br>Minecraft Manhunt<br>Speedrunner</a></p>
+        <p><a href="../Challenges/Pokemon/Platinum_Lv100_Magikarp.html">[Pokemon Platinum] <br>Lv100 Magikarp</a></p>
+        <p><a href="../Challenges/PvZ/Adventure_No_Sunflora.html">[Plants Vs Zombies] <br>Adventure Mode<br>No Sunflowers</a></p>
+        <p><a href="../Challenges/PvZ/Perpetually_Seeing_Stars.html">[Plants Vs Zombies] <br>Perpetually Seeing Stars</a></p>
+        <p><a href="../Challenges/Terraria/No_WASD.html">[Terraria] <br>No WASD</a></p>
+        <p><a href="../Challenges/Terraria/Terra_Toilet.html">[Terraria] <br>Terra Toilet%</a></p>
+      </div>
+    </div>
+
+    </header>
+  </div>
+
+  <h3 id="Menu"><span onclick="openNav()">&#9776;</span></h3><!--https://www.toptal.com/designers/htmlarrows/symbols/
+  The sidenav-->
+  <div id="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><h1>&times;</h1></a>
+    <a href="../Others/Suggestions.html" class="Choices2" style="margin-left:0px">Suggestion Box</a>
+    <a href="" class="Choices2">About</a>
+    <a href="javascript:void(0)" class="Choices2" onclick="Very_Random()">Random</a>
+    <p id="choices_2" class="More_Choices2">Make a choice:</p>
+    <a href="../Challenges/Games.html" class="More_Choices2">By Game</a>
+    <a href="../Challenges/Difficulty.html" class="More_Choices2">By Difficulty</a>
+    <a href="../Challenges/Featured.html" class="More_Choices2">Featured</a>
+  </div>
+
+<!--All the audio files-->
+<div id="Songs">
+
+  <audio src="../Audio/250-milliseconds-of-silence.mp3" id="Chosen"></audio>
+
+  <div id="Celeste">
+    <audio src="../Audio/Celeste/Celestial_Resort_(Good_Karma_Mix).mp3" id="Celestial_Resort_(Good_Karma_Mix)"></audio>
+    <audio src="../Audio/Celeste/First_Steps.mp3" id="First_Steps"></audio>
+    <audio src="../Audio/Celeste/Forsaken_City_(Sever_the_Skyline_Mix).mp3" id="Forsaken_City_(Sever_the_Skyline_Mix)"></audio>
+    <audio src="../Audio/Celeste/Prologue.mp3" id="Prologue"></audio>
+    <audio src="../Audio/Celeste/Reflection.mp3" id="Reflection"></audio>
+    <audio src="../Audio/Celeste/Resurrections.mp3" id="Resurrections"></audio>
+    <audio src="../Audio/Celeste/Scattered_and_Lost.mp3" id="Scattered_and_Lost"></audio>
+    <audio src="../Audio/Celeste/Summit_(No_More_Running_Mix).mp3" id="Summit_(No_More_Running_Mix)"></audio>
+  </div>
+
+  <div id="Deltarune">
+    <audio src="../Audio/Deltarune/A_Town_Called_Hometown.mp3" id="A_Town_Called_Hometown"></audio>
+    <audio src="../Audio/Deltarune/Card_Castle.mp3" id="Card_Castle"></audio>
+    <audio src="../Audio/Deltarune/Chaos_King.mp3" id="Chaos_King"></audio>
+    <audio src="../Audio/Deltarune/Don't_Forget.mp3" id="Don't_Forget"></audio>
+    <audio src="../Audio/Deltarune/Empty_Town.mp3" id="Empty_Town"></audio>
+    <audio src="../Audio/Deltarune/Field_of_Hopes_and_Dreams.mp3" id="Field_of_Hopes_and_Dreams"></audio>
+    <audio src="../Audio/Deltarune/Lantern.mp3" id="Lantern"></audio>
+    <audio src="../Audio/Deltarune/Rude_Buster.mp3" id="Rude_Buster"></audio>
+    <audio src="../Audio/Deltarune/Scarlet_Forest.mp3" id="Scarlet_Forest"></audio>
+    <audio src="../Audio/Deltarune/School.mp3" id="School"></audio>
+    <audio src="../Audio/Deltarune/The_Legend.mp3" id="The_Legend"></audio>
+    <audio src="../Audio/Deltarune/THE_WORLD_REVOLVING.mp3" id="THE_WORLD_REVOLVING"></audio>
+    <audio src="../Audio/Deltarune/Vs._Lancer.mp3" id="Vs._Lancer"></audio>
+  </div>
+
+  <div id="Hollow_Knight">
+    <audio src="../Audio/Hollow_Knight/Broken_Vessel.mp3" id="Broken_Vessel"></audio>
+    <audio src="../Audio/Hollow_Knight/City_of_Tears.mp3" id="City_of_Tears"></audio>
+    <audio src="../Audio/Hollow_Knight/Crossroads.mp3" id="Crossroads"></audio>
+    <audio src="../Audio/Hollow_Knight/Daughter_of_Hallownest.mp3" id="Daughter_of_Hallownest"></audio>
+    <audio src="../Audio/Hollow_Knight/Dirtmouth.mp3" id="Dirtmouth"></audio>
+    <audio src="../Audio/Hollow_Knight/Dung_Defender.mp3" id="Dung_Defender"></audio>
+    <audio src="../Audio/Hollow_Knight/Enter_Hallownest.mp3" id="Enter_Hallownest"></audio>
+    <audio src="../Audio/Hollow_Knight/False_Knight.mp3" id="False_Knight"></audio>
+    <audio src="../Audio/Hollow_Knight/Fungal_Wastes.mp3" id="Fungal_Wastes"></audio>
+    <audio src="../Audio/Hollow_Knight/Furious_Gods.mp3" id="Furious_Gods"></audio>
+    <audio src="../Audio/Hollow_Knight/Gods_and_Glory.mp3" id="Gods_and_Glory"></audio>
+    <audio src="../Audio/Hollow_Knight/Greenpath.mp3" id="Greenpath"></audio>
+    <audio src="../Audio/Hollow_Knight/Grimm.mp3" id="Grimm"></audio>
+    <audio src="../Audio/Hollow_Knight/Haunted_Foes.mp3" id="Haunted_Foes"></audio>
+    <audio src="../Audio/Hollow_Knight/Hive_Knight.mp3" id="Hive_Knight"></audio>
+    <audio src="../Audio/Hollow_Knight/Hornet.mp3" id="Hornet"></audio>
+    <audio src="../Audio/Hollow_Knight/Lace.mp3" id=Lace""></audio>
+    <audio src="../Audio/Hollow_Knight/Mantis_Lords.mp3" id="Mantis_Lords"></audio>
+    <audio src="../Audio/Hollow_Knight/Nightmare_King.mp3" id="Nightmare_King"></audio>
+    <audio src="../Audio/Hollow_Knight/Nosk.mp3" id="Nosk"></audio>
+    <audio src="../Audio/Hollow_Knight/Pure_Vessel.mp3" id="Pure_Vessel"></audio>
+    <audio src="../Audio/Hollow_Knight/Radiance.mp3" id="Radiance"></audio>
+    <audio src="../Audio/Hollow_Knight/Resting_Grounds.mp3" id="Resting_Grounds"></audio>
+    <audio src="../Audio/Hollow_Knight/Sealed_Vessel.mp3" id="Sealed_Vessel"></audio>
+    <audio src="../Audio/Hollow_Knight/Sisters_of_Battle.mp3" id="Sisters_of_Battle"></audio>
+    <audio src="../Audio/Hollow_Knight/Soul_Sanctum.mp3" id="Soul_Sanctum"></audio>
+    <audio src="../Audio/Hollow_Knight/Truth,_Beauty_and_Hatred.mp3" id="Truth,_Beauty_and_Hatred"></audio>
+    <audio src="../Audio/Hollow_Knight/White_Defender.mp3" id="White_Defender"></audio>
+  </div>
+
+  <div id="Plants_Vs_Zombies">
+    <audio src="../Audio/PvZ/Brainiac_Maniac_(Zomboss_Battle).mp3" id="Brainiac_Maniac"></audio>
+    <audio src="../Audio/PvZ/Grasswalk_(Day).mp3" id="Grasswalk"></audio>
+    <audio src="../Audio/PvZ/Graze_the_Roof_(Roof).mp3" id="Graze_the_Roof"></audio>
+    <audio src="../Audio/PvZ/Loonboon_(Mini-Games).mp3" id="Loonboon"></audio>
+    <audio src="../Audio/PvZ/Moongrains_(Night).mp3" id="Moongrains"></audio>
+    <audio src="../Audio/PvZ/Rigor_Mormist_(Fog).mp3" id="Rigor_Mormist"></audio>
+    <audio src="../Audio/PvZ/Ultimate_Battle_(Conveyor_Belts).mp3" id="Ultimate_Battle"></audio>
+    <audio src="../Audio/PvZ/Watery_Graves_(Pool).mp3" id=Watery_Graves""></audio>
+    <audio src="../Audio/PvZ/Zombies_on_Your_Lawn.mp3" id="Zombies_on_Your_Lawn"></audio>
+  </div>
+
+  <div id="Terraria:_Calamity_Mod">
+    <audio src="../Audio/Terraria_Calamity/1NF3S+@+!0N.mp3" id="1NF3S+@+!0N"></audio>
+    <audio src="../Audio/Terraria_Calamity/Breaking_The_Seal.mp3" id="Breaking_The_Seal"></audio>
+    <audio src="../Audio/Terraria_Calamity/Cosmic_Disgust.mp3" id="Cosmic_Disgust"></audio>
+    <audio src="../Audio/Terraria_Calamity/Curse_of_the_Dungeon.mp3" id="Curse_of_the_Dungeon"></audio>
+    <audio src="../Audio/Terraria_Calamity/Ensemble_of_Fools.mp3" id="Ensemble_of_Fools"></audio>
+    <audio src="../Audio/Terraria_Calamity/Evil_Earthquake.mp3" id="Evil_Earthquake"></audio>
+    <audio src="../Audio/Terraria_Calamity/Feral_Amalgamation.mp3" id="Feral_Amalgamation"></audio>
+    <audio src="../Audio/Terraria_Calamity/Fiery_Fists_of_Stone.mp3" id="Fiery_Fists_of_Stone"></audio>
+    <audio src="../Audio/Terraria_Calamity/Fly_of_Beelzebub.mp3" id="Fly_of_Beelzebub"></audio>
+    <audio src="../Audio/Terraria_Calamity/Forbidden_Lullaby.mp3" id="Forbidden_Lullaby"></audio>
+    <audio src="../Audio/Terraria_Calamity/Gelatine_Throne.mp3" id="Gelatine_Throne"></audio>
+    <audio src="../Audio/Terraria_Calamity/Guardian_of_The_Former_Seas.mp3" id="Guardian_of_The_Former_Seas"></audio>
+    <audio src="../Audio/Terraria_Calamity/Hell_or_High_Waters.mp3" id="Hell_or_High_Waters"></audio>
+    <audio src="../Audio/Terraria_Calamity/Infernal_Catharsis.mp3" id="Infernal_Catharsis"></audio>
+    <audio src="../Audio/Terraria_Calamity/Interstellar_Stomper.mp3" id="Interstellar_Stomper"></audio>
+    <audio src="../Audio/Terraria_Calamity/It_Sees_Everything.mp3" id="It_Sees_Everything"></audio>
+    <audio src="../Audio/Terraria_Calamity/Left_Alone.mp3" id="Left_Alone"></audio>
+    <audio src="../Audio/Terraria_Calamity/Murderswarm.mp3" id="Murderswarm"></audio>
+    <audio src="../Audio/Terraria_Calamity/Nuclear_Monsoon.mp3" id="Nuclear_Monsoon"></audio>
+    <audio src="../Audio/Terraria_Calamity/Open_Frenzy.mp3" id="Open_Frenzy"></audio>
+    <audio src="../Audio/Terraria_Calamity/Pest_of_The_Cosmos.mp3" id="Pest_of_The_Cosmos"></audio>
+    <audio src="../Audio/Terraria_Calamity/Playing_with_Firepower.mp3" id="Playing_with_Firepower"></audio>
+    <audio src="../Audio/Terraria_Calamity/Raw,_Unfiltered_Calamity.mp3" id="Raw,_Unfiltered_Calamity"></audio>
+    <audio src="../Audio/Terraria_Calamity/Return_To_Slime.mp3" id="Return_To_Slime"></audio>
+    <audio src="../Audio/Terraria_Calamity/Roar_of_The_Jungle_Dragon.mp3" id="Roar_of_The_Jungle_Dragon"></audio>
+    <audio src="../Audio/Terraria_Calamity/Scourge_of_The_Universe.mp3" id="Scourge_of_The_Universe"></audio>
+    <audio src="../Audio/Terraria_Calamity/Servants_of_The_Scourge.mp3" id="Servants_of_The_Scourge"></audio>
+    <audio src="../Audio/Terraria_Calamity/Stained,_Brutal_Calamity.mp3" id="Stained,_Brutal_Calamity"></audio>
+    <audio src="../Audio/Terraria_Calamity/Stinging_Onslaught.mp3" id="Stinging_Onslaught"></audio>
+    <audio src="../Audio/Terraria_Calamity/The_Heaven-Sent_Abomination.mp3" id="The_Heaven-Sent_Abomination"></audio>
+    <audio src="../Audio/Terraria_Calamity/The_Step_Below_Hell.mp3" id="The_Step_Below_Hell"></audio>
+    <audio src="../Audio/Terraria_Calamity/Toxic_Wisdom.mp3" id="Toxic_Wisdom"></audio>
+    <audio src="../Audio/Terraria_Calamity/Treasures_Within_The_Abomination.mp3" id="Treasures_Within_The_Abomination"></audio>
+    <audio src="../Audio/Terraria_Calamity/Unholy_Ambush.mp3" id="Unholy_Ambush"></audio>
+    <audio src="../Audio/Terraria_Calamity/Unholy_Insurgency.mp3" id="Unholy_Insurgency"></audio>
+    <audio src="../Audio/Terraria_Calamity/UNIVERSAL_COLLAPSE.mp3" id="UNIVERSAL_COLLAPSE"></audio>
+  </div>
+
+  <div id="Undertale">
+    <audio src="../Audio/Undertale/Alphys.mp3" id="Alphys"></audio>
+    <audio src="../Audio/Undertale/An_Ending.mp3" id="An_Ending"></audio>
+    <audio src="../Audio/Undertale/Another_Medium.mp3" id="Another_Medium"></audio>
+    <audio src="../Audio/Undertale/ASGORE.mp3" id="ASGORE"></audio>
+    <audio src="../Audio/Undertale/Battle_Against_a_True_Hero.mp3" id="Battle_Against_a_True_Hero"></audio>
+    <audio src="../Audio/Undertale/Bonetrousle.mp3" id="Bonetrousle"></audio>
+    <audio src="../Audio/Undertale/Bring_It_In,_Guys!.mp3" id="Bring_It_In,_Guys!"></audio>
+    <audio src="../Audio/Undertale/Can_You_Really_Call_This_A_Hotel,_I_Didn't_Receive_A_Mint_On_My_Pillow.mp3" id="Can_You_Really_Call_This_A_Hotel,_I_Didn't_Receive_A_Mint_On_My_Pillow"></audio>
+    <audio src="../Audio/Undertale/CORE.mp3" id="CORE"></audio>
+    <audio src="../Audio/Undertale/Death_by_Glamour.mp3" id="Death_by_Glamour"></audio>
+    <audio src="../Audio/Undertale/Dummy!.mp3" id="Dummy!"></audio>
+    <audio src="../Audio/Undertale/Finale.mp3" id="Finale"></audio>
+    <audio src="../Audio/Undertale/Heartache.mp3" id="Heartache"></audio>
+    <audio src="../Audio/Undertale/Here_We_Are.mp3" id="Here_We_Are"></audio>
+    <audio src="../Audio/Undertale/His_Theme.mp3" id="His_Theme"></audio>
+    <audio src="../Audio/Undertale/Hopes_and_Dreams.mp3" id="Hopes_and_Dreams"></audio>
+    <audio src="../Audio/Undertale/Hotel.mp3" id="Hotel"></audio>
+    <audio src="../Audio/Undertale/It's_Raining_Somewhere_Else.mp3" id="It's_Raining_Somewhere_Else"></audio>
+    <audio src="../Audio/Undertale/Megalovania.mp3" id="Megalovania"></audio>
+    <audio src="../Audio/Undertale/Memory.mp3" id="Memory"></audio>
+    <audio src="../Audio/Undertale/Metal_Crusher.mp3" id="Metal_Crusher"></audio>
+    <audio src="../Audio/Undertale/Once_Upon_A_Time.mp3" id="Once_Upon_A_Time"></audio>
+    <audio src="../Audio/Undertale/Ruins.mp3" id="Ruins"></audio>
+    <audio src="../Audio/Undertale/SAVE_the_World.mp3" id="SAVE_the_World"></audio>
+    <audio src="../Audio/Undertale/Song_That_Might_Play_When_You_Fight_Sans.mp3" id="Song_That_Might_Play_When_You_Fight_Sans"></audio>
+    <audio src="../Audio/Undertale/Spear_of_Justice.mp3" id="Spear_of_Justice"></audio>
+    <audio src="../Audio/Undertale/Spider_Dance.mp3" id="Spider_Dance"></audio>
+    <audio src="../Audio/Undertale/Tem_Shop.mp3" id="Tem_Shop"></audio>
+    <audio src="../Audio/Undertale/Temmie_Village.mp3" id="Temmie_Village"></audio>
+    <audio src="../Audio/Undertale/Waterfall.mp3" id="Waterfall"></audio>
+    <audio src="../Audio/Undertale/Wrong_Enemy.mp3" id="Wrong_Enemy"></audio>
+  </div>
+
+</div>
+<!--Here begins the Wall of Text:-->
+<hr id="Header_Solver">
+<div id="Content">
+<div id="Announce_WallOfText">
+
+  <h3 style="margin:1.5em 0px;">The best soundtracks, each chosen carefully.</h3>
+
+  <img src="../Multimedia/Music_Note.svg" id="You_Spin_Me_Right_Round">
+
+  <h3 style="margin:1.5em 0px;">Now Playing: <span id="Join" onclick = "Radio()">Click to Join</span><span id="Song"></span><br><span id="Game"></span></h3>
+
+</div>
+</div>
+
+<footer>
+  <h2 id="icon"><img src="../Multimedia/Controller_Icon.png"> Gamer's Gauntlet</h2>
+  <!--Icon found here: https://commons.wikimedia.org/wiki/File:Video-Game-Controller-Icon-D-Edit.svg-->
+  <table id="More_Choices_Back_Again">
+    <tr>  <td><a href="Suggestions.html">Suggestion Box</a></td>  <td><a href="">About</a></td>  <td><a href="javascript:void(0)" onclick="Very_Random()">Random</a></td>  </tr>
+  </table>
+  <p class="Official_info">This is a personal project and is not intended for business.</p>
+  <p class="Official_info">All Multimedia rights are reserved to their respective owners.</p>
+  <p class="Official_info">More info is available in the HTML code.</p>
+</footer>
+</body>
+</html>

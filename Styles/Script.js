@@ -119,3 +119,59 @@ function Three() {
   var chosen = document.getElementById("Third");//The 3rd bar is chosen
   TopThree(chosen);
 }
+
+var current = 0;
+
+//Disc turns
+function Turntable() {
+  current += 0.6;//0.6 degrees every 10 milliseconds
+  if (current > 360) {
+    current = 0.6;//Prevent possible stack overflow by returning to 0.6
+  }
+  var spin = document.getElementById("You_Spin_Me_Right_Round");//Spinning element selected
+  spin.style.transform = ("rotate(" + current + "deg)");//Spinning element rotated degree increases
+}
+
+//Playing Songs
+if (window.location.href.slice(window.location.href.length - 8, window.location.href.length) == "OST.html") {
+  var chosen_song = document.getElementById("Chosen");//Song chosen is selected
+  chosen_song.addEventListener("ended", Song);//Song chosen activates a new song when it ends
+}//Only occurs in "OST.html", to prevent errors in console because I have OCD
+
+
+function Song() {
+  var all = document.getElementById("Songs").querySelectorAll("div");//All games (of songs) selected
+
+  //Random game is selected
+  var random = Math.floor(Math.random()*all.length);
+  game = all[random];
+
+  //Random song is selected
+  random = Math.floor(Math.random()*all.length);
+  song = game.querySelectorAll("audio")[random];
+
+  //Selected song is placed into id with eventListener
+  chosen_song.src = song.src;
+  chosen_song.play();
+
+  //id of songs and games contain titles, "_" are globally replaced by " "
+  game = game.id.replace(/_/g," ");
+  song = song.id.replace(/_/g," ");
+
+  //id of songs and games are shown on the screen
+  document.getElementById("Game").innerText = " [" + game + "]";
+  document.getElementById("Song").innerText = song;
+}
+
+function Radio() {
+  //Joining message disappears to prevent multiple songs being played,
+  //and turntable from reaching ungodly speeds (Nyoom!!!)
+  var join = document.getElementById("Join");
+  join.style.display = "none";
+
+  //Rotates a little every 10 milliseconds to start turning
+  setInterval(Turntable,10);
+
+  //250 milliseconds of silence are played, followed by whatever song is selected
+  chosen_song.play();
+}

@@ -864,6 +864,60 @@ a.On_Fire:hover {
   max-width:30vw;/*Pseudo-Padding*/
   margin:5px auto;/*In the center*/
 }
+
+#You_Spin_Me_Right_Round {
+  width:10vw;/*Formatting*/
+  height:10vw;/*Formatting*/
+  min-width:150px;/*Formatting*/
+  min-height:150px;/*Formatting*/
+  height:auto;/*Formatting*/
+  transform:rotate(0deg);/*See JS; it's a surprise tool that's gonna help us later.*/
+}
+#Join {
+  text-decoration: underline;/*Indicate clickable*/
+  cursor:pointer;/*Indicate clickable*/
+}
+#Join:hover {
+  font-style: italic;/*Indicate interactable*/
+}
+#Not_Radio_Button {
+  position:fixed;/*Positioning*/
+  bottom:0px;/*Positioning*/
+  right:0px;/*Positioning*/
+  margin-bottom:2.5vw;/*Not completely in the corner*/
+  margin-right:2.5vw;/*Not completely in the corner*/
+  padding-right:max(1vw, 10px);/*Formatting; gives room for text*/
+  color:white;/*Fomratting text*/
+  background-color:black;/*Formatting*/
+  border-radius:500px;/*Formatting*/
+  border:0.1vw solid black;/*Formatting*/
+  z-index:3;/*Blocks everything, at the expense of being blocked by nothing*/
+  transition:0.3s;/*Indicate interactable*/
+}
+#Not_Radio_Button:hover {
+  border-width:0.2vw;/*Formatting*/
+  margin-bottom:2.4vw;/*Compensate for border width increase*/
+  margin-right:2.4vw;/*Compensate for border width increase*/
+}
+#Not_Radio_Button img {
+  width:3.5vw;/*Formatting*/
+  min-width:40px;/*Formatting*/
+  height:auto;/*Formatting*/
+  display:inline-block;/*Formatting*/
+  transition:0.3s;/*Formatting*/
+}
+#Not_Radio_Button:hover img {
+  filter:invert(100%);/*Formatting*/
+}
+#Not_Radio_Button p {
+  display:inline-block;/*Formatting*/
+  font-family:Perpetua,Garamond;/*Formatting*/
+  font-size: max(1.25em, 1.5vw);/*Formatting*/
+  margin-left:0.1vw;/*Formatting; some distance between photo and text*/
+  margin-bottom:0px;/*Normally, 1rem*/
+  position:relative;/*For movement*/
+  top:0.1vw;/*Centers more vertically*/
+}
 /*Much needed help:
 Position:https://www.freecodecamp.org/news/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26/
 Border vs Outline: https://developer.mozilla.org/en-US/docs/Web/CSS/outline
