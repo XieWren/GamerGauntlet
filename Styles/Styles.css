@@ -918,6 +918,13 @@ a.On_Fire:hover {
   position:relative;/*For movement*/
   top:0.1vw;/*Centers more vertically*/
 }
+
+@media only screen and (max-width:575px) {
+  .Not_Phone {
+    display:none;
+  }
+}
+
 /*Much needed help:
 Position:https://www.freecodecamp.org/news/how-to-use-the-position-property-in-css-to-align-elements-d8f49c403a26/
 Border vs Outline: https://developer.mozilla.org/en-US/docs/Web/CSS/outline

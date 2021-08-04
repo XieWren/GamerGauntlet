@@ -58,21 +58,45 @@ function List_Filter() {
 
 /*Random Challenge*/
 function Very_Random() {
-  var challenges = document.getElementById("Challenge_List");//Get challenges in the challenge list (Reuse Reduce Recycle, as they say)
-  challenges = challenges.querySelectorAll("a")//Gets the list of links in Challenge_List div
+  var current = window.location.href;//Current window location
 
-  var rand_value = Math.random();
-  rand_value *= challenges.length;
-  //Counts number of 'a' in challenges, and thus number of options
+  for (var counter = 0; counter < current.length; counter++) {
+    if (current[counter] == "/") {
+      var slash = counter;//Finds the last '/'
+    }
+  }
 
-  rand_value = Math.floor(rand_value);
-  //Makes the possible range of values be the first and last choice + make all numbers a whole number
+  current = current.slice(slash + 1,current.length);
+  //Finds everything after the last '/', that is, the base file name
 
-  chosen_one = challenges[rand_value].getAttribute("href");
-  //Gets the chosen url from the anchor
+  var comparison = current;//To force entering the loop
+  while (current == comparison) {//If same file, repeats search
+
+    var challenges = document.getElementById("Challenge_List");//Get challenges in the challenge list (Reuse Reduce Recycle, as they say)
+    challenges = challenges.querySelectorAll("a")//Gets the list of links in Challenge_List div
+
+    var rand_value = Math.random();
+    rand_value *= challenges.length;
+    //Counts number of 'a' in challenges, and thus number of options
+
+    rand_value = Math.floor(rand_value);
+    //Makes the possible range of values be the first and last choice + make all numbers a whole number
+
+    var chosen_one = challenges[rand_value].getAttribute("href");
+    //Gets the chosen url from the anchor
+
+    for (counter = 0; counter < chosen_one.length; counter++) {
+      if (chosen_one[counter] == "/") {
+        slash = counter;//Get the last '/'
+      }
+    }
+
+    comparison = chosen_one.slice(slash + 1, chosen_one.length);
+    //Comparison with base HTML file name to ensure no repeatition
 
   window.location.href = chosen_one;
   //Redirects webpage to chosen url, as seen here: https://www.w3schools.com/howto/howto_js_redirect_webpage.asp
+  }
 }
 
 function FormProcessor() {
