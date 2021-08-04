@@ -168,10 +168,11 @@ function Song() {
 
   //Random game is selected
   var random = Math.floor(Math.random()*all.length);
+  console.log(random);
   game = all[random];
 
   //Random song is selected
-  random = Math.floor(Math.random()*all.length);
+  random = Math.floor(Math.random()*game.querySelectorAll("audio").length);
   song = game.querySelectorAll("audio")[random];
 
   //Selected song is placed into id with eventListener
