@@ -195,22 +195,18 @@ header p, .games_button, .difficulty_button{
   border:1px solid black;/*Formatting*/
   min-width:160px;/*Formatting*/
 }
-
-#Challenge_List a{
-  color:black;/*Formatting*/
-  text-decoration:none;/*Formatting*/
-  width:100%;/*Formatting*/
-}
 #Challenge_List p {
+  margin:0px;/*Formatting*/
+}
+#Challenge_List a {
+  color:black;/*Formatting*/
   padding:5px;/*Formatting*/
   width:100%;/*Formatting*/
-  margin:0px;/*Formatting*/
   font-size:12px;/*Formatting*/
+  text-decoration:none;/*Formatting*/
 }
 #Challenge_List p:hover a {
   color:white;/*Indicate that it is interactable*/
-}
-#Challenge_List p:hover {
   background-color:#2f2f2f;/*Indicate that it is interactable*/
 }
 

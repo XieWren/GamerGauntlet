@@ -23,7 +23,7 @@ function List_Filter() {
 
   //Get all p in #Challenge_List
   var range = document.querySelector("#Challenge_List")
-  var items = range.querySelectorAll("p");
+  var items = range.querySelectorAll("a");
 
   if (search == "") {
     range.style.display = "none";//Nothing appears if nothing triggered
