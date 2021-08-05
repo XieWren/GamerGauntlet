@@ -168,7 +168,6 @@ function Song() {
 
   //Random game is selected
   var random = Math.floor(Math.random()*all.length);
-  console.log(random);
   game = all[random];
 
   //Random song is selected
